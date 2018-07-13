@@ -1,0 +1,21 @@
+# Header
+menu:
+  首页: /#blog
+  关于: /inner/about
+  #传送: /inner/portal
+  #归档: /archive
+
+# Site favicon
+favicon: /favicon.png
+
+# Site logo
+#logo: /images/avatar.png
+
+# Enable Mathjax
+mathjax: true
+
+# Enable awesome-toc
+awesome_toc: true
+
+# Enable githubRepoWidget
+github_repo_widget: false
