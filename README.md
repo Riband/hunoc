@@ -1,6 +1,6 @@
 # huno-clsblog
 
-V-0.0.1 (huno: commit 287f824)  
+V-0.0.2 dev(huno: commit 287f824)  
 huno-clsblog 源自(Fork) [Huno](https://github.com/daleanthony/uno/)。  
 huno-clsblog forks form [Huno](https://github.com/daleanthony/uno/)。  
 由于时间不多,暂时不会有太多修改,<b>主要自用,不建议他人使用</b>,请使用优秀的Hexo主题: [Huno](https://github.com/letiantian/huno/)。   
