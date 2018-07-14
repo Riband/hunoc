@@ -20,6 +20,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block; }
 
 body {
+  background: url(../images/background-cover.jpg) #BBBBBB;
+  /*position: fixed;*/
+  background-repeat:no-repeat;
+  background-attachment:fixed;
   line-height: 1; }
 
 ol, ul {
@@ -1091,11 +1095,19 @@ code {
   width: 940px;
   margin: 0 auto; }
 
+  /*modified*/
 .content-wrapper {
   z-index: 800;
   width: 68%;
   max-width: 960px;
-  margin-left: 32%; }
+  margin-left: 32%; 
+  background-color: rgba(37, 32, 32, 0.3);
+  /*background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(68, 68, 68, 0.6)), color-stop(100%, rgba(0, 0, 0, 0.9)));
+  background-image: -webkit-linear-gradient(-410deg, rgba(68, 68, 68, 0.6) 20%, rgba(0, 0, 0, 0.9));
+  background-image: linear-gradient(140deg,rgba(68, 68, 68, 0.6) 20%, rgba(0, 0, 0, 0.9)); */
+
+
+}
 
 .content-wrapper__inner {
   margin: 0 10%;
@@ -1181,7 +1193,7 @@ hr {
   vertical-align: middle; }
 
 .panel-title {
-  font-family:"Microsoft YaHei UI Light","Microsoft YaHei UI","Noto Sans CJK SC DemiLight";
+  font-family:"Microsoft YaHei UI Light","Microsoft YaHei UI","Noto Sans CJK SC";
   margin: 0 0 5px 0;
   font-size: 2.5em;
   letter-spacing: 4px;
@@ -1202,12 +1214,12 @@ hr {
   width: 100%;
   max-width: none;
   height: 100%;
-  background: url(../images/background-cover.jpg) top left no-repeat #BBBBBB;
+  /*background: url(../images/background-cover.jpg) top left no-repeat #BBBBBB;*/
   background-size: cover; }
 
 .panel-cover--collapsed {
   width: 32%;
-  max-width: 430px; }
+  max-width: 350px; }
 
 .panel-cover--overlay {
   display: block;
@@ -1650,7 +1662,7 @@ input[type="tel"] {
       .cover-navigation.navigation--social .navigation li {
         display: inline-block;
         width: 25.8%; }
-
+  /*modified*/
   .content-wrapper {
     width: 80%;
     max-width: none;
