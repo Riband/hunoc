@@ -12,7 +12,7 @@ favicon: /favicon.png
 #logo: /images/avatar.png
 
 # Enable Mathjax
-mathjax: true
+mathjax: false
 
 # Enable awesome-toc
 awesome_toc: true
