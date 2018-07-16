@@ -1,5 +1,18 @@
+<!-- Modified by huno-clsblog。-->
 <footer class="footer">
-
-    <span class="footer__copyright">&copy; 2016-2018. | 由<a href="https://hexo.io/">Hexo</a>强力驱动 | 主题:huno-clsblog (Customed from/定制于: <a href="https://github.com/letiantian/huno">Huno</a>,by letiantian)</span>
-    
+    <span class="footer__copyright">
+            <%         var license_information="";                                       %>
+            <%         if (theme.defalut_license_information){                           %>
+            <%             license_information = theme.defalut_license_information;      %>
+            <%         }                                                                 %>
+            <%         if (config.defalut_license_information){                          %>
+            <%             license_information = config.defalut_license_information;     %>
+            <%         }                                                                 %>
+            <%         if (page.license_information){                                    %>
+            <%             license_information = page.license_information;               %>
+            <%         }                                                                 %>
+            <%- license_information                                                      %>
+        <br/>Powered by <a href="https://hexo.io/">Hexo</a> <br/> 
+        <%- theme.huno_clsblog_version_information %>
+        (From: <a href="https://github.com/letiantian/huno">Huno</a>,by letiantian)</span>
 </footer>

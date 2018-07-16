@@ -1,6 +1,6 @@
 # huno-clsblog
 
-V-0.0.2 dev(huno: commit 287f824)  
+V-0.1.0 dev (huno: commit 287f824)  
 huno-clsblog 源自(Fork) [Huno](https://github.com/daleanthony/uno/)。  
 huno-clsblog forks form [Huno](https://github.com/daleanthony/uno/)。  
 由于时间不多,暂时不会有太多修改,<b>主要自用,不建议他人使用</b>,请使用优秀的Hexo主题: [Huno](https://github.com/letiantian/huno/)。   
@@ -21,3 +21,24 @@ Author/作者: [daleanthony](https://github.com/daleanthony/)
 License: Creative Commons Attribution 4.0 International  
 Uno采用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">知识共享署名 4.0 国际许可协议</a>进行许可。  
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+
+---
+
+---
+
+# 更新/Updates 
+English vesion coming soooooooooooon.
+### v-0.1.0 dev
+* 改用白色背景色
+* 修该背景图
+* 调整panel间距
+* 提供评论选项(_config.yml,theme/_config.yml)
+* 提供许可选项(_config.yml,theme/_config.yml,post)
+
+### v-0.0.2 dev
+* 修改meta
+* 背景半透明
+
+### v-0.0.1  
+* 修改字体
+* 禁用归档

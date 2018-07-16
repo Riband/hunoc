@@ -1,7 +1,7 @@
 # Header
 menu:
-  首页: /#blog
-  关于: /inner/about
+  日志 /Blog: /#blog
+  关于/About: /inner/about
   #传送: /inner/portal
   #归档: /archive
 
@@ -10,12 +10,27 @@ favicon: /favicon.png
 
 # Site logo
 #logo: /images/avatar.png
-
 # Enable Mathjax
 mathjax: false
 
 # Enable awesome-toc
-awesome_toc: true
+awesome_toc: false
 
 # Enable githubRepoWidget
 github_repo_widget: false
+
+#huno-clsblog
+post_comments: "none"
+  #options 
+    # "none" : no comments
+    # "manual" (or other string): you will config manually in comments.ejs
+huno_clsblog_version_information: "huno-clsblog V-0.1.0 dev"
+    #version places: Readme.md(2),_config.yml,,hub release
+    #printed on the footer of a page
+default_license_information: "Copyright 2018"
+# any string,such as:
+      # "© 2016-2018"
+      # "CC-BY 4.0 International"
+      # <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+#for post,use license_information: [String] (First Process)
+#for _config.yml,use default_license_information: [String] (Second Process,theme/_config.yml is last to process)

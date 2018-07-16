@@ -54,7 +54,6 @@ body {
   body:after {
     clear: both; }
 
-
 /*
  * Foundation Icons v 3.0
  * Made by ZURB 2013 http://zurb.com/playground/foundation-icon-fonts-3
@@ -935,9 +934,9 @@ html {
 
 body {
   /*font-family: "Raleway", sans-serif;*/
-  font-family:  "Raleway",Verdana,sans-serif,宋体, serif, "Droid Serif", Helvetica Neue, Helvetica, Arial;
+  font-family: "Microsoft YaHei UI Light","Microsoft YaHei UI","Noto Sans CJK SC DemiLight","宋体";
   font-size: 1em;
-  color: #666666; }
+  color: #222222; }
 
 ::selection {
   background: #fae3df; }
@@ -1060,7 +1059,7 @@ code {
 .excerpt {
   margin: 0;
   font-size: .9em;
-  color: #999999; }
+  color: #333333; }
 
 .intro {
   font-family: "Roboto Slab", serif;
@@ -1102,7 +1101,7 @@ code {
   width: 68%;
   max-width: 960px;
   margin-left: 32%;
-  background-color: rgba(37, 32, 32, 0.3);
+  background-color: rgba(255, 255, 255, 0.5);
   /*background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(68, 68, 68, 0.6)), color-stop(100%, rgba(0, 0, 0, 0.9)));
   background-image: -webkit-linear-gradient(-410deg, rgba(68, 68, 68, 0.6) 20%, rgba(0, 0, 0, 0.9));
   background-image: linear-gradient(140deg,rgba(68, 68, 68, 0.6) 20%, rgba(0, 0, 0, 0.9)); */
@@ -1119,13 +1118,13 @@ code {
   padding: 2em 0 0 0;
   border-top: 2px solid #dddddd;
   font-size: .7em;
-  color: #b3b3b3; }
+  color: #3f3f3f; }
 
 .footer__copyright {
   display: block;
   margin-bottom: .7em; }
   .footer__copyright a {
-    color: #a6a6a6;
+    color: #3f3f3f;
     text-decoration: underline; }
     .footer__copyright a:hover {
       color: #006699; }
@@ -1153,7 +1152,7 @@ hr {
 
 .post-meta {
   margin: 0 0 1.4em 0;
-  color: #c7c7c7; }
+  color: #000000; }
 
 .post-meta__date {
   margin-right: .5em; }
@@ -1194,9 +1193,10 @@ hr {
   vertical-align: middle; }
 
 .panel-title {
-  font-family:"Microsoft YaHei UI Light","Microsoft YaHei UI","Noto Sans CJK SC";
+  font-family:"Microsoft YaHei UI","Noto Sans CJK SC";
   margin: 0 0 5px 0;
   font-size: 2.5em;
+  font-weight: 3px;
   letter-spacing: 4px;
   color: #FFF; }
 
@@ -1236,7 +1236,7 @@ hr {
   background-image: linear-gradient(140deg,rgba(68, 68, 68, 0.6) 20%, rgba(0, 0, 0, 0.9)); }
 
 .panel-cover__logo {
-  margin-bottom: .2em; }
+  margin-bottom: 1.0em; }
 
 .panel-cover__description {
   margin: 0 30px; }
@@ -1412,7 +1412,7 @@ nav {
 .pagination__page-number {
   margin: 0;
   font-size: .8em;
-  color: #999999; }
+  color: #777777; }
 
 .pagination__newer {
   margin-right: 1em; }
@@ -1450,7 +1450,7 @@ i {
   font-weight: lighter;
   line-height: 1.3em; }
   .post-list__post-title a {
-    color: #ffffff; }
+    color: #333333; }
     .post-list__post-title a:hover {
       color: #006699; }
 
@@ -1458,11 +1458,11 @@ i {
   display: block;
   margin: .7em 0 0 0;
   font-size: .9em;
-  color: #c7c7c7; }
+  color: #444444; }
 
 .post-list__meta--date {
   margin-right: .5em;
-  color: #c7c7c7; }
+  color: #444444; }
 
 .post-list__meta--tags {
   margin-left: .5em; }
@@ -1663,7 +1663,7 @@ input[type="tel"] {
       .cover-navigation.navigation--social .navigation li {
         display: inline-block;
         width: 25.8%; }
-  /*modified*/
+
   .content-wrapper {
     width: 80%;
     max-width: none;
@@ -1682,7 +1682,7 @@ input[type="tel"] {
 
   .panel-title {
     font-family: "Microsoft YaHei UI Light","Microsoft YaHei UI","Noto Sans CJK SC DemiLight";
-    margin-bottom: .1em;
+    margin-bottom: 1.8em;
     font-size: 1.5em; }
 
   .panel-subtitle {
