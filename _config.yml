@@ -24,7 +24,7 @@ post_comments: "none"
   #options 
     # "none" : no comments
     # "manual" (or other string): you will config manually in comments.ejs
-huno_clsblog_version_information: "huno-clsblog V-0.1.0 dev"
+huno_clsblog_version_information: "huno-clsblog V-0.1.0 dev2"
     #version places: Readme.md(2),_config.yml,,hub release
     #printed on the footer of a page
 default_license_information: "Copyright 2018"

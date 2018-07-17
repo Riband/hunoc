@@ -1,7 +1,23 @@
-<% if(config.post_comments != 'none' && theme.post_comments != 'none') { %>
-<section class="post-comments">
+<% var post_comments="none"; %>
+<% if(theme.post_comments) {post_comments= theme.post_comments;} %>
+<% if(config.post_comments) {post_comments= config.post_comments;} %>
+<% if(page.post_comments) {comment_code= page.post_comments;} %>
 
-    <!-- 将评论系统（例如Disqus、多说、友言、畅言等）提供的代码片段粘贴在这里 -->
-    
+<!--
+<% var comment_code='No comment_code!,you should add it or let post_comments="none"'; %>
+<% if(theme.comment_code) {comment_code= theme.comment_code;} %>
+<% if(config.comment_code) {comment_code= config.comment_code;} %>
+<% if(page.comment_code) {comment_code= page.comment_code;} %>
+
+<% if(post_comments === 'auto') { %>
+<section class="post-comments">
+    <%- comment_code %>
 </section>
+<% } %>
+-->
+
+<% if(post_comments === 'manual') { %>
+    <section class="post-comments">
+        <!-- 将评论系统（例如Disqus、多说、友言、畅言等）提供的代码片段粘贴在这里 -->
+    </section>
 <% } %>
