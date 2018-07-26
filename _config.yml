@@ -21,13 +21,14 @@ github_repo_widget: false
 
 #huno-clsblog
 post_comments: "none"
-  #options 
+  #options
     # "none" : no comments
     # "manual" (or other string): you will config manually in comments.ejs
-huno_clsblog_version_information: "huno-clsblog V-0.1.0 dev2"
+huno_clsblog_version_information: "huno-clsblog V-0.1.0 dev3"
     #version places: Readme.md(2),_config.yml,,hub release
     #printed on the footer of a page
 default_license_information: "Copyright 2018"
+# this is for users to config;NOT the license of this theme(Use cc-by-nc-sa 4.0 license)
 # any string,such as:
       # "© 2016-2018"
       # "CC-BY 4.0 International"

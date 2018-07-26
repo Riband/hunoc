@@ -934,7 +934,7 @@ html {
 
 body {
   /*font-family: "Raleway", sans-serif;*/
-  font-family: "Microsoft YaHei UI Light","Microsoft YaHei UI","Noto Sans CJK SC DemiLight","宋体";
+  font-family: "Microsoft YaHei UI Light","Microsoft YaHei UI","Noto Sans CJK SC","宋体";
   font-size: 1em;
   color: #222222; }
 
@@ -963,7 +963,7 @@ h5 {
   margin-top: .8em;
   margin-bottom: .4em;
   /*font-family: "Roboto Slab", serif;*/
-  font-family: "Raleway",Verdana,sans-serif,宋体, serif, "Droid Serif", Helvetica Neue, Helvetica, Arial;
+  font-family: "Microsoft YaHei UI","Noto Sans CJK SC DemiLight","宋体";
   font-weight: lighter;
   color: #333333;
   -webkit-font-smoothing: antialiased; }
@@ -1044,16 +1044,20 @@ code {
 .author,
 .tags {
   font-size: .8em;
-  color: #c7c7c7; }
+  color: #111111; }
+
   .date a,
   .time a,
   .author a,
   .tags a {
-    color: #666666; }
+    color: #000000;
+    font-size: 115%;
+  }
     .date a:hover,
     .time a:hover,
     .author a:hover,
     .tags a:hover {
+      font-size: 115%;
       color: #006699; }
 
 .excerpt {
@@ -1062,7 +1066,7 @@ code {
   color: #333333; }
 
 .intro {
-  font-family: "Roboto Slab", serif;
+  font-family: "Microsoft YaHei UI","Noto Sans CJK SC DemiLight","宋体", serif;
   font-size: 1.2em;
   font-weight: lighter;
   color: #999999; }
@@ -1450,9 +1454,9 @@ i {
   font-weight: lighter;
   line-height: 1.3em; }
   .post-list__post-title a {
-    color: #333333; }
+    color: #222222; }
     .post-list__post-title a:hover {
-      color: #006699; }
+      color: #000000; }
 
 .post-list__meta {
   display: block;
@@ -1574,7 +1578,7 @@ input[type="tel"] {
     width: 70px; }
 
   .panel-title {
-    font-family: "Microsoft YaHei UI Light","Microsoft YaHei UI","Noto Sans CJK SC DemiLight";
+    font-family: "Microsoft YaHei UI Light","Microsoft YaHei UI","Noto Sans CJK SC";
     font-size: 2em; }
 
   .panel-subtitle {

@@ -5,13 +5,13 @@ var post = page;
 <article class="post-container post-container--single">
 
   <header class="post-header">
-    
+
     <h1 class="post-title"><%= post.title %></h1>
 
     <% if (type == 'post') { %>
 
     <div class="post-meta">
-      <time datetime="<%= date(post.date, config.date_format) %>" class="post-meta__date date"><%= date(post.date, config.date_format) %></time> 
+      <time datetime="<%= date(post.date, config.date_format) %>" class="post-meta__date date"><%= date(post.date, config.date_format) %></time>
 
       <span class="post-meta__tags tags">
 
@@ -24,29 +24,29 @@ var post = page;
 
           <% if (post.categories && post.categories.length > 0){ %>
             <font class="categories">
-            &#8226; 分类:
+            &nbsp; &#8226; 分类:
             <%- list_categories(post.categories, {
               show_count: false,
               class: 'categories',
               style: 'none'
             }) %>
-            </font>
+          </font>
           <% } %>
-      
+
           <% if (post.tags && post.tags.length > 0){ %>
-             &#8226; 标签:
-            <font class="tags">
+            &nbsp;  &#8226; 标签:
+            <b class="tags">
               <%- list_tags(post.tags, {
                 show_count: false,
                 style: 'none',
                 class: 'tags'
               }) %>
-            </font>
+            </b>
           <% } %>
 
       </span>
     </div>
-    
+
     <% } %>
 
   </header>
@@ -59,4 +59,3 @@ var post = page;
 
 
 </article>
-
