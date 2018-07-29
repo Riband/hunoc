@@ -25,8 +25,8 @@ License: Creative Commons Attribution 4.0 International
 Uno采用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">知识共享署名 4.0 国际许可协议</a>进行许可。  
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
 
-## Demo/演示  
+## Demo/演示(huno-clsblog V-0.1.0 dev)  
 做Demo属无事可<del>commit</del>做  
-由于时间不多,暂时不会有太多修改,<b>主要自用,不建议他人使用</b>,请使用优秀的Hexo主题: [Huno](https://github.com/letiantian/huno/)。   
+由于时间不多,暂时不会有太多修改,<b>主要自用,不建议他人使用</b>,请使用优秀的Hexo主题: [Huno](https://github.com/letiantian/huno/)。  
 this Customed Huno is mainly used for my blog.<b>Other people are NOT advised to use this theme</b>,if you want to use a nice hexo theme,see: [Huno](https://github.com/letiantian/huno/)。   
 ![huno-clsblog Demo Img](https://riband.github.io/RiBase/huno-clsblog-demo/demo.jpg)  
