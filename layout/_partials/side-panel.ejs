@@ -43,6 +43,12 @@
 
             </ul>
           </nav>
+          <% if (config.hcls_bgm) { %>
+              <br/>
+              <audio controls autoplay loop class="hc_bgm_control">
+                <source src="<%- config.hcls_bgm %>" type="audio/mpeg">
+              </audio>
+          <% } %>
 
           <%- partial('_partials/social') %>
 

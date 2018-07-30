@@ -1103,8 +1103,8 @@ code {
 .content-wrapper {
   z-index: 800;
   width: 68%;
-  max-width: 960px;
-  margin-left: 32%;
+  max-width: 900px;
+  margin-left: 28%;
   background-color: rgba(255, 255, 255, 0.5);
   /*background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(68, 68, 68, 0.6)), color-stop(100%, rgba(0, 0, 0, 0.9)));
   background-image: -webkit-linear-gradient(-410deg, rgba(68, 68, 68, 0.6) 20%, rgba(0, 0, 0, 0.9));
@@ -1320,12 +1320,13 @@ hr {
 .btn, .navigation__item a {
   padding: 10px 20px;
   border: 1px solid #006699;
-  border-radius: 20px;
+  /*border-radius: 20px;*/
   font-size: .9em;
   font-weight: bold;
   letter-spacing: 1px;
   text-shadow: none;
   color: #006699;
+  width: 7em;
   -webkit-font-smoothing: antialiased; }
   .btn:hover, .navigation__item a:hover {
     color: #006699;
@@ -1725,4 +1726,8 @@ th, td {
 }
 pre {
   font-family:
+}
+
+.hc_bgm_control {
+  width: 11em;
 }
