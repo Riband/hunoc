@@ -25,7 +25,9 @@ body {
   /*position: fixed;*/
   background-repeat:no-repeat;
   background-attachment:fixed;
-  line-height: 1; }
+  line-height: 1; 
+  
+}
 
 ol, ul {
   list-style: none; }
@@ -1398,7 +1400,7 @@ nav {
     .navigation__item a:hover {
       color: #FFF;
       border-color: #FFF;
-      opacity: 1; }
+       } /*modified*/
 
 .navigation--social {
   margin-left: 0em; }
@@ -1725,9 +1727,15 @@ th, td {
   border: none;
 }
 pre {
-  font-family:
+  /*  font-family:  */
 }
 
 .hc_bgm_control {
   width: 11em;
 }
+
+/* disused
+.hc_body_aero { 
+  -webkit-filter: blur(2px);
+}
+*/

@@ -1,0 +1,21 @@
+/*
+    License: CC-BY-NC-SA 4.0 International
+    Red and white , Reimu!
+    it's rough now; 
+*/
+
+.navigation__item {
+  display: inline-block;
+  margin: 3px 3px;
+  line-height: 1em; }
+  .navigation__item a {
+    display: block;
+    position: relative;
+    /*border-color: rgb(255, 0, 0);*/
+    color: red;
+    background-color: #FFF;
+    opacity: .8; }
+    .navigation__item a:hover {
+      color: rgb(255, 0, 0);
+      border-color: red;
+       } /*modified*/

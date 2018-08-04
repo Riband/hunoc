@@ -1,6 +1,6 @@
 # Header
 menu:
-  日志 /Blog: /#blog
+  日志 /Blog: /#blog  # "/#blog" is Enforced
   关于/About: /inner/about
   #传送: /inner/portal
   #归档: /archive
@@ -10,11 +10,12 @@ favicon: /favicon.png
 
 # Site logo
 #logo: /images/avatar.png
+
 # Enable Mathjax
 mathjax: false
 
 # Enable awesome-toc
-awesome_toc: false
+awesome_toc: true
 
 # Enable githubRepoWidget
 github_repo_widget: false
@@ -24,14 +25,22 @@ post_comments: "none"
   #options
     # "none" : no comments
     # "manual" (or other string): you will config manually in comments.ejs
-huno_clsblog_version_information: "huno-clsblog V-0.1.0 dev3"
+    
+huno_clsblog_version_information: huno-clsblog V-0.1.0 dev.5
     #version places: Readme.md(2),_config.yml,,hub release
     #printed on the footer of a page
-default_license_information: "Copyright 2018"
-# this is for users to config;NOT the license of this theme(Use cc-by-nc-sa 4.0 license)
-# any string,such as:
-      # "© 2016-2018"
-      # "CC-BY 4.0 International"
+
+default_license_information: Copyright 2018
+# this is not suggested for users to config , becasue it will change with the updates of the theme;
+# This(default_license_information: "Copyright 2018") is NOT the license of this theme , which uses cc-by-nc-sa 4.0 license)
+# [String] ,such as:
+      # © 2016-2018
+      # CC-BY 4.0 International
       # <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
 #for post,use license_information: [String] (First Process)
 #for _config.yml,use default_license_information: [String] (Second Process,theme/_config.yml is last to process)
+
+custom: flase
+#choices:
+  # flase: None custom
+  # red_and_white: red and white custom

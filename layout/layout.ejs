@@ -54,9 +54,18 @@
       <link rel="icon" type="image/x-icon" href="<%- theme.favicon %>">
     <% } %>
     <%- css('css/uno.css') %>
+     
+    
     <%- css('css/highlight') %>
     <%- css('css/archive.css') %>
     <%- css('css/china-social-icon.css') %>
+
+    <!-- hc: load custom -->
+    <% if(theme.custom) {                                                         %>
+    <%  var custom_uno_url = 'css/custom_uno/' + theme.custom + '.css';           %>
+    <%- css(custom_uno_url) %>
+    <% } %>
+    <!-- hc: load custom end -->                                                                     
 
 </head>
 <body>
