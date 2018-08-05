@@ -936,7 +936,7 @@ html {
 
 body {
   /*font-family: "Raleway", sans-serif;*/
-  font-family: "Microsoft YaHei UI Light","Microsoft YaHei UI","Noto Sans CJK SC","宋体";
+  font-family: "Microsoft YaHei UI","Noto Sans CJK";
   font-size: 1em;
   color: #222222; }
 
@@ -951,6 +951,7 @@ a {
   color: #006699; }
   a:hover {
     color: green;
+    transition: .5s;
     -o-transition: .5s;
     -ms-transition: .5s;
     -moz-transition: .5s;
@@ -965,7 +966,7 @@ h5 {
   margin-top: .8em;
   margin-bottom: .4em;
   /*font-family: "Roboto Slab", serif;*/
-  font-family: "Microsoft YaHei UI","Noto Sans CJK SC DemiLight","宋体";
+  font-family: "Microsoft YaHei UI";
   font-weight: lighter;
   color: #333333;
   -webkit-font-smoothing: antialiased; }
@@ -1324,7 +1325,7 @@ hr {
   border: 1px solid #006699;
   /*border-radius: 20px;*/
   font-size: .9em;
-  font-weight: bold;
+  font-weight: normal;
   letter-spacing: 1px;
   text-shadow: none;
   color: #006699;
@@ -1391,6 +1392,7 @@ nav {
   display: inline-block;
   margin: 3px 3px;
   line-height: 1em; }
+
   .navigation__item a {
     display: block;
     position: relative;
@@ -1454,7 +1456,7 @@ i {
   margin-bottom: .2em;
   font-size: 1.8em;
   -webkit-font-smoothing: antialiased;
-  font-weight: lighter;
+  font-weight: normal;
   line-height: 1.3em; }
   .post-list__post-title a {
     color: #222222; }
@@ -1475,9 +1477,9 @@ i {
   margin-left: .5em; }
 
 .post-list__divider {
-  width: 30%;
+  width: 62%;
   margin: 2.2em 0 2.1em 0;
-  border-top: 1px solid #dddddd; }
+  border-top: 1px solid #000000; }
 
 *:focus {
   outline: none; }
@@ -1688,7 +1690,7 @@ input[type="tel"] {
     padding: 0 5%; }
 
   .panel-title {
-    font-family: "Microsoft YaHei UI Light","Microsoft YaHei UI","Noto Sans CJK SC DemiLight";
+    font-family: "Microsoft YaHei UI","Noto Sans CJK SC DemiLight";
     margin-bottom: 1.8em;
     font-size: 1.5em; }
 
@@ -1726,9 +1728,11 @@ th, td {
 .highlight table {
   border: none;
 }
+/*
 pre {
-  /*  font-family:  */
+    font-family:  
 }
+*/
 
 .hc_bgm_control {
   width: 11em;

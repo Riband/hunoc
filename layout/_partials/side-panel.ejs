@@ -43,21 +43,32 @@
 
             </ul>
           </nav>
-          <% if (config.hcls_bgm) { %>
+
+
+          <!-- hc bgm option -->
+          <%         var hc_bgm="";                                                    %>
+          <%         if (theme.hc_bgm){                                                %>
+          <%             hc_bgm = theme.hc_bgm;                                        %>
+          <%         }                                                                 %>
+          <%         if (config.hc_bgm){                                               %>
+          <%             hc_bgm = config.hc_bgm;                                       %>
+          <%         }                                                                 %>
+          <%         if (page.hc_bgm){                                                 %>
+          <%             hc_bgm = page.hc_bgm;                                         %>
+          <%         }                                                                 %>
+          <% if (hc_bgm) {                                                             %>
               <br/>
               <audio controls autoplay loop class="hc_bgm_control">
-                <source src="<%- config.hcls_bgm %>" type="audio/mpeg">
+                <source src="<%- hc_bgm %>" type="audio/mpeg">
               </audio>
-          <% } %>
+          <% }                                                                         %>
+          <!-- hc bgm option end -->
+
 
           <%- partial('_partials/social') %>
-
         </div>
-
       </div>
-
     </div>
-
     <div class="panel-cover--overlay"></div>
   </div>
 </header>

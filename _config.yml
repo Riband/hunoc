@@ -20,15 +20,18 @@ awesome_toc: true
 # Enable githubRepoWidget
 github_repo_widget: false
 
+
 #huno-clsblog
-post_comments: "none"
+post_comments: false
   #options
-    # "none" : no comments
+    # false : no comments
     # "manual" (or other string): you will config manually in comments.ejs
+#[In comments.ejs]
     
-huno_clsblog_version_information: huno-clsblog V-0.1.0 dev.5
+huno_clsblog_version_information: huno-clsblog V-0.1.0 dev.6
     #version places: Readme.md(2),_config.yml,,hub release
     #printed on the footer of a page
+#[In footer.ejs]
 
 default_license_information: Copyright 2018
 # this is not suggested for users to config , becasue it will change with the updates of the theme;
@@ -37,10 +40,20 @@ default_license_information: Copyright 2018
       # © 2016-2018
       # CC-BY 4.0 International
       # <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
-#for post,use license_information: [String] (First Process)
-#for _config.yml,use default_license_information: [String] (Second Process,theme/_config.yml is last to process)
+# [Availabel in config/theme/*post ] for post,use license_information: [String]
+#[In footer.ejs]
 
-custom: flase
+custom: red_and_white
 #choices:
-  # flase: None custom
-  # red_and_white: red and white custom
+  # false: None custom
+  # other customs:(Rough)
+    # glass
+    # red_and_white
+# [In layout.ejs]
+
+hc_bgm: false
+#hc_bgm: 
+  #false : No bgm
+  #[String] : URL for your bgm (   http(s)://**.mp3  )
+# [In side-panel.ejs]
+# [Availabel in config/theme/post]
