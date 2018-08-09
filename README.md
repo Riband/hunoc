@@ -3,7 +3,31 @@
 [![GitHub (pre-)release](https://img.shields.io/github/release/Riband/huno-clsblog/all.svg?style=flat-square)](https://github.com/Riband/huno-clsblog/releases/)  
 [![GitHub (Pre-)Release Date](https://img.shields.io/github/release-date-pre/Riband/huno-clsblog.svg?style=flat-square)](https://github.com/Riband/huno-clsblog/releases)  
 ![GitHub last commit](https://img.shields.io/github/last-commit/Riband/huno-clsblog.svg?style=flat-square)  
-huno version: commit 287f824  
+huno version: commit 287f824 
+
+## Introduction/介绍  
+在用Hexo制作静态博客(CloudySummer Blog @Bitbucket)时,选择了Huno主题,为了满足一些需要,自己进行了一些修改,算是第一个正经项目吧.  
+自娱自乐的Commit,Release,写更新日志<del>(明明一个注意到的也没有....)</del>,嘛,做人最重要的是开心.  
+When using Hexo to generate my static blog (Cloudysummer blog @Bitbucket), I chose the Huno theme.In order to meet some needs, I have made some changes on Huno. It may be the first serious project for me.  
+Amuse myself by commiting,releasing, writing update log.<del>(obviously no one notice it)</del>Well, the most important thing is to be happy.  
+
+## 特性/Features    
+#### 在Huno的基础上:  
+* 增加背景音乐选项
+* 增加定制选项(进一步用CSS自定义)
+* 更丰富的页脚自定义 (版权 版本)
+* 使用半透明背景
+* 更换字体
+* 清理commit以节省空间
+* 修正无评论功能时有多余白线
+#### Comparing to huno:    
+* Add background music option
+* Add Custom option (Custom your theme with your own css)
+* Use Translucent Background
+* Change Fonts
+* Clean commits of huno to save some space
+* Fix : there's extra line when comment is disabled
+
 ## huno-clsblog  
 huno-clsblog 源自/is form [Huno](https://github.com/letiantian/huno/)。   
 由于时间不多,暂时不会有太多修改,<b>主要自用,不建议他人使用</b>,请使用优秀的Hexo主题: [Huno](https://github.com/letiantian/huno/)。   
