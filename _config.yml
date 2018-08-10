@@ -1,7 +1,7 @@
 # Header
 menu:
   日志 /Blog: /#blog  # "/#blog" is Enforced
-  关于/About: /inner/about
+  关于/About: /inner/about/
   #传送: /inner/portal
   #归档: /archive
 
@@ -20,7 +20,6 @@ awesome_toc: true
 # Enable githubRepoWidget
 github_repo_widget: false
 
-
 #huno-clsblog
 post_comments: false
   #options
@@ -28,8 +27,8 @@ post_comments: false
     # "manual" (or other string): you will config manually in comments.ejs
 #[In comments.ejs]
     
-huno_clsblog_version_information: huno-clsblog V-0.1.0 dev.6
-    #version places: Readme.md(2),_config.yml,,hub release
+huno_clsblog_version_information: huno-clsblog V-0.1.0
+    #version places: Readme.md(2),_config.yml,hub release
     #printed on the footer of a page
 #[In footer.ejs]
 
@@ -43,7 +42,7 @@ default_license_information: Copyright 2018
 # [Availabel in config/theme/*post ] for post,use license_information: [String]
 #[In footer.ejs]
 
-custom: red_and_white
+custom: glass
 #choices:
   # false: None custom
   # other customs:(Rough)
