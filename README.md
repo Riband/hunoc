@@ -1,10 +1,15 @@
 # huno-clsblog  
 ## Project Status/项目状态
-[![GitHub (pre-)release](https://img.shields.io/github/release/Riband/huno-clsblog/all.svg?style=flat-square)](https://github.com/Riband/huno-clsblog/releases/)  
-[![GitHub (Pre-)Release Date](https://img.shields.io/github/release-date-pre/Riband/huno-clsblog.svg?style=flat-square)](https://github.com/Riband/huno-clsblog/releases)  
-![GitHub last commit](https://img.shields.io/github/last-commit/Riband/huno-clsblog.svg?style=flat-square)  
+#### Stable
+[![GitHub release](https://img.shields.io/github/release/Riband/huno-clsblog.svg?style=flat-square)](https://github.com/Riband/huno-clsblog/releases/)  
+![GitHub Release Date](https://img.shields.io/github/release-date/Riband/huno-clsblog.svg?style=flat-square)   
+huno version: commit 287f824 
+#### Dev
+![GitHub (pre-)release](https://img.shields.io/github/release/Riband/huno-clsblog/all.svg?style=flat-square)  
+![GitHub (pre-)Release Date](https://img.shields.io/github/release-date-pre/Riband/huno-clsblog.svg?style=flat-square)   
 huno version: commit 287f824 
 
+![GitHub last commit](https://img.shields.io/github/last-commit/Riband/huno-clsblog.svg?style=flat-square)  
 ## Introduction/介绍  
 在用Hexo制作静态博客(CloudySummer Blog @Bitbucket)时,选择了Huno主题,为了满足一些需要,自己进行了一些修改,算是第一个正经项目吧.  
 自娱自乐的Commit,Release,写更新日志<del>(明明一个注意到的也没有....)</del>,嘛,做人最重要的是开心.  
