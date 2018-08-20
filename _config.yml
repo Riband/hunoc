@@ -2,6 +2,7 @@
 menu:
   日志 /Blog: /#blog  # "/#blog" is Enforced
   关于/About: /inner/about/
+  #地图 / Map: /inner/map/
   #传送: /inner/portal
   #归档: /archive
 
@@ -9,7 +10,7 @@ menu:
 favicon: /favicon.png
 
 # Site logo
-#logo: /images/avatar.png
+logo: /images/avatar.png
 
 # Enable Mathjax
 mathjax: false
@@ -27,7 +28,7 @@ post_comments: false
     # "manual" (or other string): you will config manually in comments.ejs
 #[In comments.ejs]
     
-huno_clsblog_version_information: huno-clsblog V-0.1.0
+huno_clsblog_version_information: huno-clsblog V-0.1.1-dev.1
     #version places: Readme.md(2),_config.yml,hub release
     #printed on the footer of a page
 #[In footer.ejs]
