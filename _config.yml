@@ -1,10 +1,13 @@
 # Header
 menu:
+  #暂不开放/Closed: /
+
   日志 /Blog: /#blog  # "/#blog" is Enforced
   关于/About: /inner/about/
-  #地图 / Map: /inner/map/
-  #传送: /inner/portal
-  #归档: /archive
+  归档/Archive: /archive
+
+# I might forget to switch this from my blog version to public version,
+# please switch it manually and issue it if it happened.
 
 # Site favicon
 favicon: /favicon.png
@@ -21,16 +24,18 @@ awesome_toc: true
 # Enable githubRepoWidget
 github_repo_widget: false
 
-#huno-clsblog
+#-------------------- huno-clsblog Begin--------------------
+
 post_comments: false
   #options
     # false : no comments
     # "manual" (or other string): you will config manually in comments.ejs
+# [Available in config/theme/post]
 #[In comments.ejs]
     
-huno_clsblog_version_information: huno-clsblog V-0.1.1-dev.2
-    #version places: Readme.md(2),_config.yml,hub release
-    #printed on the footer of a page
+huno_clsblog_version_information: huno-clsblog V-0.1.1-dev.3
+#printed on the footer of a page,if you don't like this , use 'false'
+#[Available in theme]
 #[In footer.ejs]
 
 default_license_information: Copyright 2018
@@ -40,15 +45,16 @@ default_license_information: Copyright 2018
       # © 2016-2018
       # CC-BY 4.0 International
       # <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
-# [Availabel in config/theme/*post ] for post,use license_information: [String]
+# [Available in config/theme/*post ] for post,use license_information: [String]
 #[In footer.ejs]
 
-custom: glass
+hc_custom: glass
 #choices:
   # false: None custom
   # other customs:(Rough)
     # glass
     # red_and_white
+# [Available in config/theme/post]
 # [In layout.ejs]
 
 hc_bgm: false
@@ -56,4 +62,14 @@ hc_bgm: false
   #false : No bgm
   #[String] : URL for your bgm (   http(s)://**.mp3  )
 # [In side-panel.ejs]
-# [Availabel in config/theme/post]
+# [Available in config/theme/post]
+hc_iframe_bgm: false
+# use bgm on side-panel by html code(yes,HTML code,but mostly <iframe>)
+# You'd better mostly open one erither hc_bgm or hc_iframe_bgm
+#hc_iframe_bgm: 
+  #false : No iframe_bgm
+  #[String] : HTML code for your bgm
+# [In side-panel.ejs]
+# [Available in config/theme/post]
+
+#-------------------- huno-clsblog End --------------------
