@@ -51,11 +51,17 @@ var post = page;
 
   </header>
 
-  <section id="post-content" class="article-content post">
-    <%- post.content %>
-  </section>
+    <% // hc tech filter begin %>
+    <% if(post.hc_tech_filter) { %>
+          <!-- ↓↓↓ Delete disabled="disabled" ↓↓↓ -->
+          <button id='hc_tech_filter_btn' disabled="disabled" class="btn btn-secondary" style="width:20em;" onclick="document.getElementById('post-content').style.visibility='visible';" >
+          Find A Way To Click Me?</button><br/>
+          <!-- ↑↑↑ Delete disabled="disabled" ↑↑↑ -->
+       <section id="post-content" class="article-content post" style="visibility: hidden;"><%- post.content %></section>
+    <% } else { %>
+        <section id="post-content" class="article-content post"><%- post.content %></section>
+    <% } %>
+    <% // hc tech filter end  %>
 
   <%- partial('comment') %>
-
-
 </article>

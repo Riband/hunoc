@@ -1,7 +1,6 @@
 # Header
 menu:
-  #暂不开放/Closed: /
-
+  #暂不开放/Not Open: /
   日志 /Blog: /#blog  # "/#blog" is Enforced
   关于/About: /inner/about/
   归档/Archive: /archive
@@ -33,7 +32,7 @@ post_comments: false
 # [Available in config/theme/post]
 #[In comments.ejs]
     
-huno_clsblog_version_information: huno-clsblog V-0.1.1-dev.3
+huno_clsblog_version_information: huno-clsblog V-0.1.1-dev.4
 #printed on the footer of a page,if you don't like this , use 'false'
 #[Available in theme]
 #[In footer.ejs]
@@ -63,6 +62,7 @@ hc_bgm: false
   #[String] : URL for your bgm (   http(s)://**.mp3  )
 # [In side-panel.ejs]
 # [Available in config/theme/post]
+
 hc_iframe_bgm: false
 # use bgm on side-panel by html code(yes,HTML code,but mostly <iframe>)
 # You'd better mostly open one erither hc_bgm or hc_iframe_bgm
@@ -71,5 +71,9 @@ hc_iframe_bgm: false
   #[String] : HTML code for your bgm
 # [In side-panel.ejs]
 # [Available in config/theme/post]
+
+# - hc_tech_filter:
+#   tech knowledge filter for who can understand some html and usage of browsers' developer tool.
+#   Funny Option in [post]
 
 #-------------------- huno-clsblog End --------------------
