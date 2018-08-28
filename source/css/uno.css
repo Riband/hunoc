@@ -1781,6 +1781,7 @@ pre {
 #post-content a {
   color:black;
   font-weight: bolder;
+  text-decoration: underline;
 }
 
 #post-content a:hover {

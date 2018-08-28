@@ -1,9 +1,9 @@
 # Header
 menu:
-  #暂不开放/Not Open: /
-  日志 /Blog: /#blog  # "/#blog" is Enforced
-  关于/About: /inner/about/
-  归档/Archive: /archive
+  #暂不开放<br/>Not Open: /
+  日志<br/>Blog: /#blog  # "/#blog" is Enforced
+  关于<br/>About: /inner/about/
+  归档<br/>Archive: /archive
 
 # I might forget to switch this from my blog version to public version,
 # please switch it manually and issue it if it happened.
@@ -23,7 +23,7 @@ awesome_toc: true
 # Enable githubRepoWidget
 github_repo_widget: false
 
-#-------------------- huno-clsblog Begin--------------------
+#-------------------- huno-clsblog Begin--------------------LICENSE: CC-BY-NC-SA 4.0 International
 
 post_comments: false
   #options
@@ -32,8 +32,8 @@ post_comments: false
 # [Available in config/theme/post]
 #[In comments.ejs]
     
-huno_clsblog_version_information: huno-clsblog V-0.1.1-dev.4
-#printed on the footer of a page,if you don't like this , use 'false'
+huno_clsblog_version_information: huno-clsblog v0.1.1-dev.5
+#printed on the footer of a page,if you don't like this , leave it nothing
 #[Available in theme]
 #[In footer.ejs]
 
@@ -75,5 +75,17 @@ hc_iframe_bgm: false
 # - hc_tech_filter:
 #   tech knowledge filter for who can understand some html and usage of browsers' developer tool.
 #   Funny Option in [post]
+# -------------Options End------------
+
+# Suggestions:
+#   1.Use hexo-all-minifier(Plugin),
+#     because I use too many /r/n in this theme's ejs files,which can casue your webpages become big and unstable
+#   2.Add infomation such as 'Special Edition For XXX' to huno_clsblog_version_information:(if you make it not empty)
+#   3.If you want to keep up-to-date,you need to know:
+#     This theme DO NOT obey Semantic Versioning now(AT LEAST before 1.0.0)
+
+### Updates of this version
+# * new: add underline for url
+# * new: can use html code in memu ,like Blog<br/>Welcome!: #blog
 
 #-------------------- huno-clsblog End --------------------
