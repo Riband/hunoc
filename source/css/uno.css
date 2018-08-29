@@ -1202,15 +1202,16 @@ hr {
   vertical-align: middle; }
 
 .panel-title {
-  font-family:"Microsoft YaHei UI","Noto Sans CJK SC";
+  font-family: "Microsoft YaHei UI","Noto Sans CJK SC";
   margin: 0 0 5px 0;
   font-size: 2.5em;
   font-weight: 3px;
   letter-spacing: 4px;
+  text-shadow: -4px 4px 0 rgba(0,0,0,.2);
   color: #FFF; }
 
 .panel-subtitle {
-  font-family: "Roboto Slab", serif;
+  font-family: "Microsoft YaHei UI","Noto Sans CJK SC";
   font-size: 1.2em;
   font-weight: lighter;
   letter-spacing: 3px;

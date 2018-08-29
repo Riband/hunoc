@@ -1,9 +1,9 @@
 # Header
 menu:
-  #暂不开放<br/>Not Open: /
-  日志<br/>Blog: /#blog  # "/#blog" is Enforced
-  关于<br/>About: /inner/about/
-  归档<br/>Archive: /archive
+  暂不开放<br/>Not Open: /
+  #日志<br/>Blog: /#blog  # "/#blog" is Enforced
+  #关于<br/>About: /inner/about/
+  #归档<br/>Archive: /archive
 
 # I might forget to switch this from my blog version to public version,
 # please switch it manually and issue it if it happened.
@@ -87,5 +87,5 @@ hc_iframe_bgm: false
 ### Updates of this version
 # * new: add underline for url
 # * new: can use html code in memu ,like Blog<br/>Welcome!: #blog
-
+# * new: add text shadow to title
 #-------------------- huno-clsblog End --------------------
