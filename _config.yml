@@ -1,7 +1,7 @@
 # Header
 menu:
   暂不开放<br/>Not Open: /
-  #日志<br/>Blog: /#blog  # "/#blog" is Enforced
+  日志<br/>Blog: /#blog  # "/#blog" is Enforced
   #关于<br/>About: /inner/about/
   #归档<br/>Archive: /archive
 
@@ -32,7 +32,7 @@ post_comments: false
 # [Available in config/theme/post]
 #[In comments.ejs]
     
-huno_clsblog_version_information: huno-clsblog v0.1.1-dev.5
+hc_footer_info: huno-clsblog v0.1.1-dev.6 (Based on huno)
 #printed on the footer of a page,if you don't like this , leave it nothing
 #[Available in theme]
 #[In footer.ejs]
@@ -53,6 +53,7 @@ hc_custom: glass
   # other customs:(Rough)
     # glass
     # red_and_white
+    # grace
 # [Available in config/theme/post]
 # [In layout.ejs]
 
@@ -72,9 +73,10 @@ hc_iframe_bgm: false
 # [In side-panel.ejs]
 # [Available in config/theme/post]
 
-# - hc_tech_filter:
-#   tech knowledge filter for who can understand some html and usage of browsers' developer tool.
+# - hc_hide:
+#   hide the page which can be seen by using develop tools(F12) to make it unhidden
 #   Funny Option in [post]
+
 # -------------Options End------------
 
 # Suggestions:
@@ -85,7 +87,7 @@ hc_iframe_bgm: false
 #     This theme DO NOT obey Semantic Versioning now(AT LEAST before 1.0.0)
 
 ### Updates of this version
-# * new: add underline for url
+# Fix: Page custom nug
 # * new: can use html code in memu ,like Blog<br/>Welcome!: #blog
 # * new: add text shadow to title
 #-------------------- huno-clsblog End --------------------
