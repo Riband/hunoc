@@ -26,6 +26,7 @@ Amuse myself by commiting,releasing, writing update log.<del>(obviously no one n
 * 清理commit以节省空间
 * 修正无评论功能时有多余白线
 * 允许再导航按钮中使用HTML  
+* 支持Gitment  
 #### Comparing to huno:    
 * Add background music option
 * Add Custom option (Custom your theme with your own css)
@@ -34,14 +35,18 @@ Amuse myself by commiting,releasing, writing update log.<del>(obviously no one n
 * Clean commits of huno to save some space
 * Fix : there's extra line when comment is disabled
 * Enable use HTML Code in menu:  
+* Gitment Supported  
 ## Theme Options/主题选项
 [theme]: /themes/huno-clsblog/_config.yml  
 [config]: /_config.yml  
 [post]: /source/_post/*.md  
-##### post_comments: [String]/false  
+##### hc_post_comments: [String]/false  
      false: no comments/无评论功能  
      manual (or other string): you will config manually in comments.ejs  
      [config|theme|post]
+##### hc_gitment_config: 
+    you must set hc_post_comments: gitment  
+    [theme]  
 ##### hc_footer_info: [String]       
       Printed on the footer of a page/显示在页脚中   
       [theme]
@@ -63,7 +68,7 @@ Amuse myself by commiting,releasing, writing update log.<del>(obviously no one n
     false : No background music(BGM)/无背景音乐
     [String] : URL for your bgm /mp3文件地址(http(s)://**.mp3)  
     [config|theme|post]   
- ##### hc_iframe_bgm: [String]/false     
+##### hc_iframe_bgm: [String]/false     
     false : No background music(BGM)/无背景音乐
     [String] : HTML code for your bgm  
     [config|theme|post]   
@@ -102,3 +107,6 @@ It's generally tested on:
 * node: 8.9.3
 * Browsers: Firefox/Chrome/Edge(Some small bugs in Edge)  
 * Plugins: hexo-all-minifier/hexo-deploy
+
+## Note
+if you use HTTP,you'll get a gitment error : CORS request did not succeed

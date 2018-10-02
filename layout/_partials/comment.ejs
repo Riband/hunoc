@@ -1,23 +1,44 @@
-<% var post_comments=""; %>
-<% if(theme.post_comments) {post_comments= theme.post_comments;} %>
-<% if(config.post_comments) {post_comments= config.post_comments;} %>
-<% if(page.post_comments) {comment_code= page.post_comments;} %>
+<% var hc_post_comments=''; %>
+<% if(theme.hc_post_comments) {hc_post_comments= theme.hc_post_comments;} %>
+<% if(config.hc_post_comments) {hc_post_comments= config.hc_post_comments;} %>
+<% if(page.hc_post_comments) {hc_post_comments= page.hc_post_comments;} %>
 
-<!--
-<% var comment_code='No comment_code!,you should add it or let post_comments="none"'; %>
-<% if(theme.comment_code) {comment_code= theme.comment_code;} %>
-<% if(config.comment_code) {comment_code= config.comment_code;} %>
-<% if(page.comment_code) {comment_code= page.comment_code;} %>
-
-<% if(post_comments === 'auto') { %>
-<section class="post-comments">
-    <%- comment_code %>
-</section>
-<% } %>
--->
-
-<% if(post_comments === 'manual') { %>
+<% if(hc_post_comments === 'manual') { %>
     <section class="post-comments">
         <!-- 将评论系统（例如Disqus、多说、友言、畅言等）提供的代码片段粘贴在这里 -->
     </section>
+<% } %>
+
+<% if(hc_post_comments === 'gitment') { %>
+    <section class="post-comments">
+        <div id="container"></div>
+    </section>
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    <script>
+        const hc_default_theme = {
+            render(state, instance) {
+                const container = document.createElement('div')
+                container.lang = "en-US"
+                container.className = 'gitment-container gitment-root-container'
+                container.appendChild(instance.renderHeader(state, instance))
+                container.appendChild(instance.renderEditor(state, instance))
+                container.appendChild(instance.renderComments(state, instance))
+                return container
+            },
+            }
+
+      var gitment = new Gitment({
+        id: '<%- theme.hc_gitment_config.id %>', // 可选。默认为 location.href
+        owner: '<%- theme.hc_gitment_config.owner %>',
+        repo: '<%- theme.hc_gitment_config.repo %>',
+        oauth: {
+          client_id: '<%- theme.hc_gitment_config.oauth.client_id %>',
+          client_secret: '<%- theme.hc_gitment_config.oauth.client_secret %>',
+        },
+        theme: hc_default_theme
+      })
+      gitment.render('container');
+    </script>
+
 <% } %>

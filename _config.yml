@@ -25,13 +25,23 @@ github_repo_widget: false
 
 #-------------------- huno-clsblog Begin--------------------LICENSE: CC-BY-NC-SA 4.0 International
 
-post_comments: false
+hc_post_comments: false
   #options
     # false : no comments
-    # "manual" (or other string): you will config manually in comments.ejs
+    # gitment: use gitment(simple)
+    # manual: you will config manually in comments.ejs
 # [Available in config/theme/post]
 #[In comments.ejs]
-    
+
+hc_gitment_config: #must set hc_post_comments: gitment
+  id: 
+  owner: 
+  repo: 
+  oauth:
+    client_id: 
+    client_secret: 
+# [Available in theme]
+
 hc_footer_info: huno-clsblog v0.1.1 (Based on huno)
 #printed on the footer of a page,if you don't like this , leave it nothing
 #[Available in theme]
