@@ -25,6 +25,8 @@ Amuse myself by commiting,releasing, writing update log.<del>(obviously no one n
 * 更换字体
 * 清理commit以节省空间
 * 修正无评论功能时有多余白线
+* 允许再导航按钮中使用HTML  
+* 支持Gitment  
 #### Comparing to huno:    
 * Add background music option
 * Add Custom option (Custom your theme with your own css)
@@ -32,6 +34,44 @@ Amuse myself by commiting,releasing, writing update log.<del>(obviously no one n
 * Change Fonts
 * Clean commits of huno to save some space
 * Fix : there's extra line when comment is disabled
+* Enable use HTML Code in menu:  
+* Gitment Supported  
+## Theme Options/主题选项
+[theme]: /themes/huno-clsblog/_config.yml  
+[config]: /_config.yml  
+[post]: /source/_post/*.md  
+##### hc_post_comments: [String]/false  
+     false: no comments/无评论功能  
+     manual (or other string): you will config manually in comments.ejs  
+     [config|theme|post]
+##### hc_gitment_config: 
+    you must set hc_post_comments: gitment  
+    [theme]  
+##### hc_footer_info: [String]       
+      Printed on the footer of a page/显示在页脚中   
+      [theme]
+##### default_license_information: [String]/false    
+    Such as/如:  
+      © 2016-2018  
+      CC-BY 4.0 International  
+      <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0"><img style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+      [config|theme] [post(license_information instead)]
+##### hc_custom: [String]/false      
+     false: None custom/无定制    
+     glass: glass feeling/玻璃感  
+     red_and_white: red_and_white/红白    
+     grace
+     (other/其他): file name in /themes/huno-clsblog/source/css/custom_uno/ 
+                  /themes/huno-clsblog/source/css/custom_uno/中的css文件   
+      [config|theme|post]   
+##### hc_bgm: [String]/false     
+    false : No background music(BGM)/无背景音乐
+    [String] : URL for your bgm /mp3文件地址(http(s)://**.mp3)  
+    [config|theme|post]   
+##### hc_iframe_bgm: [String]/false     
+    false : No background music(BGM)/无背景音乐
+    [String] : HTML code for your bgm  
+    [config|theme|post]   
 
 ## Theme Options/主题选项
 [theme]: /themes/huno-clsblog/_config.yml  
@@ -88,3 +128,14 @@ Uno采用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">知
 由于时间不多,暂时不会有太多修改,<b>主要自用,不建议他人使用</b>,请使用优秀的Hexo主题: [Huno](https://github.com/letiantian/huno/)。  
 this Customed Huno is mainly used for my blog.<b>Other people are NOT advised to use this theme</b>,if you want to use a nice hexo theme,see: [Huno](https://github.com/letiantian/huno/)。   
 ![huno-clsblog Demo Img](https://riband.github.io/RiBase/huno-clsblog-demo/demo.jpg)  
+
+## 兼容性/Compatibility  
+在以下环境测试基本正常:  
+It's generally tested on:  
+* hexo: 3.7.1
+* node: 8.9.3
+* Browsers: Firefox/Chrome/Edge(Some small bugs in Edge)  
+* Plugins: hexo-all-minifier/hexo-deploy
+
+## Note
+if you use HTTP,you'll get a gitment error : CORS request did not succeed

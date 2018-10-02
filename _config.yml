@@ -1,15 +1,18 @@
 # Header
 menu:
-  日志 /Blog: /#blog  # "/#blog" is Enforced
-  关于/About: /inner/about/
-  #传送: /inner/portal
-  #归档: /archive
+  #暂不开放<br/>Not Open: /
+  日志<br/>Blog: /#blog  # "/#blog" is Enforced
+  关于<br/>About: /inner/about/
+  归档<br/>Archive: /archive
+
+# I might forget to switch this from my blog version to public version,
+# please switch it manually and issue it if it happened.
 
 # Site favicon
 favicon: /favicon.png
 
 # Site logo
-#logo: /images/avatar.png
+logo: /images/avatar.png
 
 # Enable Mathjax
 mathjax: false
@@ -20,16 +23,28 @@ awesome_toc: true
 # Enable githubRepoWidget
 github_repo_widget: false
 
-#huno-clsblog
-post_comments: false
+#-------------------- huno-clsblog Begin--------------------LICENSE: CC-BY-NC-SA 4.0 International
+
+hc_post_comments: false
   #options
     # false : no comments
-    # "manual" (or other string): you will config manually in comments.ejs
+    # gitment: use gitment(simple)
+    # manual: you will config manually in comments.ejs
+# [Available in config/theme/post]
 #[In comments.ejs]
-    
-huno_clsblog_version_information: huno-clsblog V-0.1.0
-    #version places: Readme.md(2),_config.yml,hub release
-    #printed on the footer of a page
+
+hc_gitment_config: #must set hc_post_comments: gitment
+  id: 
+  owner: 
+  repo: 
+  oauth:
+    client_id: 
+    client_secret: 
+# [Available in theme]
+
+hc_footer_info: huno-clsblog v0.1.1 (Based on huno)
+#printed on the footer of a page,if you don't like this , leave it nothing
+#[Available in theme]
 #[In footer.ejs]
 
 default_license_information: Copyright 2018
@@ -39,15 +54,17 @@ default_license_information: Copyright 2018
       # © 2016-2018
       # CC-BY 4.0 International
       # <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
-# [Availabel in config/theme/*post ] for post,use license_information: [String]
+# [Available in config/theme/*post ] for post,use license_information: [String]
 #[In footer.ejs]
 
-custom: glass
+hc_custom: glass
 #choices:
   # false: None custom
   # other customs:(Rough)
     # glass
     # red_and_white
+    # grace
+# [Available in config/theme/post]
 # [In layout.ejs]
 
 hc_bgm: false
@@ -55,4 +72,27 @@ hc_bgm: false
   #false : No bgm
   #[String] : URL for your bgm (   http(s)://**.mp3  )
 # [In side-panel.ejs]
-# [Availabel in config/theme/post]
+# [Available in config/theme/post]
+
+hc_iframe_bgm: false
+# use bgm on side-panel by html code(yes,HTML code,but mostly <iframe>)
+# You'd better mostly open one erither hc_bgm or hc_iframe_bgm
+#hc_iframe_bgm: 
+  #false : No iframe_bgm
+  #[String] : HTML code for your bgm
+# [In side-panel.ejs]
+# [Available in config/theme/post]
+
+# - hc_hide:
+#   hide the page which can be seen by using develop tools(F12) to make it unhidden
+#   Funny Option in [post]
+
+# -------------Options End------------
+
+# Suggestions:
+#   1.Use hexo-all-minifier(Plugin),
+#     because I use too many /r/n in this theme's ejs files,which can casue your webpages become big and unstable
+#   2.Add infomation such as 'Special Edition For XXX' to huno_clsblog_version_information:(if you make it not empty)
+#   3.If you want to keep up-to-date,you need to know:
+#     This theme DO NOT obey Semantic Versioning now(AT LEAST before 1.0.0)
+#-------------------- huno-clsblog End --------------------

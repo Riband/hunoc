@@ -56,12 +56,25 @@
     <%- css('css/highlight') %>
     <%- css('css/archive.css') %>
     <%- css('css/china-social-icon.css') %>
+
+
     <!-- hc: load custom -->
-    <% if(theme.custom) {                                                         %>
-    <%  var custom_uno_url = 'css/custom_uno/' + theme.custom + '.css';           %>
-    <%- css(custom_uno_url) %>
+    <%         var hc_custom="";                                                    %>
+    <%         if (theme.hc_custom){                                                %>
+    <%             hc_custom = theme.hc_custom;                                     %>
+    <%         }                                                                    %>
+    <%         if (config.hc_custom){                                               %>
+    <%             hc_custom = config.hc_custom;                                    %>
+    <%         }                                                                    %>
+    <%         if (page.hc_custom){                                                 %>
+    <%             hc_custom = page.hc_custom;                                      %>
+    <%         }                                                                    %>                                                                    %>
+    <% if(hc_custom) {                                                              %>
+    <%  var custom_uno_url = 'css/custom_uno/' + hc_custom + '.css';                %>
+    <%- css(custom_uno_url)                                                         %>
     <% } %>
-    <!-- hc: load custom end -->                                                                     
+    <!-- hc: load custom end -->
+
 </head>
 <body>
 
