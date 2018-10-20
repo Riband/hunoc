@@ -34,7 +34,6 @@ hc_post_comments: false
 #[In comments.ejs]
 
 hc_gitment_config: #must set hc_post_comments: gitment
-  id: 
   owner: 
   repo: 
   oauth:
@@ -42,7 +41,7 @@ hc_gitment_config: #must set hc_post_comments: gitment
     client_secret: 
 # [Available in theme]
 
-hc_footer_info: huno-clsblog v0.1.1 (Based on huno)
+hc_footer_info: huno-clsblog v0.1.1-2 (Based on huno)
 #printed on the footer of a page,if you don't like this , leave it nothing
 #[Available in theme]
 #[In footer.ejs]

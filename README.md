@@ -42,6 +42,7 @@ Amuse myself by commiting,releasing, writing update log.<del>(obviously no one n
 [post]: /source/_post/*.md  
 ##### hc_post_comments: [String]/false  
      false: no comments/无评论功能  
+     gitment: gitment
      manual (or other string): you will config manually in comments.ejs  
      [config|theme|post]
 ##### hc_gitment_config: 
@@ -73,34 +74,6 @@ Amuse myself by commiting,releasing, writing update log.<del>(obviously no one n
     [String] : HTML code for your bgm  
     [config|theme|post]   
 
-## Theme Options/主题选项
-[theme]: /themes/huno-clsblog/_config.yml  
-[config]: /_config.yml  
-[post]: /source/_post/*.md  
-##### post_comments: [String]/false  
-     false: no comments/无评论功能  
-     manual (or other string): you will config manually in comments.ejs  
-     [config|theme|post]
-##### huno_clsblog_version_information: [String]/false       
-      Printed on the footer of a page/显示在页脚中   
-      [theme]
-##### default_license_information: [String]/false    
-    Such as/如:  
-      © 2016-2018  
-      CC-BY 4.0 International  
-      <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0"><img style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
-      [config|theme] [post(license_information instead)]
-##### custom: [String]/false      
-     false: None custom/无定制    
-     glass: glass feeling/玻璃感  
-     red_and_white: red_and_white/红白    
-     (other/其他): file name in /themes/huno-clsblog/source/css/custom_uno/ 
-                  /themes/huno-clsblog/source/css/custom_uno/中的css文件   
-      [theme]
-##### hc_bgm: [String]/false     
-    false : No background music(BGM)/无背景音乐
-    [String] : URL for your bgm /mps文件地址(http(s)://**.mp3)  
-    [config|theme|post]   
 
 ## huno-clsblog  
 huno-clsblog 源自/is form [Huno](https://github.com/letiantian/huno/)。   
