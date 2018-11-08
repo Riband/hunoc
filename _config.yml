@@ -35,12 +35,12 @@ hc_post_comments: gitalk
 #[In comments.ejs]
 
 hc_github_config: #must set hc_post_comments: gitment or gitalk,all below is enforced
-  owner: Riband
-  repo: RiBase
-  client_id: dbcf8639a6ef24c74f01
-  client_secret: bb8e39964ebb7d584082a7c5ad98b0142b8798e1
+  owner: 
+  repo: 
+  client_id: 
+  client_secret: 
   admin:          #Only for gitalk
-    - Riband
+    - Tom
   
 # [Available in theme]
 
