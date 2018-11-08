@@ -5,11 +5,13 @@
 
 <% if(hc_post_comments === 'manual') { %>
     <section class="post-comments">
-        <!-- 将评论系统（例如Disqus、多说、友言、畅言等）提供的代码片段粘贴在这里 -->
+        <!-- 将评论系统（例如Disqus、友言、畅言等）提供的代码片段粘贴在这里 -->
     </section>
 <% } %>
 
+<!-- Gitment Support -->
 <% if(hc_post_comments === 'gitment') { %>
+  <noscript>Please enable JavaScript to view the comments</noscript>
     <section class="post-comments">
         <div id="container"></div>
     </section>
@@ -29,15 +31,39 @@
             }
 
       var gitment = new Gitment({
-        owner: '<%- theme.hc_gitment_config.owner %>',
-        repo: '<%- theme.hc_gitment_config.repo %>',
+        owner: '<%- theme.hc_github_config.owner %>',
+        repo: '<%- theme.hc_github_config.repo %>',
         oauth: {
-          client_id: '<%- theme.hc_gitment_config.oauth.client_id %>',
-          client_secret: '<%- theme.hc_gitment_config.oauth.client_secret %>',
+          client_id: '<%- theme.hc_github_config.client_id %>',
+          client_secret: '<%- theme.hc_github_config.client_secret %>',
         },
         theme: hc_default_theme
       })
       gitment.render('container');
+    </script>
+
+<% } %>
+
+<!-- Gitalk Support -->
+<% if(hc_post_comments === 'gitalk') { %>
+
+    <noscript>Please enable JavaScript to view the comments</noscript>
+    <section class="post-comments">
+        <div id="gitalk-container"></div>
+    </section>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+        var gitalk = new Gitalk({
+        clientID: "<%- theme.hc_github_config.client_id %>",
+        clientSecret: "<%- theme.hc_github_config.client_secret %>",
+        repo: "<%- theme.hc_github_config.repo %>",
+        owner:"<%- theme.hc_github_config.owner %>",
+            admin: "<%- theme.hc_github_config.admin %>",
+            id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+        })
+        gitalk.render('gitalk-container');
     </script>
 
 <% } %>

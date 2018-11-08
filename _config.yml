@@ -25,23 +25,26 @@ github_repo_widget: false
 
 #-------------------- huno-clsblog Begin--------------------LICENSE: CC-BY-NC-SA 4.0 International
 
-hc_post_comments: false
+hc_post_comments: gitalk
   #options
     # false : no comments
-    # gitment: use gitment(simple)
+    # gitment: use gitment
+    # gitalk: use gitalk
     # manual: you will config manually in comments.ejs
 # [Available in config/theme/post]
 #[In comments.ejs]
 
-hc_gitment_config: #must set hc_post_comments: gitment
-  owner: 
-  repo: 
-  oauth:
-    client_id: 
-    client_secret: 
+hc_github_config: #must set hc_post_comments: gitment or gitalk,all below is enforced
+  owner: Riband
+  repo: RiBase
+  client_id: dbcf8639a6ef24c74f01
+  client_secret: bb8e39964ebb7d584082a7c5ad98b0142b8798e1
+  admin:          #Only for gitalk
+    - Riband
+  
 # [Available in theme]
 
-hc_footer_info: huno-clsblog v0.1.1-2 (Based on huno)
+hc_footer_info: huno-clsblog v0.1.2-dev.1 (Based on huno)
 #printed on the footer of a page,if you don't like this , leave it nothing
 #[Available in theme]
 #[In footer.ejs]
@@ -87,7 +90,8 @@ hc_iframe_bgm: false
 #   Funny Option in [post]
 
 # -------------Options End------------
-
+# Updates
+# Fix many makrdown mistakes in README :)
 # Suggestions:
 #   1.Use hexo-all-minifier(Plugin),
 #     because I use too many /r/n in this theme's ejs files,which can casue your webpages become big and unstable
