@@ -25,7 +25,7 @@ github_repo_widget: false
 
 #-------------------- huno-clsblog Begin--------------------LICENSE: CC-BY-NC-SA 4.0 International
 
-hc_post_comments: gitalk
+hc_post_comments: false
   #options
     # false : no comments
     # gitment: use gitment
@@ -39,27 +39,27 @@ hc_github_config: #must set hc_post_comments: gitment or gitalk,all below is enf
   repo: 
   client_id: 
   client_secret: 
-  admin:          #Only for gitalk
+  admin: 
     - Tom
   
 # [Available in theme]
 
-hc_footer_info: huno-clsblog v0.1.2-dev.1 (Based on huno)
+hc_footer_info: huno-clsblog v0.1.2-dev.2 (Based on huno)
 #printed on the footer of a page,if you don't like this , leave it nothing
 #[Available in theme]
 #[In footer.ejs]
 
-default_license_information: Copyright 2018
+default_license_information: ©Copyright 2018
 # this is not suggested for users to config , becasue it will change with the updates of the theme;
 # This(default_license_information: "Copyright 2018") is NOT the license of this theme , which uses cc-by-nc-sa 4.0 license)
 # [String] ,such as:
-      # © 2016-2018
-      # CC-BY 4.0 International
-      # <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
-# [Available in config/theme/*post ] for post,use license_information: [String]
+  # CC-BY 4.0 International
+  # Even HTML Code provided by CC
+  # [Available in config/theme/*post ] 
+  # for post,use license_information: [String]
 #[In footer.ejs]
 
-hc_custom: glass
+hc_custom: grace
 #choices:
   # false: None custom
   # other customs:(Rough)
@@ -76,12 +76,9 @@ hc_bgm: false
 # [In side-panel.ejs]
 # [Available in config/theme/post]
 
-hc_iframe_bgm: false
-# use bgm on side-panel by html code(yes,HTML code,but mostly <iframe>)
+hc_panel_addition: false
+# add some customed html in side-panel
 # You'd better mostly open one erither hc_bgm or hc_iframe_bgm
-#hc_iframe_bgm: 
-  #false : No iframe_bgm
-  #[String] : HTML code for your bgm
 # [In side-panel.ejs]
 # [Available in config/theme/post]
 
@@ -91,7 +88,7 @@ hc_iframe_bgm: false
 
 # -------------Options End------------
 # Updates
-# Fix many makrdown mistakes in README :)
+# Adjust
 # Suggestions:
 #   1.Use hexo-all-minifier(Plugin),
 #     because I use too many /r/n in this theme's ejs files,which can casue your webpages become big and unstable

@@ -94,8 +94,7 @@ this Customed Huno is mainly used for my blog.**Other people are NOT advised to 
 huno-clsblog is based on [Huno](https://github.com/letiantian/huno/).
 
 this Customed Huno is mainly used for my blog.<b>Other people are NOT advised to use this theme</b>,if you want to use a nice hexo theme,see: [Huno](https://github.com/letiantian/huno/).
-License: [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](http://creativecommons.org/licenses/by-nc-sa/4.0/)  
-[![cc-by-nc-sa](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)  
+License: [Mozilla Public License Version 2.0](https://www.mozilla.org/en-US/MPL/2.0/)  
 
 ## About Huno
 

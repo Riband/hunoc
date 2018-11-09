@@ -1,7 +1,23 @@
-  .panel-cover {
+    /*
+    License: Mozilla Public License Version 2.0
+    (https://www.mozilla.org/en-US/MPL/2.0/)  
+    */
+
+.panel-cover {
     background: #111111;
  }
 
  body {
   background:#BBBBBB; 
 }
+
+  .navigation__item a {
+    color: #DDDDDD;
+    background-color: #111111;
+    opacity: .8; 
+  }
+
+    .navigation__item a:hover {
+      color: #eeeeee;
+      border-color: #cccccc;
+    } 

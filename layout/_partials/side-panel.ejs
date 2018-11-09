@@ -58,25 +58,25 @@
               <audio controls autoplay loop class="hc_bgm_control">
                 <source src="<%- hc_bgm %>" type="audio/mpeg">
               </audio>
-          <% }                                                                         %>
+          <% }                                                                  %>
           <%   //-- hc bgm option end                                           %>
-          <%   // hc iframe_bgm option                                                 %>
-          <%         var hc_iframe_bgm="";                                             %>
-          <%         if (theme.hc_iframe_bgm){                                         %>
-          <%             hc_iframe_bgm = theme.hc_iframe_bgm;                          %>
-          <%         }                                                                 %>
-          <%         if (config.hc_iframe_bgm){                                        %>
-          <%             hc_iframe_bgm = config.hc_iframe_bgm;                         %>
-          <%         }                                                                 %>
-          <%         if (page.hc_iframe_bgm){                                          %>
-          <%             hc_iframe_bgm = page.hc_iframe_bgm;                           %>
-          <%         }                                                                 %>
-          <% if (hc_iframe_bgm) {                                                      %>
-              <br/>
-          <%- hc_iframe_bgm                                                            %>
+          <%   // hc hc_panel_addition                                          %>
+          <%         var hc_panel_addition="";                                  %>
+          <%         if (theme.hc_panel_addition){                              %>
+          <%             hc_panel_addition = theme.hc_panel_addition;           %>
+          <%         }                                                          %>
+          <%         if (config.hc_panel_addition){                             %>
+          <%             hc_panel_addition = config.hc_panel_addition;          %>
+          <%         }                                                          %>
+          <%         if (page.hc_panel_addition){                               %>
+          <%             hc_panel_addition = page.hc_panel_addition;            %>
+          <%         }                                                          %>
+          <% if (hc_panel_addition) {                                           %>
+            <br/>
+            <%- hc_panel_addition %>
           
-          <% }                                                                         %>
-          <% //hc bgm option end %>
+          <% } %>
+          <% //hc hc_panel_addition end %>
           <%- partial('_partials/social') %>
         </div>
       </div>

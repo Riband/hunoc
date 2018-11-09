@@ -61,7 +61,7 @@ huno版本: commit 287f824
     * client_id:
     * client_secret:
     * admin:
-    [theme]
+    [theme]d
 
     hc_footer_info:[String]
           显示在页脚中
@@ -94,8 +94,7 @@ huno版本: commit 287f824
 ## huno-clsblog主题
 
 huno-clsblog 是一个基于 [huno](https://github.com/letiantian/huno/) 的 Hexo 主题.  
-本作品采用 [知识共享-署名-非商业性使用-相同方式共享 4.0 国际许可协议](http://creativecommons.org/licenses/by-nc-sa/4.0/)进行许可.  
-[![cc-by-nc-sa](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)  
+本作品采用 [Mozilla 公共许可证 Version 2.0](https://www.mozilla.org/en-US/MPL/2.0/)进行许可.  
 
 ## 关于Huno
 
