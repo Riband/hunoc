@@ -1,3 +1,8 @@
+<% var hc_menu=''; %>
+<% if(theme.hc_menu) {hc_menu= theme.hc_menu;} %>
+<% if(config.hc_menu) {hc_menu= config.hc_menu;} %>
+<% if(page.hc_menu) {hc_menu= page.hc_menu;} %>
+
 <% if (is_home()) { %> 
 <header class="panel-cover">
 <% } else { %>
@@ -29,15 +34,15 @@
           <nav class="cover-navigation cover-navigation--primary">
             <ul class="navigation">
 
-              <% for (var i in theme.menu){ %>
+              <% for (var i in hc_menu){ %>
                 <%
-                  if (theme.menu[i]+'' == '/#blog') {
+                  if (hc_menu[i]+'' == '/#blog') {
                     nav_btn_class = 'blog-button';
                   } else {
                     nav_btn_class = '';
                   }
                 %>
-                <li class="navigation__item"><a href="<%- theme.menu[i] %>" title="" class="<%= nav_btn_class %>"><%- i %></a></li>
+                <li class="navigation__item"><a href="<%- hc_menu[i] %>" title="" class="<%= nav_btn_class %>"><%- i %></a></li>
               <% } %>
 
             </ul>

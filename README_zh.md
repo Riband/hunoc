@@ -1,4 +1,4 @@
-# huno-clsblog
+# hunoc
 
 [English](./README.md)
 
@@ -6,17 +6,16 @@
 
 ### 稳定版
 
-[![GitHub release](https://img.shields.io/github/release/Riband/huno-clsblog.svg?style=flat-square)](https://github.com/Riband/huno-clsblog/releases/)  
-![GitHub Release Date](https://img.shields.io/github/release-date/Riband/huno-clsblog.svg?style=flat-square)  
-huno版本: commit 287f824  
+[![GitHub release](https://img.shields.io/github/release/Riband/hunoc.svg?style=flat-square)](https://github.com/Riband/hunoc/releases/)
+![GitHub Release Date](https://img.shields.io/github/release-date/Riband/hunoc.svg?style=flat-square)  
 
 ### 测试版
 
-![GitHub (pre-)release](https://img.shields.io/github/release/Riband/huno-clsblog/all.svg?style=flat-square)  
-![GitHub (pre-)Release Date](https://img.shields.io/github/release-date-pre/Riband/huno-clsblog.svg?style=flat-square)  
+![GitHub (pre-)release](https://img.shields.io/github/release/Riband/hunoc/all.svg?style=flat-square)  
+![GitHub (pre-)Release Date](https://img.shields.io/github/release-date-pre/Riband/hunoc.svg?style=flat-square)  
 huno版本: commit 287f824
 
-![GitHub last commit](https://img.shields.io/github/last-commit/Riband/huno-clsblog.svg?style=flat-square)  
+![GitHub last commit](https://img.shields.io/github/last-commit/Riband/hunoc.svg?style=flat-square)  
 
 ## 介绍
 
@@ -40,11 +39,10 @@ huno版本: commit 287f824
 ## 演示
 
 做Demo属无事可<del>commit</del>做  
-由于时间不多,暂时不会有太多修改,**主要自用,不建议他人使用**,请使用优秀的Hexo主题: [Huno](https://github.com/letiantian/huno/).  
-![huno-clsblog Demo Img](https://riband.github.io/RiBase/huno-clsblog-demo/demo.jpg)  
+![hunoc Demo Img](https://riband.github.io/RiBase/hunoc-demo/demo.jpg)  
 
 ## 主题选项
-[theme]: /themes/huno-clsblog/_config.yml  
+[theme]: /themes/hunoc/_config.yml  
 [config]: /_config.yml  
 [post]: /source/_post/*.md  
 
@@ -78,7 +76,7 @@ huno版本: commit 287f824
         glass: 玻璃感  
         red_and_white: 红白
         grace: 雅
-        (其他): /themes/huno-clsblog/source/css/custom_uno/中的css文件
+        (其他): /themes/hunoc/source/css/custom_uno/中的css文件
         [config|theme|post]
 
     hc_bgm: [String]/false
@@ -91,21 +89,21 @@ huno版本: commit 287f824
         [String]: HTML 代码
         [config|theme|post]
 
-## huno-clsblog主题
+## hunoc主题
 
-huno-clsblog 是一个基于 [huno](https://github.com/letiantian/huno/) 的 Hexo 主题.  
+hunoc 是一个基于 [huno](https://github.com/letiantian/huno/) 的 Hexo 主题.  
 本作品采用 [Mozilla 公共许可证 Version 2.0](https://www.mozilla.org/en-US/MPL/2.0/)进行许可.  
 
-## 关于Huno
+## 关于huno
 
 Huno是为[Hexo](http://hexo.io/)编写的一个响应式的主题，该主题基于[Uno](https://github.com/daleanthony/uno/).  
-Author/作者: [letiantian](https://github.com/letiantian/)  
+作者: [letiantian](https://github.com/letiantian/)  
 Huno采用 [知识共享-署名 4.0 国际许可协议](http://creativecommons.org/licenses/by/4.0/)进行许可.  
 [![cc-by-nc-sa](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)  
 
-## 关于Uno
+## 关于uno
 
-Author/作者: [daleanthony](https://github.com/daleanthony/)  
+作者: [daleanthony](https://github.com/daleanthony/)  
 License: Creative Commons Attribution 4.0 International  
 Uno采用 [知识共享-署名 4.0 国际许可协议](http://creativecommons.org/licenses/by/4.0/)进行许可.  
 [![cc-by-nc-sa](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)  
@@ -114,7 +112,9 @@ Uno采用 [知识共享-署名 4.0 国际许可协议](http://creativecommons.or
 
 在以下环境测试基本正常:
 
-* hexo: 3.7.1
-* node: 10.13.0
-* Browsers: Firefox/Chrome/Edge
+* hexo: 3.8.0
+* node: 10.14.1
+* Browsers: Firefox/Chrome/Edge/IE11
 * Plugins: hexo-all-minifier,hexo-deploy
+
+建议使用Gitalk

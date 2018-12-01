@@ -1,4 +1,4 @@
-# huno-clsblog
+# hunoc
 
 [中文](./README_zh.md)
 
@@ -6,22 +6,22 @@
 
 ### Stable
 
-[![GitHub release](https://img.shields.io/github/release/Riband/huno-clsblog.svg?style=flat-square)](https://github.com/Riband/huno-clsblog/releases/)  
-![GitHub Release Date](https://img.shields.io/github/release-date/Riband/huno-clsblog.svg?style=flat-square)  
-huno version: commit 287f824  
+[![GitHub release](https://img.shields.io/github/release/Riband/hunoc.svg?style=flat-square)](https://github.com/Riband/hunoc/releases/)  
+![GitHub Release Date](https://img.shields.io/github/release-date/Riband/hunoc.svg?style=flat-square)  
 
 ### Dev
 
-![GitHub (pre-)release](https://img.shields.io/github/release/Riband/huno-clsblog/all.svg?style=flat-square)  
-![GitHub (pre-)Release Date](https://img.shields.io/github/release-date-pre/Riband/huno-clsblog.svg?style=flat-square)  
+![GitHub (pre-)release](https://img.shields.io/github/release/Riband/hunoc/all.svg?style=flat-square)  
+![GitHub (pre-)Release Date](https://img.shields.io/github/release-date-pre/Riband/hunoc.svg?style=flat-square)  
 huno version: commit 287f824
 
-![GitHub last commit](https://img.shields.io/github/last-commit/Riband/huno-clsblog.svg?style=flat-square)  
+![GitHub last commit](https://img.shields.io/github/last-commit/Riband/hunoc.svg?style=flat-square)  
 
 ## Introduction
 
-When using Hexo to generate my static blog (Cloudysummer blog @Bitbucket), I chose the Huno theme.In order to meet some needs, I have made some changes on Huno. It may be the first serious project for me.  
-Amuse myself by commiting,releasing, writing update log.<del>(obviously no one notice it)</del>Well, the most important thing is to be happy.  
+this Customed Huno is mainly used for my blog.**Other people are NOT advised to use this theme**,if you want to use a nice and stable hexo theme,see: [huno](https://github.com/letiantian/huno/).  
+When using Hexo to generate my static blog,I chose the Huno theme.In order to meet some needs, I have made some changes on Huno. It may be the first serious project for me.  
+I amuse myself by commiting,releasing,writing update log.<del>(obviously no one notice it)</del>Well, the most important thing is to be happy.  
 
 ## Features
 
@@ -38,11 +38,10 @@ Amuse myself by commiting,releasing, writing update log.<del>(obviously no one n
 
 ## Demo
 
-this Customed Huno is mainly used for my blog.**Other people are NOT advised to use this theme**,if you want to use a nice hexo theme,see: [Huno](https://github.com/letiantian/huno/).  
-![huno-clsblog Demo Img](https://riband.github.io/RiBase/huno-clsblog-demo/demo.jpg)  
+![hunoc Demo Img](https://riband.github.io/RiBase/hunoc-demo/demo.jpg)  
 
 ## Theme Options
-[theme]: /themes/huno-clsblog/_config.yml  
+[theme]: /themes/hunoc/_config.yml  
 [config]: /_config.yml  
 [post]: /source/_post/*.md  
 
@@ -76,7 +75,7 @@ this Customed Huno is mainly used for my blog.**Other people are NOT advised to 
          glass: glass feeling 
          red_and_white: red_and_white
          grace
-         (other): file name in /themes/huno-clsblog/source/css/custom_uno/
+         (other): file name in /themes/hunoc/source/css/custom_uno/
         [config|theme|post]
 
     hc_bgm: [String]/false
@@ -89,9 +88,9 @@ this Customed Huno is mainly used for my blog.**Other people are NOT advised to 
         [String] : HTML code for your bgm  
         [config|theme|post]
 
-## About huno-clsblog
+## About hunoc
 
-huno-clsblog is based on [Huno](https://github.com/letiantian/huno/).
+hunoc is based on [Huno](https://github.com/letiantian/huno/).
 
 this Customed Huno is mainly used for my blog.<b>Other people are NOT advised to use this theme</b>,if you want to use a nice hexo theme,see: [Huno](https://github.com/letiantian/huno/).
 License: [Mozilla Public License Version 2.0](https://www.mozilla.org/en-US/MPL/2.0/)  
@@ -111,15 +110,21 @@ License: [Creative Commons Attribution 4.0 International](http://creativecommons
 
 It's generally tested on:
 
-* hexo: 3.7.1
-* node: 10.13.0
-* Browsers: Firefox/Chrome/Edge
+* hexo: 3.8.0
+* node: 10.14.1
+* Browsers: Firefox/Chrome/Edge/IE 11
 * Plugins: hexo-all-minifier,hexo-dep
 
-## Note
+Gitalk is recommended.
 
-if you use HTTP,you'll get a gitment error : CORS request did not succeed
-Updates:
+## Updates For This Version
 
-* Fix many makrdown mistakes in README :)
-* Support Gitalk
+* link Gitment/Gitalk js properly
+* Test IE11
+* Rename the Project
+* Make gitment/gitalk available in config/theme/post
+* Make menu to hc_menu,available in config/theme/post
+
+## Memo
+
+* Add author avatar and sign

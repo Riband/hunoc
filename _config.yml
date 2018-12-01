@@ -1,12 +1,9 @@
 # Header
-menu:
-  #暂不开放<br/>Not Open: /
+hc_menu:
   日志<br/>Blog: /#blog  # "/#blog" is Enforced
   关于<br/>About: /inner/about/
   归档<br/>Archive: /archive
-
-# I might forget to switch this from my blog version to public version,
-# please switch it manually and issue it if it happened.
+# [Available in config/theme/post]
 
 # Site favicon
 favicon: /favicon.png
@@ -23,7 +20,7 @@ awesome_toc: true
 # Enable githubRepoWidget
 github_repo_widget: false
 
-#-------------------- huno-clsblog Begin--------------------LICENSE: CC-BY-NC-SA 4.0 International
+#-------------------- huno-clsblog Begin--------------------LICENSE: MPL 2.0
 
 hc_post_comments: false
   #options
@@ -41,10 +38,9 @@ hc_github_config: #must set hc_post_comments: gitment or gitalk,all below is enf
   client_secret: 
   admin: 
     - Tom
-  
-# [Available in theme]
+# [Available in config/theme/post]
 
-hc_footer_info: huno-clsblog v0.1.2-dev.2 (Based on huno)
+hc_footer_info: huno-clsblog v0.1.2 (Based on huno)
 #printed on the footer of a page,if you don't like this , leave it nothing
 #[Available in theme]
 #[In footer.ejs]
@@ -59,7 +55,7 @@ default_license_information: ©Copyright 2018
   # for post,use license_information: [String]
 #[In footer.ejs]
 
-hc_custom: grace
+hc_custom: glass
 #choices:
   # false: None custom
   # other customs:(Rough)
