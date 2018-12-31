@@ -72,27 +72,22 @@ I amuse myself by commiting,releasing,writing update log.<del>(obviously no one 
 
     hc_custom: [String]/false
          false: None custom
-         glass: glass feeling 
+         glass: glass feeling
          red_and_white: red_and_white
          grace
          (other): file name in /themes/hunoc/source/css/custom_uno/
-        [config|theme|post]
+        [config|theme|post]  
 
-    hc_bgm: [String]/false
-        false : No background music(BGM)
-        [String] : URL for your bgm
-        [config|theme|post]
-
-    hc_iframe_bgm: [String]/false
-        false : No background music(BGM)
-        [String] : HTML code for your bgm  
+    hc_panel_addition: [String]/false
+        false : No
+        [String] : HTML code for your bgm or ads  
         [config|theme|post]
 
 ## About hunoc
 
 hunoc is based on [Huno](https://github.com/letiantian/huno/).
 
-this Customed Huno is mainly used for my blog.<b>Other people are NOT advised to use this theme</b>,if you want to use a nice hexo theme,see: [Huno](https://github.com/letiantian/huno/).
+this Customed Huno is mainly used for my blog.**Other people are NOT advised to use this theme</b>,if you want to use a nice hexo theme,see: [Huno](https://github.com/letiantian/huno/).
 License: [Mozilla Public License Version 2.0](https://www.mozilla.org/en-US/MPL/2.0/)  
 
 ## About Huno
@@ -113,7 +108,7 @@ It's generally tested on:
 * hexo: 3.8.0
 * node: 10.14.1
 * Browsers: Firefox/Chrome/Edge/IE 11
-* Plugins: hexo-all-minifier,hexo-dep
+* Plugins: hexo-all-minifier,hexo-deploy
 
 Gitalk is recommended.
 
@@ -124,6 +119,10 @@ Gitalk is recommended.
 * Rename the Project
 * Make gitment/gitalk available in config/theme/post
 * Make menu to hc_menu,available in config/theme/post
+
+---
+
+* remove hc_bgm , please use hc_panel_addition
 
 ## Memo
 
