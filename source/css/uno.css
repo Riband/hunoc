@@ -521,13 +521,13 @@ nav {
   .navigation__item a {
     display: block;
     position: relative;
-    color: white;
+    color: #cccccc;
     border-color: gray;
     opacity: .8; }
     .navigation__item a:hover {
       color: black;
       border-color: white;
-       } /*modified*/
+       }
 
 .navigation--social {
   margin-left: 0em; }

@@ -6,7 +6,6 @@ hc_menu:
   归档<br/>Archive: /archive
 hc_social:
   github.com: github.com/YourName
-  weibo.com: weibo.com/YourName
 
 # Site favicon
 favicon: /favicon.ico
@@ -18,7 +17,7 @@ logo: /images/avatar.png
 mathjax: false
 
 # Enable awesome-toc
-awesome_toc: true
+awesome_toc: false
 
 # Enable githubRepoWidget
 github_repo_widget: false
