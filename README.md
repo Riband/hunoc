@@ -35,6 +35,7 @@ I amuse myself by commiting,releasing,writing update log.<del>(obviously no one 
 * Fix : there's extra line when comment is disabled
 * Enable use HTML Code in menu:  
 * Gitment/Gitalk Supported
+* Better subpath support(Need only change root)
 
 ## Demo
 
@@ -75,10 +76,10 @@ I amuse myself by commiting,releasing,writing update log.<del>(obviously no one 
          glass: glass feeling
          red_and_white: red_and_white
          grace
-         (other): file name in /themes/hunoc/source/css/custom_uno/
+        (other): file name in /themes/hunoc/source/css/custom_uno/
         [config|theme|post]  
 
-    hc_panel_addition: [String]/false
+    hc_pane l_addition: [String]/false
         false : No
         [String] : HTML code for your bgm or ads  
         [config|theme|post]
@@ -123,6 +124,7 @@ Gitalk is recommended.
 ---
 
 * remove hc_bgm , please use hc_panel_addition
+* better support for subpath website
 
 ## Memo
 

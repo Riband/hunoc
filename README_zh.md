@@ -19,7 +19,7 @@ huno版本: commit 287f824
 
 ## 介绍
 
-在用Hexo制作静态博客(CloudySummer Blog @Bitbucket)时,选择了Huno主题,为了满足一些需要,自己进行了一些修改,算是第一个正经项目吧.  
+在用Hexo制作静态博客,选择了Huno主题,为了满足一些需要,自己进行了一些修改,算是第一个正经项目吧.  
 自娱自乐的Commit,Release,写更新日志<del>(明明一个注意到的也没有....)</del>,嘛,做人最重要的是开心.  
 
 ## 特性
@@ -35,6 +35,7 @@ huno版本: commit 287f824
 * 修正无评论功能时有多余白线
 * 允许再导航按钮中使用HTML  
 * 支持Gitment/Gitalk (请勿滥用!)
+* 更好的子目录支持
 
 ## 演示
 
@@ -73,20 +74,9 @@ huno版本: commit 287f824
 
     hc_custom: [String]/false
         false: 无定制
-        glass: 玻璃感  
         red_and_white: 红白
         grace: 雅
         (其他): /themes/hunoc/source/css/custom_uno/中的css文件
-        [config|theme|post]
-
-    hc_bgm: [String]/false
-        false: 无背景音乐
-        [String]: mp3文件地址(http(s)://**.mp3)  
-        [config|theme|post]
-
-    hc_iframe_bgm: [String]/false
-        false: 无背景音乐
-        [String]: HTML 代码
         [config|theme|post]
 
 ## hunoc主题

@@ -1,9 +1,12 @@
-#-------------------- huno-clsblog Begin--------------------LICENSE: MPL 2.0
-
+#---hunoc---
+#LICENSE: MPL 2.0
+# Based on huno,uno
+# All path here (exclude social) must begin as "/"
+# config.root must end as "/"
 hc_menu:
   日志<br/>Blog: /#blog  # "/#blog" is Compulsory
   关于<br/>About: /inner/about/
-  归档<br/>Archive: /archive
+  归档<br/>Archive: /archive/
 hc_social:
   github.com: github.com/YourName
 
@@ -27,8 +30,7 @@ hc_post_comments: false
     # false : no comments
     # gitment: use gitment
     # gitalk: use gitalk (Recommended)
-    # manual: you will config manually in comments.ejs
-#[In comments.ejs]
+    # manual: config manually in comments.ejs
 
 hc_github_config: #must set hc_post_comments: gitment or gitalk,all below is enforced
   owner: 
@@ -38,7 +40,7 @@ hc_github_config: #must set hc_post_comments: gitment or gitalk,all below is enf
   admin: 
     - Tom
 
-hc_footer_info: huno-clsblog v0.1.3 (Based on huno)
+hc_footer_info: huno-clsblog v0.1.3-dev.2 (Based on huno)
 #printed on the footer of a page,if you don't like this , leave it nothing
 #[Available in theme]
 #[In footer.ejs]
@@ -49,31 +51,23 @@ default_license_information: ©Copyright 2018
 # [String] ,such as:
   # CC-BY 4.0 International
   # Even HTML Code provided by CC
-  # [Available in config/theme/*post ] 
   # for post,use license_information: [String]
 #[In footer.ejs]
 
 hc_custom: false
 #choices:
   # false: None custom
-  # other customs:(Rough)
-    # red_and_white
-    # grace
-# [In layout.ejs]
-
+  # red_and_white
+  # grace
 
 hc_panel_addition: false
 # add some customed html in side-panel
 # You'd better mostly open one erither hc_bgm or hc_iframe_bgm
-# [In side-panel.ejs]
 
 # - hc_hide:
 #   hide the page which can be seen by using develop tools(F12) to make it unhidden
 #   Funny Option in [post]
 
-# -------------Options End------------
-# Updates
-# Adjust
 # Suggestions:
 #   1.Use hexo-all-minifier(Plugin),
 #     because I use too many /r/n in this theme's ejs files,which can casue your webpages become big and unstable

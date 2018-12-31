@@ -14,10 +14,10 @@
     <div class="panel-main__content">
 
         <% if (theme.logo) { %>
-        <a href="/" title="link to homepage for <%= config.title %>"><img src="<%= theme.logo %>" width="80" alt="<%= config.title %> logo" class="panel-cover__logo logo" /></a>
+        <a href="<%- config.root %>" title="link to homepage for <%= config.title %>"><img src="<%= config.root + theme.logo %>" width="80" alt="<%= config.title %> logo" class="panel-cover__logo logo" /></a>
         <% } %>
 
-        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage"><%= config.title %></a></h1>
+        <h1 class="panel-cover__title panel-title"><a href="<%- config.root %>" title="link to homepage"><%= config.title %></a></h1>
         <hr class="panel-cover__divider" />
         <% if (config.subtitle) { %>
         <p class="panel-cover__description">
@@ -41,28 +41,10 @@
                     nav_btn_class = '';
                   }
                 %>
-                <li class="navigation__item"><a href="<%- hc_menu[i] %>" title="" class="<%= nav_btn_class %>"><%- i %></a></li>
+                <li class="navigation__item"><a href="<%- config.root.slice(0,-1) + hc_menu[i] %>" title="" class="<%= nav_btn_class %>"><%- i %></a></li>
               <% } %>
             </ul>
           </nav>
-          <% //hc bgm option %> 
-          <%         var hc_bgm="";                                                    %>
-          <%         if (theme.hc_bgm){                                                %>
-          <%             hc_bgm = theme.hc_bgm;                                        %>
-          <%         }                                                                 %>
-          <%         if (config.hc_bgm){                                               %>
-          <%             hc_bgm = config.hc_bgm;                                       %>
-          <%         }                                                                 %>
-          <%         if (page.hc_bgm){                                                 %>
-          <%             hc_bgm = page.hc_bgm;                                         %>
-          <%         }                                                                 %>
-          <% if (hc_bgm) {                                                             %>
-              <br/>
-              <audio controls autoplay loop class="hc_bgm_control">
-                <source src="<%- hc_bgm %>" type="audio/mpeg">
-              </audio>
-          <% }                                                                  %>
-          <%   //-- hc bgm option end                                           %>
           <%   // hc hc_panel_addition                                          %>
           <%         var hc_panel_addition="";                                  %>
           <%         if (theme.hc_panel_addition){                              %>

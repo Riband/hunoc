@@ -50,7 +50,7 @@
       <link rel="alternate" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
     <% } %>
     <% if (theme.favicon){ %>
-      <link rel="icon" type="image/x-icon" href="<%- theme.favicon %>">
+      <link rel="icon" type="image/x-icon" href="<%- config.root.slice(0,-1) + theme.favicon %>">
     <% } %>
     <%- css('css/uno.css') %>
     <%- css('css/highlight') %>
@@ -68,7 +68,7 @@
     <%         }                                                                    %>
     <%         if (page.hc_custom){                                                 %>
     <%             hc_custom = page.hc_custom;                                      %>
-    <%         }                                                                    %>                                                                    %>
+    <%         }                                                                    %>
     <% if(hc_custom) {                                                              %>
     <%  var custom_uno_url = 'css/custom_uno/' + hc_custom + '.css';                %>
     <%- css(custom_uno_url)                                                         %>
@@ -89,8 +89,33 @@
 
     <!-- js files -->
     <script src="<%- config.root %>js/jquery.min.js"></script>
-    <script src="<%- config.root %>js/main.js"></script>
     <script src="<%- config.root %>js/scale.fix.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('a.blog-button').click(function() {
+          if ($('.panel-cover').hasClass('panel-cover--collapsed')) return;
+          currentWidth = $('.panel-cover').width();
+          $('.panel-cover').addClass('animated panel-cover--collapsed slideInLeft');
+          $('.content-wrapper').addClass('animated slideInLeft');
+        });
+        if (window.location.hash && window.location.hash === "#blog") {
+          $('.panel-cover').addClass('panel-cover--collapsed');
+        }
+        if (window.location.pathname != "<%- config.root %>") {
+          $('.panel-cover').addClass('panel-cover--collapsed');
+        }
+        $('.btn-mobile-menu').click(function() {
+          $('.navigation-wrapper').toggleClass('visible animated bounceInDown');
+          $('.btn-mobile-menu__icon').toggleClass('icon-list icon-x-circle animated fadeIn');
+        });
+        $('.navigation-wrapper .blog-button').click(function() {
+          // $('.navigation-wrapper').toggleClass('visible');
+          $('.btn-mobile-menu__icon').toggleClass('icon-list icon-x-circle animated fadeIn');
+        });
+      });
+    </script>
+
   <!-- Gitment/Gitalk Support -->
   <% var hc_post_comments=''; %>
   <% if(theme.hc_post_comments) {hc_post_comments= theme.hc_post_comments;} %>
