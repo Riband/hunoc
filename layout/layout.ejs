@@ -52,11 +52,10 @@
     <% if (theme.favicon){ %>
       <link rel="icon" type="image/x-icon" href="<%- config.root.slice(0,-1) + theme.favicon %>">
     <% } %>
-    <%- css('css/uno.css') %>
-    <%- css('css/highlight') %>
-    <%- css('css/archive.css') %>
-    <%- css('css/china-social-icon.css') %>
-
+    <%- css( config.root + '/css/uno.css') %>
+    <%- css( config.root + '/css/highlight') %>
+    <%- css( config.root + '/css/archive.css') %>
+    <%- css( config.root + '/css/china-social-icon.css') %>
 
     <!-- hc: load custom -->
     <%         var hc_custom="";                                                    %>
@@ -70,7 +69,7 @@
     <%             hc_custom = page.hc_custom;                                      %>
     <%         }                                                                    %>
     <% if(hc_custom) {                                                              %>
-    <%  var custom_uno_url = 'css/custom_uno/' + hc_custom + '.css';                %>
+    <%  var custom_uno_url = config.root + '/css/custom_uno/' + hc_custom + '.css';  %>
     <%- css(custom_uno_url)                                                         %>
     <% } %>
     <!-- hc: load custom end -->
