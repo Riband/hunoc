@@ -25,7 +25,7 @@ var post = page;
     <div class="categorieslist">
         <% site.categories.sort('name').each(function(item){ %>
           <% if(item.posts.length){ %>
-            <span><a href="<%- config.root %><%- item.path %>" title="<%= item.name %>"><%= item.name %><sup><%= item.posts.length %></sup></a></span>
+            <span><a href="<%- subpath_full %><%- item.path %>" title="<%= item.name %>"><%= item.name %><sup><%= item.posts.length %></sup></a></span>
           <% } %>
         <% }); %>
      </div>
@@ -36,7 +36,7 @@ var post = page;
     <div class="tagslist">
         <% site.tags.sort('posts.length','desc').limit(20).each(function(item){ %>
             <% if(item.posts.length){ %>
-                <span><a href="<%- config.root %><%- item.path %>" title="<%= item.name %>"><%= item.name %><sup><%= item.posts.length %></sup></a></span>
+                <span><a href="<%- subpath_full %><%- item.path %>" title="<%= item.name %>"><%= item.name %><sup><%= item.posts.length %></sup></a></span>
             <% } %>
         <% }); %>
     </div>

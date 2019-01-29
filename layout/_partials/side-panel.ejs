@@ -1,3 +1,17 @@
+<% 
+  function path_adjust(__root){
+  if(__root[0] !== '/'){
+    __root = '/' + __root;
+  } 
+  if (__root[__root.length-1] !== '/') {
+    __root = __root + '/';
+  }
+  return __root;
+} %>
+
+<% const subpath_full= path_adjust(config.root); %>
+<% const subpath= subpath_full.slice(0,-1); %>
+
 <% var hc_menu=''; %>
 <% if(theme.hc_menu) {hc_menu= theme.hc_menu;} %>
 <% if(config.hc_menu) {hc_menu= config.hc_menu;} %>
@@ -14,10 +28,10 @@
     <div class="panel-main__content">
 
         <% if (theme.logo) { %>
-        <a href="<%- config.root %>" title="link to homepage for <%= config.title %>"><img src="<%= config.root + theme.logo %>" width="80" alt="<%= config.title %> logo" class="panel-cover__logo logo" /></a>
+        <a href="<%- subpath_full %>" title="link to homepage for <%= config.title %>"><img src="<%= subpath + theme.logo %>" width="80" alt="<%= config.title %> logo" class="panel-cover__logo logo" /></a>
         <% } %>
 
-        <h1 class="panel-cover__title panel-title"><a href="<%- config.root %>" title="link to homepage"><%= config.title %></a></h1>
+        <h1 class="panel-cover__title panel-title"><a href="<%- subpath_full %>" title="link to homepage"><%= config.title %></a></h1>
         <hr class="panel-cover__divider" />
         <% if (config.subtitle) { %>
         <p class="panel-cover__description">
@@ -41,7 +55,7 @@
                     nav_btn_class = '';
                   }
                 %>
-                <li class="navigation__item"><a href="<%- config.root.slice(0,-1) + hc_menu[i] %>" title="" class="<%= nav_btn_class %>"><%- i %></a></li>
+                <li class="navigation__item"><a href="<%- subpath + hc_menu[i] %>" title="" class="<%= nav_btn_class %>"><%- i %></a></li>
               <% } %>
             </ul>
           </nav>
