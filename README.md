@@ -88,7 +88,7 @@ I amuse myself by commiting,releasing,writing update log.<del>(obviously no one 
 
 hunoc is based on [Huno](https://github.com/letiantian/huno/).
 
-this Customed Huno is mainly used for my blog.**Other people are NOT advised to use this theme</b>,if you want to use a nice hexo theme,see: [Huno](https://github.com/letiantian/huno/).
+this Customed Huno is mainly used for my blog.**Other people are NOT advised to use this theme**,if you want to use a nice hexo theme,see: [Huno](https://github.com/letiantian/huno/).
 License: [Mozilla Public License Version 2.0](https://www.mozilla.org/en-US/MPL/2.0/)  
 
 ## About Huno
@@ -113,7 +113,12 @@ It's generally tested on:
 
 Gitalk is recommended.
 
-## Updates For This Version
+## Picture Authors
+Thank these generous guys!  
 
+|Picture|Author|License|
+|---|---|---|
+|Red and blue sky – end of day|[Peter Janzen](https://cc0.photo/author/peter/)|[CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)|
+|Picography lake view bridge|[Gratisography](https://gratisography.com/)|[CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)|
 
-
+Some authors are still being searched...
