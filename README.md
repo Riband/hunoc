@@ -107,7 +107,7 @@ License: [Creative Commons Attribution 4.0 International](http://creativecommons
 It's generally tested on:
 
 * hexo: 3.8.0
-* node: 10.14.1
+* node: 10.15.1
 * Browsers: Firefox/Chrome/Edge/IE 11
 * Plugins: hexo-all-minifier,hexo-deploy
 
@@ -115,17 +115,5 @@ Gitalk is recommended.
 
 ## Updates For This Version
 
-* link Gitment/Gitalk js properly
-* Test IE11
-* Rename the Project
-* Make gitment/gitalk available in config/theme/post
-* Make menu to hc_menu,available in config/theme/post
 
----
 
-* remove hc_bgm , please use hc_panel_addition
-* better support for subpath website
-
-## Memo
-
-* Add author avatar and sign

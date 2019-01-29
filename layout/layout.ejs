@@ -63,14 +63,13 @@
           $('.panel-cover').addClass('animated panel-cover--collapsed slideInLeft');
           $('.content-wrapper').addClass('animated slideInLeft');
         });
-
-        if (window.location.hash && window.location.hash === "#blog") {
-          $('.panel-cover').addClass('panel-cover--collapsed');
-        } 
-        else if (window.location.pathname === "<%- subpath_full %>" || window.location.pathname === "<%- subpath %>") {
+        //页面跳转
+        if (window.location.hash === "#blog") {
           $('.panel-cover').addClass('panel-cover--collapsed');
         }
-
+        /*else if (window.location.pathname === "<%- subpath_full %>" || window.location.pathname === "<%- subpath %>") {
+          $('.panel-cover').addClass('panel-cover--overlay');
+        }*/
         $('.btn-mobile-menu').click(function() {
           $('.navigation-wrapper').toggleClass('visible animated bounceInDown');
           $('.btn-mobile-menu__icon').toggleClass('icon-list icon-x-circle animated fadeIn');
@@ -96,10 +95,10 @@
     <% if (theme.favicon){ %>
       <link rel="icon" type="image/x-icon" href="<%- subpath + theme.favicon %>">
     <% } %>
-    <%- css( subpath + '/css/uno.css') %>
-    <%- css( subpath + '/css/highlight') %>
-    <%- css( subpath + '/css/archive.css') %>
-    <%- css( subpath + '/css/china-social-icon.css') %>
+    <%- css( '/css/uno.css') %>
+    <%- css( '/css/highlight') %>
+    <%- css( '/css/archive.css') %>
+    <%- css( '/css/china-social-icon.css') %>
 
     <!-- hc: load custom -->
     <%         var hc_custom="";                                                    %>
@@ -113,7 +112,7 @@
     <%             hc_custom = page.hc_custom;                                      %>
     <%         }                                                                    %>
     <% if(hc_custom) {                                                              %>
-    <%  var custom_uno_url = subpath + '/css/custom_uno/' + hc_custom + '.css';     %>
+    <%  var custom_uno_url = '/css/custom_uno/' + hc_custom + '.css';     %>
     <%- css(custom_uno_url)                                                         %>
     <% } %>
     <!-- hc: load custom end -->
