@@ -21,8 +21,8 @@
 <% if(config.social) {social= config.social;} %>
 <% if(page.social) {social= page.social;} %>
 <% if (social) { %>
-<% for (var i in social){ %>
 <nav class="cover-navigation navigation--social">
+  <% for (var i in social){ %>
     <li class="hc-social-navigation">
       <a href="https://<%- i %>.com/<%- social[i] %>" title="<%- i %>">
         <i class='icon icon-social-<%- i %>'></i>
