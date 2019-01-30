@@ -77,7 +77,7 @@ Please read the instruction in /_config.yml for detailed and correct infomation.
 
 ## About hunoc
 
-hunoc is a hexo theme based on [hunoc](https://github.com/letiantian/hunoc/).
+hunoc is a hexo theme based on [huno](https://github.com/letiantian/hunoc/).
 License: [Mozilla Public License Version 2.0](https://www.mozilla.org/en-US/MPL/2.0/)  
 
 ## About huno
