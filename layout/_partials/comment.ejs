@@ -1,3 +1,8 @@
+<% var hc_github_config=''; %>
+<% if(theme.hc_github_config) {hc_github_config= theme.hc_github_config;} %>
+<% if(config.hc_github_config) {hc_github_config= config.hc_github_config;} %>
+<% if(page.hc_github_config) {hc_github_config= page.hc_github_config;} %>
+
 <% var hc_post_comments=''; %>
 <% if(theme.hc_post_comments) {hc_post_comments= theme.hc_post_comments;} %>
 <% if(config.hc_post_comments) {hc_post_comments= config.hc_post_comments;} %>
@@ -23,4 +28,35 @@
     <section class="post-comments">
         <div id="gitalk-container"></div>
     </section>
+<% } %>
+
+<!-- Vssue Support -->
+<% if(hc_post_comments === 'vssue') { %>
+<noscript>Please enable JavaScript to view the comments</noscript>
+<section class="post-comments">
+    <div id="vssue"></div>
+</section>
+    <!-- Vssue 的样式文件 -->
+    <link rel="stylesheet" href="https://unpkg.com/vssue/dist/vssue.min.css">
+    <!-- Vue 运行时版 (runtime only)  -->
+    <script src="https://unpkg.com/vue/dist/vue.runtime.min.js"></script>
+    <script src="https://unpkg.com/vssue/dist/vssue.<%- hc_github_config.type %>.min.js"></script>
+    <script>
+        new Vue({
+            el: '#vssue',
+            render: h => h('Vssue', {
+                props: {
+                    // 在这里设置当前页面对应的 Issue 标题
+                    title: '<%- config.title %> comments',
+                    // 在这里设置你使用的平台的 OAuth App 配置
+                    options: {
+                        owner: '<%- hc_github_config.owner %>',
+                        repo: '<%- hc_github_config.repo %>',
+                        clientId: '<%- hc_github_config.client_id %>',
+                        clientSecret: '<%- hc_github_config.client_secret %>',
+                    },
+                }
+            })
+        })
+    </script>
 <% } %>

@@ -1170,10 +1170,6 @@ pre {
 }
 */
 
-.hc_bgm_control {
-  width: 11em;
-}
-
 /* disused
 .hc_body_aero { 
   -webkit-filter: blur(2px);
@@ -1224,11 +1220,11 @@ pre {
 }
 
 .hc-social{
-  color: rgba(0, 0, 0, 1);
-  border: 0px;
   margin: 0;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
+  border-radius: 70px;
+  border: 1px solid white;
 }
 
 .hc-social-icon{
@@ -1237,8 +1233,8 @@ pre {
 }
 
 .hc-social-navigation {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: .3em;
+  margin-right: .3em;
   border: 0px;
   -webkit-font-smoothing: antialiased; 
   display: inline-block;

@@ -13,107 +13,110 @@
 
 ![GitHub (pre-)release](https://img.shields.io/github/release/Riband/hunoc/all.svg?style=flat-square)  
 ![GitHub (pre-)Release Date](https://img.shields.io/github/release-date-pre/Riband/hunoc.svg?style=flat-square)  
-huno version: commit 287f824
+hunoc version: commit 287f824
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/Riband/hunoc.svg?style=flat-square)  
 
 ## Introduction
 
-this Customed Huno is mainly used for my blog.**Other people are NOT advised to use this theme**,if you want to use a nice and stable hexo theme,see: [huno](https://github.com/letiantian/huno/).  
-When using Hexo to generate my static blog,I chose the Huno theme.In order to meet some needs, I have made some changes on Huno. It may be the first serious project for me.  
+When using hexo to generate my static blog,I chose the hunoc theme.In order to meet some needs,I have made some changes on hunoc. It may be the first serious project for me.  
 I amuse myself by commiting,releasing,writing update log.<del>(obviously no one notice it)</del>Well, the most important thing is to be happy.  
 
 ## Features
 
-### Comparing to huno
+### Comparing to hunoc
 
-* Add background music option
 * Add Custom option (Custom your theme with your own css)
 * Use Translucent Background
 * Change Fonts
 * Clean commits of huno to save some space
 * Fix : there's extra line when comment is disabled
-* Enable use HTML Code in menu:  
+* Enable use HTML Code in hc_menu:  
 * Gitment/Gitalk Supported
 * Better subpath support(Need only change root)
+* Remove animate
+* Etc.
 
 ## Demo
 
 ![hunoc Demo Img](https://riband.github.io/RiBase/hunoc-demo/demo.jpg)  
 
 ## Theme Options
-[theme]: /themes/hunoc/_config.yml  
-[config]: /_config.yml  
-[post]: /source/_post/*.md  
+
+Every option is available in these files excluding ones with explanation.And you can use html in most of them.  
+Please read the instruction in /_config.yml for detailed and correct infomation.
+
+* /themes/hunoc/_config.yml  
+* /_config.yml  
+* /source/_post/*.md  
 
     hc_post_comments: [String]/false
          false: no comments  
-         gitment: gitment
-         gitalk: gitalk
+         gitment: use gitment(must cofig the hc_github_config)
+         gitalk: use gitalk(must cofig the hc_github_config)
          manual (or other string): you will config manually in comments.ejs  
-         [config|theme|post]
 
-    hc_github_config(you must set hc_post_comments: gitment)
-    * owner:
-    * repo:
-    * client_id:
-    * client_secret:
-    * admin:
-    [theme]
+    hc_github_config: (you must set hc_post_comments: gitment/gittalk)
+        owner:
+        repo:
+        client_id:
+        client_secret:
+        admin:
 
     hc_footer_info:[String]
           Printed on the footer of a page
-          [theme]
-
-    hc_footer_info:[String]
-        Such as:  
-          © 2016-2018  
-          CC-BY 4.0 International  
-          [config|theme] [post(license_information instead)]
+          only theme/_config.yml
 
     hc_custom: [String]/false
          false: None custom
-         glass: glass feeling
-         red_and_white: red_and_white
-         grace
-        (other): file name in /themes/hunoc/source/css/custom_uno/
-        [config|theme|post]  
+        (other): file name in /themes/hunoc/source/css/custom_uno/  
 
-    hc_pane l_addition: [String]/false
+    hc_panel_addition: [String]/false
         false : No
         [String] : HTML code for your bgm or ads  
-        [config|theme|post]
 
 ## About hunoc
 
-hunoc is based on [Huno](https://github.com/letiantian/huno/).
-
-this Customed Huno is mainly used for my blog.**Other people are NOT advised to use this theme**,if you want to use a nice hexo theme,see: [Huno](https://github.com/letiantian/huno/).
+hunoc is a hexo theme based on [hunoc](https://github.com/letiantian/hunoc/).
 License: [Mozilla Public License Version 2.0](https://www.mozilla.org/en-US/MPL/2.0/)  
 
-## About Huno
+## About huno
 
-Huno is a [Hexo](http://hexo.io/) theme，based on [Uno](https://github.com/daleanthony/uno/).  
+huno is a [Hexo](http://hexo.io/) theme，based on [uno](https://github.com/daleanthony/uno/).  
 Author: [letiantian](https://github.com/letiantian/)  
 License: [Creative Commons Attribution 4.0 International](http://creativecommons.org/licenses/by/4.0/)  
 
-## About Uno
+## About uno
 
 Author: [daleanthony](https://github.com/daleanthony/)  
 License: [Creative Commons Attribution 4.0 International](http://creativecommons.org/licenses/by/4.0/)  
+
+## About gitalk
+
+Author: booxood,mamboer,devrsi0n,meteorlxy,CoderMing,cometeme,xnng ......  
+[View all contributors](https://github.com/gitalk/gitalk/graphs/contributors)  
+Sites: [gitalk](https://github.com/gitalk/gitalk/)  
+License: MIT
 
 ## Compatibility
 
 It's generally tested on:
 
 * hexo: 3.8.0
-* node: 10.15.1
+* node: 10.15.1 / 11.8.0
 * Browsers: Firefox/Chrome/Edge/IE 11
 * Plugins: hexo-all-minifier,hexo-deploy
+* vssue and gitalk is recommended.
 
-Gitalk is recommended.
+## Suggestions
+
+* Use hexo-all-minifier(Plugin)
+* If you want to keep up-to-date,you need to know:
+    This theme DO NOT obey Semantic Versioning now(AT LEAST before 1.0.0)
+    This theme DO NOT update regularly
 
 ## Picture Authors
+
 Thank these generous guys!  
 
 |Picture|Author|License|

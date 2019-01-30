@@ -26,85 +26,91 @@ huno版本: commit 287f824
 
 ### 在Huno的基础上
 
-* 增加背景音乐选项
 * 增加定制选项(进一步用CSS自定义)
-* 更丰富的页脚自定义 (版权 版本)
+* 更丰富的页脚自定义
 * 使用半透明背景
 * 更换字体
 * 清理commit以节省空间
 * 修正无评论功能时有多余白线
-* 允许再导航按钮中使用HTML  
-* 支持Gitment/Gitalk (请勿滥用!)
-* 更好的子目录支持
+* 允许在导航按钮中使用HTML  
+* 支持Gitment/Gitalk
+* 更好的子目录支持(仅需修改root)
+* 移除了动画
+* 等等
 
 ## 演示
 
 做Demo属无事可<del>commit</del>做  
+[查看](https://riband.github.io/hunoc-demo/)
 ![hunoc Demo Img](https://riband.github.io/RiBase/hunoc-demo/demo.jpg)  
 
 ## 主题选项
-[theme]: /themes/hunoc/_config.yml  
-[config]: /_config.yml  
-[post]: /source/_post/*.md  
+
+所有的选项都可以在/theme/_config.yml,/_config.yml,/source/*.md中使用,有特殊注明的除外  
+请以/theme/_config.yml中的说明为准  
 
     hc_post_comments: [String]/false
          false: 无评论功能  
          gitment: gitment
          gitalk: gitalk
          manual (or other string): you will config manually in comments.ejs  
-         [config|theme|post]
 
     hc_github_config(you must set hc_post_comments: gitment)
-    * owner:
-    * repo:
-    * client_id:
-    * client_secret:
-    * admin:
-    [theme]d
+      owner:
+      repo:
+      client_id:
+      client_secret:
+      admin:
 
     hc_footer_info:[String]
           显示在页脚中
-          [theme]
 
     hc_footer_info:[String]
-        如:  
-          © 2016-2018  
+        如:© 2016-2018  
           CC-BY 4.0 International  
-          [config|theme] [post(license_information instead)]
+          支持html
 
     hc_custom: [String]/false
         false: 无定制
-        red_and_white: 红白
-        grace: 雅
+        huno: huno风格
         (其他): /themes/hunoc/source/css/custom_uno/中的css文件
-        [config|theme|post]
 
-## hunoc主题
+## 关于hunoc
 
-hunoc 是一个基于 [huno](https://github.com/letiantian/huno/) 的 Hexo 主题.  
-本作品采用 [Mozilla 公共许可证 Version 2.0](https://www.mozilla.org/en-US/MPL/2.0/)进行许可.  
+hunoc 是一个基于[huno](https://github.com/letiantian/huno/)的一个响应式的Hexo主题.  
+许可协议:[Mozilla 公共许可证 Version 2.0](https://www.mozilla.org/en-US/MPL/2.0/)  
 
 ## 关于huno
 
-Huno是为[Hexo](http://hexo.io/)编写的一个响应式的主题，该主题基于[Uno](https://github.com/daleanthony/uno/).  
 作者: [letiantian](https://github.com/letiantian/)  
-Huno采用 [知识共享-署名 4.0 国际许可协议](http://creativecommons.org/licenses/by/4.0/)进行许可.  
-[![cc-by-nc-sa](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)  
+许可协议: [知识共享-署名 4.0 国际许可协议](http://creativecommons.org/licenses/by/4.0/)  
+该主题基于[uno](https://github.com/daleanthony/uno/)  
 
 ## 关于uno
 
 作者: [daleanthony](https://github.com/daleanthony/)  
-License: Creative Commons Attribution 4.0 International  
-Uno采用 [知识共享-署名 4.0 国际许可协议](http://creativecommons.org/licenses/by/4.0/)进行许可.  
-[![cc-by-nc-sa](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)  
+许可协议: [知识共享-署名 4.0 国际许可协议](http://creativecommons.org/licenses/by/4.0/)  
 
 ## 兼容性
 
 在以下环境测试基本正常:
 
 * hexo: 3.8.0
-* node: 10.14.1
-* Browsers: Firefox/Chrome/Edge/IE11
-* Plugins: hexo-all-minifier,hexo-deploy
+* node: 10.15.1 / 11.8.0
+* 浏览器: Firefox/Chrome/Edge/IE11
+* 插件: hexo-all-minifier,hexo-deploy
+* 建议使用vssue,gitalk
 
-建议使用Gitalk
+## 建议
+
+* 使用hexo-all-minifier插件
+* 注意,本主题暂不遵循语义版本,不能有规律地更新
+
+## 图片来源
+
+感谢诸位!  
+
+|图片|作者|许可协议|
+|---|---|---|
+|Red and blue sky – end of day|[Peter Janzen](https://cc0.photo/author/peter/)|[CC0共有领域](https://creativecommons.org/publicdomain/zero/1.0/)|
+|Picography lake view bridge|[Gratisography](https://gratisography.com/)|[CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)|
