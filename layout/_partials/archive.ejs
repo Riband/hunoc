@@ -45,6 +45,7 @@ if (is_category()) {
     <% page.posts.each(function(post, i){ %>
       <%
         var title=post.title;
+        if(title==''){title=post.link;}
         if(title==''){title='No title';}
       %>
       <%

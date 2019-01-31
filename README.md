@@ -146,7 +146,7 @@ License: [Creative Commons Attribution 4.0 International](http://creativecommons
 
 ## Compatibility
 
-hexo-theme-unit-test: PASSED(Except tag-plugins)
+hexo-theme-unit-test: PASSED
 
 It's generally tested on:
 
