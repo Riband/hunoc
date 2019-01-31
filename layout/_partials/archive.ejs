@@ -43,13 +43,22 @@ if (is_category()) {
     <ol class="post-list">
     
     <% page.posts.each(function(post, i){ %>
+      <%
+        var title=post.title;
+        if(title==''){title='No title';}
+      %>
+      <%
+        var hc_link= post.link || subpath_full + post.path;
+      %>
     <li>
-
       <h2 class="post-list__post-title post-title">
-        <a href="<%- subpath_full %><%- post.path %>" title="link to <%= post.title %>"><%= post.title %></a>
+        <a href="<%- hc_link %>" title="link to <%= title %>"><%= title %></a>
       </h2>
-
       <div class="post-list__meta">
+      <% 
+      title='';
+      hc_link='';
+      %>
 
       <% if (post.id && post.id.length > 0){ %>
         <font class="post-id">

@@ -1,18 +1,21 @@
 <%
 var post = page;
 %>
-
+<%
+  var title=post.title;
+  if(title==''){title=='Post ' + page.date;}
+  if(title=='' && page.date==''){title=='No title';}
+%>
 <article class="post-container post-container--single">
 
   <header class="post-header">
 
-    <h1 class="post-title"><%= post.title %></h1>
+    <h1 class="post-title"><%= title %></h1>
 
     <% if (type == 'post') { %>
 
     <div class="post-meta">
       <time datetime="<%= date(post.date, config.date_format) %>" class="post-meta__date date"><%= date(post.date, config.date_format) %></time>
-
       <span class="post-meta__tags tags">
 
             <% if (post.id){ %>

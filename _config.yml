@@ -7,9 +7,9 @@ hc_menu:
   日志<br/>Blog: /#blog  # "/#blog" is Compulsory
   关于<br/>About: /about/
 social:
-    github: tom
+    github: tom(a fake name)
 #hc_social:
-#  github.com: github.com/tom
+#  github.com: github.com/tom(a fake name)
 # hc_social use favicon.ico of your social sites,so it support every site,but not stable
 
 # You can still use huno's way to add social icons,which is stable,but don't use hc_social and social together.
@@ -19,7 +19,9 @@ social:
 favicon: /favicon.ico
 
 # Site logo
-logo: /images/avatar.png
+hc_logo: /avatar.png
+# or logo
+# you're suggested to config it in hexo's _config.yml to cover the option in theme
 
 # Enable Mathjax
 mathjax: false
@@ -44,12 +46,12 @@ hc_github_config: #must set hc_post_comments: gitment, vssue, gitalk,all below i
   client_id: 
   client_secret: 
   admin: #only for gitalk
-    - tom
+    - tom(a fake name)
   type: github #or gitlab,bitbucket. only for vssue
   vssue_theme_color: black
   
 
-hc_footer_info: hunoc 0.1.5-preview.2<br/>based on huno by letiantian,Powered by Hexo
+hc_footer_info: hunoc 0.1.5-preview.4<br/>based on huno by letiantian,Powered by Hexo
 #[only available in theme]
 
 default_license_information: ©Copyright 2018

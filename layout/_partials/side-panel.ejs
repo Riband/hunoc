@@ -17,6 +17,15 @@
 <% if(config.hc_menu) {hc_menu= config.hc_menu;} %>
 <% if(page.hc_menu) {hc_menu= page.hc_menu;} %>
 
+<% var hc_logo=''; %>
+<% if(theme.logo) {hc_logo= theme.logo;} %>
+<% if(theme.hc_logo) {hc_logo= theme.hc_logo;} %>
+<% if(config.logo) {hc_logo= config.logo;} %>
+<% if(config.hc_logo) {hc_logo= config.hc_logo;} %>
+<% if(page.logo) {hc_logo= page.logo;} %>
+<% if(page.hc_logo) {hc_logo= page.hc_logo;} %>
+
+
 <% if (is_home()) { %> 
 <header class="panel-cover">
 <% } else { %>
@@ -27,8 +36,8 @@
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
 
-        <% if (theme.logo) { %>
-        <a href="<%- subpath_full %>" title="link to homepage for <%= config.title %>"><img src="<%= subpath + theme.logo %>" width="80" alt="<%= config.title %> logo" class="panel-cover__logo logo" /></a>
+        <% if (theme.hc_logo) { %>
+        <a href="<%- subpath_full %>" title="link to homepage for <%= config.title %>"><img src="<%= subpath + hc_logo %>" width="80" alt="<%= config.title %> logo" class="panel-cover__logo logo" /></a>
         <% } %>
 
         <h1 class="panel-cover__title panel-title"><a href="<%- subpath_full %>" title="link to homepage"><%= config.title %></a></h1>
