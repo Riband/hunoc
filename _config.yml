@@ -69,6 +69,8 @@ hc_custom: false
 hc_panel_addition: false
 # add some customed html in side-panel like bgm
 
+hc_site_analytics: false
+
 # - hc_hide:
 #   hide the page's content  
 #   Funny Option in [post]

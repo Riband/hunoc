@@ -99,6 +99,40 @@ Please read the instruction in /_config.yml for detailed and correct infomation.
         false : No
         [String] : HTML code for your bgm or ads  
 
+### Background picture
+
+Just put your picture as source/images/background-cover.jpg  
+If you want to use a picture in CDN,please modify source/css/uno.css  
+For more infomation,read [huno readme](https://github.com/letiantian/huno)  
+
+### Archive
+
+run:
+    $ hexo new page archive
+edit source/archive/index.md
+    title: Archive
+    layout: page-archive
+    ---
+For more infomation,read [huno readme](https://github.com/letiantian/huno)  
+
+### Social Icon
+
+For example:
+    social:
+        github: tom
+        500px: tom
+Do not need to edit social.yml
+For more infomation,read _config.yml  
+
+Foundation Icons v 3.0
+ Made by ZURB 2013 [Official Site](http://zurb.com/playground/foundation-icon-fonts-3)
+ MIT License
+
+### Site analytics
+
+    hc_site_analytics: (your analytics code from Google analysis,CNZZ etc.)
+Or just paste it in layout/_scripts/site-analytics.ejs
+
 ## About huno
 
 huno is a [Hexo](http://hexo.io/) theme，based on [uno](https://github.com/daleanthony/uno/).  
@@ -109,13 +143,6 @@ License: [Creative Commons Attribution 4.0 International](http://creativecommons
 
 Author: [daleanthony](https://github.com/daleanthony/)  
 License: [Creative Commons Attribution 4.0 International](http://creativecommons.org/licenses/by/4.0/)  
-
-## About gitalk
-
-Author: booxood,mamboer,devrsi0n,meteorlxy,CoderMing,cometeme,xnng ......  
-[View all contributors](https://github.com/gitalk/gitalk/graphs/contributors)  
-Sites: [gitalk](https://github.com/gitalk/gitalk/)  
-License: MIT
 
 ## Compatibility
 

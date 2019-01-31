@@ -100,6 +100,55 @@ huno版本: commit 287f824
         huno: huno风格
         (其他): /themes/hunoc/source/css/custom_uno/中的css文件
 
+### 背景图片
+
+位于 source/images/background-cover.jpg  
+或者修改图片URL。例如修改成CDN中的某个图片
+    background: url("//img.alicdn.com/tps/TB1UC8nJVXXXXbRXpXXXXXXXXXX-1920-1200.jpg") top left no-repeat #666666;
+请参阅 [huno说明](https://github.com/letiantian/huno)  
+
+### Archive
+
+归档页面
+
+归档页面会显示分类、标签云以及基于日期的归档。
+
+在主题的配置文件_config.yml中:
+
+### 归档页面
+
+hc_menu:
+  首页: /#blog
+  关于: /about
+  归档: /archive
+
+创建新的page:
+    $ hexo new page archive
+    $ cd source/archive
+    $ vim index.md
+内容修改为:
+    title: 归档
+    layout: page-archive
+    ---
+hexo 默认有一个/archives，如果您认为归档页面的url（/archive）和这个冲突，可以选更加合适的名称  
+请参阅 [huno说明](https://github.com/letiantian/huno)  
+
+### 社交网站图标
+
+    social:
+        github: tom
+        500px: tom
+由于版权问题存疑,hunoc移除了China Social Icon
+请参阅 [huno说明](https://github.com/letiantian/huno),_config.yml  
+
+Foundation Icons v 3.0
+ Made by ZURB 2013 [Official Site](http://zurb.com/playground/foundation-icon-fonts-3)
+ MIT License
+
+### 网站分析
+
+    hc_site_analytics: (your analytics code from Google analysis,CNZZ etc.)
+
 ## 关于huno
 
 作者: [letiantian](https://github.com/letiantian/)  
