@@ -46,10 +46,10 @@ hc_github_config: #must set hc_post_comments: gitment, vssue, gitalk,all below i
   admin: #only for gitalk
     - tom
   type: github #or gitlab,bitbucket. only for vssue
+  vssue_theme_color: black
   
 
-hc_footer_info: hunoc 0.1.5-preview.1<br/>based on huno by letiantian,Powered by Hexo
-#printed on the footer of a page,if you don't like this , leave it nothing
+hc_footer_info: hunoc 0.1.5-preview.2<br/>based on huno by letiantian,Powered by Hexo
 #[only available in theme]
 
 default_license_information: ©Copyright 2018
@@ -79,10 +79,3 @@ hc_panel_addition: false
 #     This theme DO NOT obey Semantic Versioning now(AT LEAST before 1.0.0)
 #     This theme DO NOT update regular
 #-------------------- hunoc End --------------------
-# Updates
-# recover social
-# add huno custom
-# Change background
-# polish documets
-# add local gitalk
-# support vssue

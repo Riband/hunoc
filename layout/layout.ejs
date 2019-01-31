@@ -126,54 +126,6 @@
             <%- partial('_partials/footer') %>
         </div>
     </div>
-
-  <!-- Gitment/Gitalk Support -->
-  <% var hc_post_comments=''; %>
-  <% if(theme.hc_post_comments) {hc_post_comments= theme.hc_post_comments;} %>
-  <% if(config.hc_post_comments) {hc_post_comments= config.hc_post_comments;} %>
-  <% if(page.hc_post_comments) {hc_post_comments= page.hc_post_comments;} %>
-  <% var hc_github_config=''; %>
-  <% if(theme.hc_github_config) {hc_github_config= theme.hc_github_config;} %>
-  <% if(config.hc_github_config) {hc_github_config= config.hc_github_config;} %>
-  <% if(page.hc_github_config) {hc_github_config= page.hc_github_config;} %>
-    <!-- Gitment Support -->
-  <% if(hc_post_comments === 'gitment') { %>
-    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-    <script>
-        var gitment = new Gitment({
-        owner: '<%- hc_github_config.owner %>',
-        repo: '<%- hc_github_config.repo %>',
-        oauth: {
-          client_id: '<%- hc_github_config.client_id %>',
-          client_secret: '<%- hc_github_config.client_secret %>',
-        }
-      })
-      if(document.getElementById('gitment-container')){
-        gitment.render('gitment-container');
-      }
-    </script>
-<% } %>
-
-<!-- Gitalk Support -->
-    <% if(hc_post_comments === 'gitalk') { %>
-    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-    <script>
-        var gitalk = new Gitalk({
-        clientID: "<%- hc_github_config.client_id %>",
-        clientSecret: "<%- hc_github_config.client_secret %>",
-        repo: "<%- hc_github_config.repo %>",
-        owner:"<%- hc_github_config.owner %>",
-            admin: "<%- hc_github_config.admin %>",
-            id: location.pathname,      // Ensure uniqueness and length less than 50
-        distractionFreeMode: true  // Facebook-like distraction free mode
-        })
-        if(document.getElementById('gitalk-container')){
-          gitalk.render('gitalk-container');
-        }
-    </script>
-<% } %>
     <%- partial('_scripts/mathjax') %>
     <%- partial('_scripts/awesome-toc') %>
     <%- partial('_scripts/site-analytics') %>

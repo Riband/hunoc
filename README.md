@@ -2,44 +2,68 @@
 
 [中文](./README_zh.md)
 
+## Introduction
+
+hunoc is a hexo theme based on [huno](https://github.com/letiantian/hunoc/).  
+License: [Mozilla Public License Version 2.0](https://www.mozilla.org/en-US/MPL/2.0/)  
+In order to meet some needs,I have made some changes on hunoc. It may be the first serious project for me.  
+I like commiting,releasing,writing update log.Well,the most important thing is to be happy.  
+
 ## Project Status
 
 ### Stable
 
-[![GitHub release](https://img.shields.io/github/release/Riband/hunoc.svg?style=flat-square)](https://github.com/Riband/hunoc/releases/)  
-![GitHub Release Date](https://img.shields.io/github/release-date/Riband/hunoc.svg?style=flat-square)  
+[![GitHub release](https://img.shields.io/github/release/Riband/hunoc.svg?style=flat-square)](https://github.com/Riband/hunoc/releases/)![GitHub Release Date](https://img.shields.io/github/release-date/Riband/hunoc.svg?style=flat-square)  
 
 ### Dev
 
-![GitHub (pre-)release](https://img.shields.io/github/release/Riband/hunoc/all.svg?style=flat-square)  
-![GitHub (pre-)Release Date](https://img.shields.io/github/release-date-pre/Riband/hunoc.svg?style=flat-square)  
-hunoc version: commit 287f824
+![GitHub (pre-)release](https://img.shields.io/github/release/Riband/hunoc/all.svg?style=flat-square)![GitHub (pre-)Release Date](https://img.shields.io/github/release-date-pre/Riband/hunoc.svg?style=flat-square)  
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/Riband/hunoc.svg?style=flat-square)  
-
-## Introduction
-
-When using hexo to generate my static blog,I chose the hunoc theme.In order to meet some needs,I have made some changes on hunoc. It may be the first serious project for me.  
-I amuse myself by commiting,releasing,writing update log.<del>(obviously no one notice it)</del>Well, the most important thing is to be happy.  
+hunoc version: commit 287f824  
 
 ## Features
 
-### Comparing to hunoc
-
 * Add Custom option (Custom your theme with your own css)
 * Use Translucent Background
-* Change Fonts
 * Clean commits of huno to save some space
-* Fix : there's extra line when comment is disabled
 * Enable use HTML Code in hc_menu:  
-* Gitment/Gitalk Supported
-* Better subpath support(Need only change root)
+* SupportVssue/Gitment/Gitalk comment
+* Better subpath(child path) support(only need change root:)
 * Remove animate
 * Etc.
 
 ## Demo
 
+[View](https://riband.github.io/hunoc-demo/)
 ![hunoc Demo Img](https://riband.github.io/RiBase/hunoc-demo/demo.jpg)  
+
+## How to use
+
+### Method 1: Download and Unzip(Recommend)
+
+1. Open the release page [https://github.com/Riband/hunoc/releases/](https://github.com/Riband/hunoc/releases/)
+2. Download **Source code(zip)**
+3. Unzip it to  &lt;Your hexo path&gt;/themes/hunoc
+4. Edit hexo's _config.yml
+    theme: hunoc
+5. If your'd like to config more about this theme,edit themes/hunoc/_config.yml,but you'd better copy the option to you hexo's _config.yml instead of theme's
+
+### Method 2: Git Clone
+
+1. Start your shell/cmd and enter your hexo path
+2. make sure your installed git,and:
+    $ git clone git://github.com/someus/hunoc.git themes/hunoc
+    Cloning into 'themes/hunoc'...
+    remote: Enumerating objects: 6, done.
+    remote: Counting objects: 100% (6/6), done.
+    remote: Compressing objects: 100% (6/6), done.
+    remote: Total 369 (delta 0), reused 0 (delta 0), pack-reused 363
+    Receiving objects: 100% (369/369), 3.10 MiB | 762.00 KiB/s, done.
+    Resolving deltas: 100% (172/172), done.
+3. Edit hexo's _config.yml
+    theme: hunoc
+4. If your'd like to config more about this theme,edit themes/hunoc/_config.yml,but you'd better copy the option to you hexo's _config.yml instead of theme's
 
 ## Theme Options
 
@@ -54,9 +78,9 @@ Please read the instruction in /_config.yml for detailed and correct infomation.
          false: no comments  
          gitment: use gitment(must cofig the hc_github_config)
          gitalk: use gitalk(must cofig the hc_github_config)
-         manual (or other string): you will config manually in comments.ejs  
+         manual: you will config manually in comments.ejs  
 
-    hc_github_config: (you must set hc_post_comments: gitment/gittalk)
+    hc_github_config: (you must set hc_post_comments: gitment/gitalk/vssue)
         owner:
         repo:
         client_id:
@@ -65,7 +89,7 @@ Please read the instruction in /_config.yml for detailed and correct infomation.
 
     hc_footer_info:[String]
           Printed on the footer of a page
-          only theme/_config.yml
+          only themes/_config.yml
 
     hc_custom: [String]/false
          false: None custom
@@ -74,11 +98,6 @@ Please read the instruction in /_config.yml for detailed and correct infomation.
     hc_panel_addition: [String]/false
         false : No
         [String] : HTML code for your bgm or ads  
-
-## About hunoc
-
-hunoc is a hexo theme based on [huno](https://github.com/letiantian/hunoc/).
-License: [Mozilla Public License Version 2.0](https://www.mozilla.org/en-US/MPL/2.0/)  
 
 ## About huno
 
@@ -106,7 +125,6 @@ It's generally tested on:
 * node: 10.15.1 / 11.8.0
 * Browsers: Firefox/Chrome/Edge/IE 11
 * Plugins: hexo-all-minifier,hexo-deploy
-* vssue and gitalk is recommended.
 
 ## Suggestions
 
@@ -114,6 +132,7 @@ It's generally tested on:
 * If you want to keep up-to-date,you need to know:
     This theme DO NOT obey Semantic Versioning now(AT LEAST before 1.0.0)
     This theme DO NOT update regularly
+* vssue and gitalk are recommended.
 
 ## Picture Authors
 

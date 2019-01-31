@@ -2,58 +2,83 @@
 
 [English](./README.md)
 
+## 介绍
+
+hunoc 是一个基于[huno](https://github.com/letiantian/huno/)的一个响应式的Hexo主题.  
+许可协议:[Mozilla 公共许可证 Version 2.0](https://www.mozilla.org/en-US/MPL/2.0/)  
+为了满足一些需要,自己对huno进行了一些修改,算是第一个正经项目吧.  
+自娱自乐地Commit,Release,写更新日志,嘛,做人最重要的是开心.  
+
 ## 项目状态
 
 ### 稳定版
 
-[![GitHub release](https://img.shields.io/github/release/Riband/hunoc.svg?style=flat-square)](https://github.com/Riband/hunoc/releases/)
-![GitHub Release Date](https://img.shields.io/github/release-date/Riband/hunoc.svg?style=flat-square)  
+[![GitHub release](https://img.shields.io/github/release/Riband/hunoc.svg?style=flat-square)](https://github.com/Riband/hunoc/releases/)![GitHub Release Date](https://img.shields.io/github/release-date/Riband/hunoc.svg?style=flat-square)  
 
 ### 测试版
 
-![GitHub (pre-)release](https://img.shields.io/github/release/Riband/hunoc/all.svg?style=flat-square)  
-![GitHub (pre-)Release Date](https://img.shields.io/github/release-date-pre/Riband/hunoc.svg?style=flat-square)  
-huno版本: commit 287f824
+![GitHub (pre-)release](https://img.shields.io/github/release/Riband/hunoc/all.svg?style=flat-square)![GitHub (pre-)Release Date](https://img.shields.io/github/release-date-pre/Riband/hunoc.svg?style=flat-square)  
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/Riband/hunoc.svg?style=flat-square)  
-
-## 介绍
-
-在用Hexo制作静态博客,选择了Huno主题,为了满足一些需要,自己进行了一些修改,算是第一个正经项目吧.  
-自娱自乐的Commit,Release,写更新日志<del>(明明一个注意到的也没有....)</del>,嘛,做人最重要的是开心.  
+huno版本: commit 287f824  
 
 ## 特性
 
-### 在Huno的基础上
+在Huno的基础上
 
 * 增加定制选项(进一步用CSS自定义)
 * 更丰富的页脚自定义
 * 使用半透明背景
-* 更换字体
 * 清理commit以节省空间
-* 修正无评论功能时有多余白线
 * 允许在导航按钮中使用HTML  
-* 支持Gitment/Gitalk
+* 支持Vssue/Gitment/Gitalk评论
 * 更好的子目录支持(仅需修改root)
 * 移除了动画
 * 等等
 
 ## 演示
 
-做Demo属无事可<del>commit</del>做  
 [查看](https://riband.github.io/hunoc-demo/)
 ![hunoc Demo Img](https://riband.github.io/RiBase/hunoc-demo/demo.jpg)  
 
+## 如何使用
+
+### 方案1: 下载解压(推荐)
+
+1. 打开发布页面 [https://github.com/Riband/hunoc/releases/](https://github.com/Riband/hunoc/releases/)
+2. 下载 **Source code(zip)**
+3. 解压至  &lt;你的hexo路径&gt;/themes/hunoc
+4. 修改 hexo的 _config.yml
+    theme: hunoc
+5. 如果有进一步的需要,编辑themes/hunoc/_config.yml但建议将其中的选项复制到&lt;你的hexo路径&gt;/_config.yml中修改
+
+### 方案2: 用Git克隆仓库
+
+1. 启动 shell/cmd 进入你的hexo路径
+2. 确保安装了git,然后执行:
+    $ git clone git://github.com/someus/hunoc.git themes/hunoc
+    Cloning into 'themes/hunoc'...
+    remote: Enumerating objects: 6, done.
+    remote: Counting objects: 100% (6/6), done.
+    remote: Compressing objects: 100% (6/6), done.
+    remote: Total 369 (delta 0), reused 0 (delta 0), pack-reused 363
+    Receiving objects: 100% (369/369), 3.10 MiB | 762.00 KiB/s, done.
+    Resolving deltas: 100% (172/172), done.
+3. 修改 hexo的 _config.yml
+    theme: hunoc
+4. 如果有进一步的需要,编辑themes/hunoc/_config.yml但建议将其中的选项复制到&lt;你的hexo路径&gt;/_config.yml中修改
+
 ## 主题选项
 
-所有的选项都可以在/theme/_config.yml,/_config.yml,/source/*.md中使用,有特殊注明的除外  
+所有的选项都可以在/themes/hunoc/_config.yml,/_config.yml,/source/*.md中使用,有特殊注明的除外  
 请以/theme/_config.yml中的说明为准  
 
     hc_post_comments: [String]/false
-         false: 无评论功能  
-         gitment: gitment
-         gitalk: gitalk
-         manual (or other string): you will config manually in comments.ejs  
+        false: 无评论功能  
+        vssue: 使用vssue
+        gitment: 使用gitment
+        gitalk: 使用gitalk
+        manual: 在comments.ejs中手动设置  
 
     hc_github_config(you must set hc_post_comments: gitment)
       owner:
@@ -63,7 +88,7 @@ huno版本: commit 287f824
       admin:
 
     hc_footer_info:[String]
-          显示在页脚中
+          显示在页脚中的信息
 
     hc_footer_info:[String]
         如:© 2016-2018  
@@ -74,11 +99,6 @@ huno版本: commit 287f824
         false: 无定制
         huno: huno风格
         (其他): /themes/hunoc/source/css/custom_uno/中的css文件
-
-## 关于hunoc
-
-hunoc 是一个基于[huno](https://github.com/letiantian/huno/)的一个响应式的Hexo主题.  
-许可协议:[Mozilla 公共许可证 Version 2.0](https://www.mozilla.org/en-US/MPL/2.0/)  
 
 ## 关于huno
 
@@ -99,11 +119,11 @@ hunoc 是一个基于[huno](https://github.com/letiantian/huno/)的一个响应�
 * node: 10.15.1 / 11.8.0
 * 浏览器: Firefox/Chrome/Edge/IE11
 * 插件: hexo-all-minifier,hexo-deploy
-* 建议使用vssue,gitalk
 
 ## 建议
 
 * 使用hexo-all-minifier插件
+* 建议使用vssue,gitalk
 * 注意,本主题暂不遵循语义版本,不能有规律地更新
 
 ## 图片来源
