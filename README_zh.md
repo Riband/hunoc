@@ -64,36 +64,34 @@ huno版本: commit 287f824
 
 所有的选项都可以在/themes/hunoc/_config.yml,/_config.yml,/source/*.md中使用,有特殊注明的除外  
 请以/theme/_config.yml中的说明为准  
-
-    hc_post_comments: [String]/false
-        false: 无评论功能  
-        vssue: 使用vssue(需在hc_github_config进一步设置)
-        gitment: 使用gitment(需在hc_github_config进一步设置)
-        gitalk: 使用gitalk(需在hc_github_config进一步设置)
-        manual: 在comments.ejs中手动设置  
-
-    hc_github_config:
-      type:
-      owner:
-      repo:
-      client_id:
-      client_secret:
-      admin:
-
-    hc_footer_info:[String]
-        如:© 2016-2018  
-          CC-BY 4.0 International  
-          支持html
-            显示在页脚中的信息
-
-    hc_custom: [String]/false
-        false: 无定制
-        huno: huno风格(并不)
-        其他: /themes/hunoc/source/css/custom_uno/ 中的css文件
-
-    hc_panel_addition: [String]/false
-        false : No
-        [String] : 背景音乐或广告等等,支持HTML  
+<pre>
+hc_post_comments: [String]/false
+    false: 无评论功能  
+    vssue: 使用vssue(需在hc_github_config进一步设置)
+    gitment: 使用gitment(需在hc_github_config进一步设置)
+    gitalk: 使用gitalk(需在hc_github_config进一步设置)
+    manual: 在comments.ejs中手动设置  
+hc_github_config:
+  type:
+  owner:
+  repo:
+  client_id:
+  client_secret:
+  admin:
+  vssue_theme_color:
+hc_footer_info:[String]
+    如:© 2016-2018  
+      CC-BY 4.0 International  
+      支持html
+        显示在页脚中的信息
+hc_custom: [String]/false
+    false: 无定制
+    huno: huno风格(并不)
+    其他: /themes/hunoc/source/css/custom_uno/ 中的css文件
+hc_panel_addition: [String]/false
+    false : 无
+    [String] : 背景音乐或广告等等,支持HTML  
+</pre>
 
 ### 背景图片
 
@@ -104,32 +102,41 @@ huno版本: commit 287f824
 
 ### 归档页面
 
-归档页面
-
 归档页面会显示分类、标签云以及基于日期的归档  
 在hexo的配置文件或hunoc的配置文件_config.yml中:  
 
+<pre>
 hc_menu:
   首页: /#blog
   关于: /about
   归档: /archive
+</pre>
 
 创建新的page:
+<pre>
     $ hexo new page archive
     $ cd source/archive
-    $ vim index.md
+    $   index.md
+</pre>
+
 内容修改为:
+
+<pre>
+    ---
     title: 归档
     layout: page-archive
     ---
+</pre>
 hexo 默认有一个/archives，如果您认为归档页面的url（/archive）和这个冲突，可以选更加合适的名称  
 请参阅 [huno说明](https://github.com/letiantian/huno)  
 
 ### 社交网站图标
 
+<pre>
     social:
         github: tom
         500px: tom
+</pre>
 由于版权问题存疑,hunoc移除了China Social Icon
 请参阅 [huno说明](https://github.com/letiantian/huno),_config.yml  
 

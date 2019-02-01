@@ -54,45 +54,43 @@ huno version: commit 287f824
     git clone git://github.com/someus/hunoc.git themes/hunoc
 3. Edit hexo's _config.yml  
     theme: hunoc
-4. If your'd like to config more about this theme,edit themes/hunoc/_config.yml,but you'd better copy the option to you hexo's _config.yml instead of theme's
+4. If your'd like to config more about this theme,edit themes/hunoc/_config.yml,but you'd better copy the option to you hexo's config.yml instead of theme's
 
 ## Theme Options
 
 Every option is available in these files excluding ones with explanation.And you can use html in most of them.  
 Please read the instruction in /_config.yml for detailed and correct infomation.
 
-* /themes/hunoc/_config.yml  
-* /_config.yml  
-* /source/_post/*.md  
+* /themes/hunoc/_config.yml
+* /_config.yml
+* /source/_post/*.md
 
-    hc_post_comments: [String]/false
-         false: no comments  
-         gitment: use gitment(must complete the hc_github_config list)
-         gitalk: use gitalk(must complete the hc_github_config list)
-         vssue: use vssue(must complete the hc_github_config list)
-         manual: you will config manually in comments.ejs  
-
-    hc_github_config:
-        type:
-        owner:
-        repo:
-        client_id:
-        client_secret:
-        admin:
-        vssue_theme_color:
-
-    hc_footer_info:[String]
-          Information printed on the footer of a page
-          only available in themes/_config.yml
-
-    hc_custom: [String]/false
-         false: None custom
-         huno: Original huno style(not very original)
-        (others): file name in /themes/hunoc/source/css/custom_uno/  
-
-    hc_panel_addition: [String]/false
-        false : No
-        [String] : HTML code for your bgm or ads  
+<pre>
+hc_post_comments: [String]/false
+    false: no comments  
+    gitment: use gitment(must complete the hc_github_config list)
+    gitalk: use gitalk(must complete the hc_github_config list)
+    vssue: use vssue(must complete the hc_github_config list)
+    manual: you will config manually in comments.ejs  
+hc_github_config:
+    type:
+    owner:
+    repo:
+    client_id:
+    client_secret:
+    admin:
+    vssue_theme_color:
+hc_footer_info:[String]
+      Information printed on the footer of a page
+      only available in themes/_config.yml
+hc_custom: [String]/false
+    false: None custom
+    huno: Original huno style(not very original)
+    (others): file name in /themes/hunoc/source/css/custom_uno/  
+hc_panel_addition: [String]/false
+    false : No
+    [String] : HTML code for your bgm or ads  
+</pre>
 
 ### Background picture
 
@@ -102,20 +100,27 @@ For more infomation,read [huno readme](https://github.com/letiantian/huno)
 
 ### Archive
 
-run:
-    $ hexo new page archive
-edit source/archive/index.md
+1. Execute:  
+    hexo new page archive
+
+2. Edit source/archive/index.md  
+
+<pre>
+    ---
     title: Archive
     layout: page-archive
     ---
+</pre>
 For more infomation,read [huno readme](https://github.com/letiantian/huno)  
 
 ### Social Icon
 
 For example:
+<pre>
     social:
         github: tom
         500px: tom
+</pre>
 Do not need to edit social.yml
 For more infomation,read _config.yml  
 
