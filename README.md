@@ -51,7 +51,7 @@ huno version: commit 287f824
 
 1. Start your shell/cmd and enter your hexo path
 2. make sure your installed git,and:  
-	$ git clone git://github.com/someus/hunoc.git themes/hunoc
+    git clone git://github.com/someus/hunoc.git themes/hunoc
 3. Edit hexo's _config.yml  
     theme: hunoc
 4. If your'd like to config more about this theme,edit themes/hunoc/_config.yml,but you'd better copy the option to you hexo's _config.yml instead of theme's
@@ -67,24 +67,28 @@ Please read the instruction in /_config.yml for detailed and correct infomation.
 
     hc_post_comments: [String]/false
          false: no comments  
-         gitment: use gitment(must cofig the hc_github_config)
-         gitalk: use gitalk(must cofig the hc_github_config)
+         gitment: use gitment(must complete the hc_github_config list)
+         gitalk: use gitalk(must complete the hc_github_config list)
+         vssue: use vssue(must complete the hc_github_config list)
          manual: you will config manually in comments.ejs  
 
-    hc_github_config: (you must set hc_post_comments: gitment/gitalk/vssue)
+    hc_github_config:
+        type:
         owner:
         repo:
         client_id:
         client_secret:
         admin:
+        vssue_theme_color:
 
     hc_footer_info:[String]
-          Printed on the footer of a page
-          only themes/_config.yml
+          Information printed on the footer of a page
+          only available in themes/_config.yml
 
     hc_custom: [String]/false
          false: None custom
-        (other): file name in /themes/hunoc/source/css/custom_uno/  
+         huno: Original huno style(not very original)
+        (others): file name in /themes/hunoc/source/css/custom_uno/  
 
     hc_panel_addition: [String]/false
         false : No
@@ -144,16 +148,16 @@ It's generally tested on:
 
 * hexo: 3.8.0
 * node: 10.15.1 / 11.8.0
-* Browsers: Firefox/Chrome/Edge/IE 11
+* Browsers: Firefox/Chrome/Edge/IE 11/IE 10
 * Plugins: hexo-all-minifier,hexo-deploy
 
 ## Suggestions
 
 * Use hexo-all-minifier(Plugin)
 * If you want to keep up-to-date,you need to know:
-    This theme DO NOT obey Semantic Versioning now(AT LEAST before 1.0.0)
+    This theme DO NOT obey Semantic Versioning now
     This theme DO NOT update regularly
-* vssue and gitalk are recommended.
+* Vssue and gitalk are recommended.
 
 ## Picture Authors
 

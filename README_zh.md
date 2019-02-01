@@ -55,7 +55,7 @@ huno版本: commit 287f824
 
 1. 启动 shell/cmd 进入你的hexo路径
 2. 确保安装了git,然后执行:
-    $ git clone git://github.com/someus/hunoc.git themes/hunoc
+    git clone git://github.com/someus/hunoc.git themes/hunoc
 3. 修改 hexo的 _config.yml
     theme: hunoc
 4. 如果有进一步的需要,编辑themes/hunoc/_config.yml但建议将其中的选项复制到&lt;你的hexo路径&gt;/_config.yml中修改
@@ -67,12 +67,13 @@ huno版本: commit 287f824
 
     hc_post_comments: [String]/false
         false: 无评论功能  
-        vssue: 使用vssue
-        gitment: 使用gitment
-        gitalk: 使用gitalk
+        vssue: 使用vssue(需在hc_github_config进一步设置)
+        gitment: 使用gitment(需在hc_github_config进一步设置)
+        gitalk: 使用gitalk(需在hc_github_config进一步设置)
         manual: 在comments.ejs中手动设置  
 
-    hc_github_config(you must set hc_post_comments: gitment)
+    hc_github_config:
+      type:
       owner:
       repo:
       client_id:
@@ -80,17 +81,19 @@ huno版本: commit 287f824
       admin:
 
     hc_footer_info:[String]
-          显示在页脚中的信息
-
-    hc_footer_info:[String]
         如:© 2016-2018  
           CC-BY 4.0 International  
           支持html
+            显示在页脚中的信息
 
     hc_custom: [String]/false
         false: 无定制
-        huno: huno风格
-        (其他): /themes/hunoc/source/css/custom_uno/中的css文件
+        huno: huno风格(并不)
+        其他: /themes/hunoc/source/css/custom_uno/ 中的css文件
+
+    hc_panel_addition: [String]/false
+        false : No
+        [String] : 背景音乐或广告等等,支持HTML  
 
 ### 背景图片
 
@@ -99,15 +102,12 @@ huno版本: commit 287f824
     background: url("//img.alicdn.com/XXX") top left no-repeat #666666;
 请参阅 [huno说明](https://github.com/letiantian/huno)  
 
-### Archive
+### 归档页面
 
 归档页面
 
-归档页面会显示分类、标签云以及基于日期的归档。
-
-在主题的配置文件_config.yml中:
-
-### 归档页面
+归档页面会显示分类、标签云以及基于日期的归档  
+在hexo的配置文件或hunoc的配置文件_config.yml中:  
 
 hc_menu:
   首页: /#blog
@@ -158,7 +158,7 @@ Foundation Icons v 3.0
 
 * hexo: 3.8.0
 * node: 10.15.1 / 11.8.0
-* 浏览器: Firefox/Chrome/Edge/IE11
+* 浏览器: Firefox/Chrome/Edge/IE 10,11
 * 插件: hexo-all-minifier,hexo-deploy
 
 ## 建议

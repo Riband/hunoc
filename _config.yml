@@ -9,7 +9,7 @@ hc_menu:
   About: /about/
   Archive: /archive/
 social:
-    github: YourName
+  github: YourName
 #hc_social:
 #  github.com: github.com/YourName
 # hc_social use favicon.ico of your social sites,so it support every site,but not stable
@@ -42,18 +42,18 @@ hc_post_comments: false
     # gitalk: use gitalk (Recommended)
     # manual: config manually in comments.ejs
 
-hc_github_config: #must set hc_post_comments: gitment, vssue, gitalk,all below is enforced
+hc_github_config: #must set hc_post_comments: gitment, vssue, gitalk
+  type: github   #or gitlab,bitbucket.Only for vssue
   owner: 
   repo: 
   client_id: 
   client_secret: 
   admin: #only for gitalk
     - YourName
-  type: github #or gitlab,bitbucket. only for vssue
   vssue_theme_color: black
   
 
-hc_footer_info: hunoc 0.1.5-preview.4<br/>based on huno by letiantian,Powered by Hexo
+hc_footer_info: hunoc 0.1.5<br/>based on huno by letiantian and uno by daleanthony,Powered by Hexo
 #[only available in theme]
 
 default_license_information: ©Copyright 2018
