@@ -1204,17 +1204,20 @@ pre {
   }
 */
 
-
 #post-content a {
-  color:black;
-  font-weight: bolder;
-  text-decoration: underline;
+    font-size: 1em;
+    background-color: rgba(50,50,50,0.2);
+    color: black;
+    border: 1px solid;
 }
 
-#post-content a:hover {
-  color:rgb(2, 77, 2);
-  border: 1px solid rgb(58, 52, 52);
-  }
+#post-content a:hover{
+    font-size: 1em;
+    background-color: rgba(50,50,50,0.4);
+    color: black;
+    border: 1px solid;
+}
+
 .post-header .post-title{
   font-size: 2em;
 }
@@ -1247,3 +1250,15 @@ pre {
 #post-content h2 {
   background-color: rgba(50,50,50,0.4);
 }
+
+#post-content * a.headerlink {
+    font-size: 0.8em;
+    background-color: green;
+    color: black;
+    border: 1px solid;
+}
+
+#post-content * a.headerlink:hover {
+    color:  rgb(11, 83, 11);
+    border-color: #006699; 
+  }

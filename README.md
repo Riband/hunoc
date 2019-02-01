@@ -13,14 +13,12 @@ I like commiting,releasing,writing update log.Well,the most important thing is t
 
 ### Stable
 
-[![GitHub release](https://img.shields.io/github/release/Riband/hunoc.svg?style=flat-square)](https://github.com/Riband/hunoc/releases/)![GitHub Release Date](https://img.shields.io/github/release-date/Riband/hunoc.svg?style=flat-square)  
+[![GitHub release](https://img.shields.io/github/release/Riband/hunoc.svg?style=flat-square)](https://github.com/Riband/hunoc/releases/) ![GitHub Release Date](https://img.shields.io/github/release-date/Riband/hunoc.svg?style=flat-square)  
 
 ### Dev
 
-![GitHub (pre-)release](https://img.shields.io/github/release/Riband/hunoc/all.svg?style=flat-square)![GitHub (pre-)Release Date](https://img.shields.io/github/release-date-pre/Riband/hunoc.svg?style=flat-square)  
-
-![GitHub last commit](https://img.shields.io/github/last-commit/Riband/hunoc.svg?style=flat-square)  
-hunoc version: commit 287f824  
+![GitHub (pre-)release](https://img.shields.io/github/release/Riband/hunoc/all.svg?style=flat-square) ![GitHub (pre-)Release Date](https://img.shields.io/github/release-date-pre/Riband/hunoc.svg?style=flat-square) ![GitHub last commit](https://img.shields.io/github/last-commit/Riband/hunoc.svg?style=flat-square)  
+huno version: commit 287f824  
 
 ## Features
 
@@ -35,8 +33,8 @@ hunoc version: commit 287f824
 
 ## Demo
 
-[View](https://riband.github.io/hunoc-demo/)
-![hunoc Demo Img](https://riband.github.io/RiBase/hunoc-demo/demo.jpg)  
+[View](https://riband.github.io/hunoc-demo/)  
+[![hunoc Demo Img](https://riband.github.io/RiBase/hunoc-demo/demo.jpg)](https://riband.github.io/hunoc-demo/)  
 
 ## How to use
 
@@ -52,16 +50,9 @@ hunoc version: commit 287f824
 ### Method 2: Git Clone
 
 1. Start your shell/cmd and enter your hexo path
-2. make sure your installed git,and:
-    $ git clone git://github.com/someus/hunoc.git themes/hunoc
-    Cloning into 'themes/hunoc'...
-    remote: Enumerating objects: 6, done.
-    remote: Counting objects: 100% (6/6), done.
-    remote: Compressing objects: 100% (6/6), done.
-    remote: Total 369 (delta 0), reused 0 (delta 0), pack-reused 363
-    Receiving objects: 100% (369/369), 3.10 MiB | 762.00 KiB/s, done.
-    Resolving deltas: 100% (172/172), done.
-3. Edit hexo's _config.yml
+2. make sure your installed git,and:  
+	$ git clone git://github.com/someus/hunoc.git themes/hunoc
+3. Edit hexo's _config.yml  
     theme: hunoc
 4. If your'd like to config more about this theme,edit themes/hunoc/_config.yml,but you'd better copy the option to you hexo's _config.yml instead of theme's
 
@@ -135,12 +126,13 @@ Or just paste it in layout/_scripts/site-analytics.ejs
 
 ## About huno
 
-huno is a [Hexo](http://hexo.io/) theme，based on [uno](https://github.com/daleanthony/uno/).  
+[huno](https://github.com/letiantian/huno) is a [Hexo](http://hexo.io/) theme，based on [uno](https://github.com/daleanthony/uno/)  
 Author: [letiantian](https://github.com/letiantian/)  
 License: [Creative Commons Attribution 4.0 International](http://creativecommons.org/licenses/by/4.0/)  
 
 ## About uno
 
+[uno](https://github.com/daleanthony/)  
 Author: [daleanthony](https://github.com/daleanthony/)  
 License: [Creative Commons Attribution 4.0 International](http://creativecommons.org/licenses/by/4.0/)  
 

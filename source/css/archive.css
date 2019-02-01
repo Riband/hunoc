@@ -4,10 +4,10 @@
 
 .archive-meta sup {
     font-size: 10px;
-    -moz-border-radius: 5px; 
-    -webkit-border-radius: 5px; 
-    border-radius: 5px;
-    background: #ddd none repeat scroll 0 0;
+    -moz-border-radius: 10px; 
+    -webkit-border-radius: 10px; 
+    border-radius: 10px;
+    /*background: #CCC none repeat scroll 0 0;*/
     vertical-align: top;
 }
 
@@ -21,4 +21,20 @@
 
 .archive-meta .archive-list-count::after {
     content: ")";
+}
+
+
+.archive-meta a{
+    font-size: 1em;
+    background-color: rgba(50,50,50,0.3);
+    color: black;
+    font-weight: bolder;
+    border: 1px solid;
+}
+.archive-meta a:hover{
+    font-size: 1em;
+    background-color: rgba(50,50,50,0.5);
+    color: black;
+    font-weight: bolder;
+    border: 1px solid;
 }

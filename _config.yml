@@ -1,15 +1,17 @@
-#LICENSE: MPL 2.0
+# hunoc 0.1.5
+# LICENSE: MPL 2.0
 # Based on huno,uno
+
 # All path here (exclude hc_social) must begin as "/"
-# "tom" is a fake name,referring to no people
 
 hc_menu:
-  日志<br/>Blog: /#blog  # "/#blog" is Compulsory
-  关于<br/>About: /about/
+  Blog: /#blog  # "/#blog" is Compulsory
+  About: /about/
+  Archive: /archive/
 social:
-    github: tom(a fake name)
+    github: YourName
 #hc_social:
-#  github.com: github.com/tom(a fake name)
+#  github.com: github.com/YourName
 # hc_social use favicon.ico of your social sites,so it support every site,but not stable
 
 # You can still use huno's way to add social icons,which is stable,but don't use hc_social and social together.
@@ -46,7 +48,7 @@ hc_github_config: #must set hc_post_comments: gitment, vssue, gitalk,all below i
   client_id: 
   client_secret: 
   admin: #only for gitalk
-    - tom(a fake name)
+    - YourName
   type: github #or gitlab,bitbucket. only for vssue
   vssue_theme_color: black
   

@@ -13,18 +13,16 @@ hunoc 是一个基于[huno](https://github.com/letiantian/huno/)的一个响应�
 
 ### 稳定版
 
-[![GitHub release](https://img.shields.io/github/release/Riband/hunoc.svg?style=flat-square)](https://github.com/Riband/hunoc/releases/)![GitHub Release Date](https://img.shields.io/github/release-date/Riband/hunoc.svg?style=flat-square)  
+[![GitHub release](https://img.shields.io/github/release/Riband/hunoc.svg?style=flat-square)](https://github.com/Riband/hunoc/releases/) ![GitHub Release Date](https://img.shields.io/github/release-date/Riband/hunoc.svg?style=flat-square)  
 
 ### 测试版
 
-![GitHub (pre-)release](https://img.shields.io/github/release/Riband/hunoc/all.svg?style=flat-square)![GitHub (pre-)Release Date](https://img.shields.io/github/release-date-pre/Riband/hunoc.svg?style=flat-square)  
-
-![GitHub last commit](https://img.shields.io/github/last-commit/Riband/hunoc.svg?style=flat-square)  
+![GitHub (pre-)release](https://img.shields.io/github/release/Riband/hunoc/all.svg?style=flat-square) ![GitHub (pre-)Release Date](https://img.shields.io/github/release-date-pre/Riband/hunoc.svg?style=flat-square) ![GitHub last commit](https://img.shields.io/github/last-commit/Riband/hunoc.svg?style=flat-square)  
 huno版本: commit 287f824  
 
 ## 特性
 
-在Huno的基础上
+在huno的基础上
 
 * 增加定制选项(进一步用CSS自定义)
 * 更丰富的页脚自定义
@@ -38,8 +36,9 @@ huno版本: commit 287f824
 
 ## 演示
 
-[查看](https://riband.github.io/hunoc-demo/)
-![hunoc Demo Img](https://riband.github.io/RiBase/hunoc-demo/demo.jpg)  
+[查看](https://riband.github.io/hunoc-demo/)  
+
+[![hunoc Demo Img](https://riband.github.io/RiBase/hunoc-demo/demo.jpg)](https://riband.github.io/hunoc-demo/)  
 
 ## 如何使用
 
@@ -57,13 +56,6 @@ huno版本: commit 287f824
 1. 启动 shell/cmd 进入你的hexo路径
 2. 确保安装了git,然后执行:
     $ git clone git://github.com/someus/hunoc.git themes/hunoc
-    Cloning into 'themes/hunoc'...
-    remote: Enumerating objects: 6, done.
-    remote: Counting objects: 100% (6/6), done.
-    remote: Compressing objects: 100% (6/6), done.
-    remote: Total 369 (delta 0), reused 0 (delta 0), pack-reused 363
-    Receiving objects: 100% (369/369), 3.10 MiB | 762.00 KiB/s, done.
-    Resolving deltas: 100% (172/172), done.
 3. 修改 hexo的 _config.yml
     theme: hunoc
 4. 如果有进一步的需要,编辑themes/hunoc/_config.yml但建议将其中的选项复制到&lt;你的hexo路径&gt;/_config.yml中修改
@@ -104,7 +96,7 @@ huno版本: commit 287f824
 
 位于 source/images/background-cover.jpg  
 或者修改图片URL。例如修改成CDN中的某个图片
-    background: url("//img.alicdn.com/tps/TB1UC8nJVXXXXbRXpXXXXXXXXXX-1920-1200.jpg") top left no-repeat #666666;
+    background: url("//img.alicdn.com/XXX") top left no-repeat #666666;
 请参阅 [huno说明](https://github.com/letiantian/huno)  
 
 ### Archive
@@ -181,5 +173,5 @@ Foundation Icons v 3.0
 
 |图片|作者|许可协议|
 |---|---|---|
-|Red and blue sky – end of day|[Peter Janzen](https://cc0.photo/author/peter/)|[CC0共有领域](https://creativecommons.org/publicdomain/zero/1.0/)|
-|Picography lake view bridge|[Gratisography](https://gratisography.com/)|[CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)|
+|Red and blue sky – end of day|[Peter Janzen](https://cc0.photo/author/peter/)|[CC0公有领域(CC0 1.0 Universal Public Domain Dedication)](https://creativecommons.org/publicdomain/zero/1.0/)|
+|Picography lake view bridge|[Gratisography](https://gratisography.com/)|[CC0公有领域(CC0 1.0 Universal Public Domain Dedication)](https://creativecommons.org/publicdomain/zero/1.0/)|
