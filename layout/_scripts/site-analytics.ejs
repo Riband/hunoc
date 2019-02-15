@@ -1,0 +1,7 @@
+<% var hc_site_analytics=''; %>
+<% if(theme.hc_site_analytics) {hc_site_analytics= theme.hc_site_analytics;} %>
+<% if(config.hc_site_analytics) {hc_site_analytics= config.hc_site_analytics;} %>
+<% if(page.hc_site_analytics) {hc_site_analytics= page.hc_site_analytics;} %>
+<% if(hc_site_analytics) {%>
+<%- hc_site_analytics %>
+<% } %>

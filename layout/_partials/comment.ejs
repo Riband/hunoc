@@ -1,0 +1,147 @@
+<% var __hc_github_config=''; %>
+<% if(theme.hc_github_config) {__hc_github_config= theme.hc_github_config;} %>
+<% if(config.hc_github_config) {__hc_github_config= config.hc_github_config;} %>
+<% if(page.hc_github_config) {__hc_github_config= page.hc_github_config;} %>
+<% if(__hc_github_config.vssue_theme_color==''){__hc_github_config.vssue_theme_color='#3eaf7c'} %>
+<% const hc_github_config=__hc_github_config %>
+
+<% var hc_post_comments=''; %>
+<% if(theme.hc_post_comments) {hc_post_comments= theme.hc_post_comments;} %>
+<% if(config.hc_post_comments) {hc_post_comments= config.hc_post_comments;} %>
+<% if(page.hc_post_comments) {hc_post_comments= page.hc_post_comments;} %>
+
+<% if(hc_post_comments === 'manual') { %>
+    <section class="post-comments">
+        <!-- 将评论系统（例如Disqus、友言、畅言等）提供的代码片段粘贴在这里 -->
+    </section>
+<% } %>
+
+<!-- Gitment Support -->
+<% if(hc_post_comments === 'gitment') { %>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+    <section class="post-comments">
+        <div id="gitment-container"></div>
+    </section>
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+            owner: '<%- hc_github_config.owner %>',
+            repo: '<%- hc_github_config.repo %>',
+            oauth: {
+                client_id: '<%- hc_github_config.client_id %>',
+                client_secret: '<%- hc_github_config.client_secret %>',
+            }
+        })
+        if (document.getElementById('gitment-container')) {
+            gitment.render('gitment-container');
+        }
+    </script>
+<% } %>
+
+<!-- Gitalk Support -->
+<% if(hc_post_comments === 'gitalk') { %>
+    <noscript>Please enable JavaScript to view the comments</noscript>
+    <section class="post-comments">
+        <div id="gitalk-container"></div>
+    </section>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+        var gitalk = new Gitalk({
+            clientID: "<%- hc_github_config.client_id %>",
+            clientSecret: "<%- hc_github_config.client_secret %>",
+            repo: "<%- hc_github_config.repo %>",
+            owner: "<%- hc_github_config.owner %>",
+            admin: "<%- hc_github_config.admin %>",
+            id: location.pathname,      // Ensure uniqueness and length less than 50
+            distractionFreeMode: true  // Facebook-like distraction free mode
+        })
+        if (document.getElementById('gitalk-container')) {
+            gitalk.render('gitalk-container');
+        }
+    </script>
+<% } %>
+
+<!-- Vssue Support -->
+<% if(hc_post_comments === 'vssue') { %>
+<noscript>Please enable JavaScript to view the comments</noscript>
+<section class="post-comments">
+    <div id="vssue"></div>
+</section>
+    <!-- Vssue 的样式文件 -->
+    <link rel="stylesheet" href="https://unpkg.com/vssue/dist/vssue.min.css">
+    <!-- hunoc 简单调色 -->
+    <style>
+    .vssue .vssue-button {
+        outline: none;
+        cursor: pointer;
+        padding: 10px 20px;
+        font-size: 1;
+        font-weight: lighter;
+        color: <%- hc_github_config.vssue_theme_color %>; /*theme color*/
+        background-color: rgba(60,60,60,0.6);
+        border: 1px solid <%- hc_github_config.vssue_theme_color %>; /*theme color*/
+        /*border-radius: 10px;*/
+    }
+    .vssue .vssue-button:not(:disabled).vssue-button-primary {
+        color: <%- hc_github_config.vssue_theme_color %>; /*theme color*/
+        border-color: <%- hc_github_config.vssue_theme_color %>; /*theme color*/
+    }
+    .vssue .vssue-notice .vssue-alert {
+        color: <%- hc_github_config.vssue_theme_color %>; /*theme color*/
+    }
+    .vssue .vssue-notice .vssue-progress {
+        background-color: <%- hc_github_config.vssue_theme_color %>; /*theme color*/
+    }
+    .vssue .vssue-status {
+        color: <%- hc_github_config.vssue_theme_color %>; /*theme color*/
+    }
+    .vssue .vssue-comments .vssue-comment .vssue-comment-body .vssue-comment-footer .vssue-comment-reactions .vssue-comment-reaction {
+        color: <%- hc_github_config.vssue_theme_color %>; /*theme color*/
+    }
+    .vssue .vssue-comments .vssue-comment .vssue-comment-body .vssue-comment-header .vssue-comment-created-at {
+        color: #222222;
+    }
+    .vssue .vssue-pagination .vssue-pagination-link:not(.disabled) {
+        color: <%- hc_github_config.vssue_theme_color %>; /*theme color*/
+    }
+    .vssue :not(.vssue-comment-content) a {
+        color: <%- hc_github_config.vssue_theme_color %>; /*theme color*/
+    }
+    .vssue .vssue-new-comment .vssue-new-comment-footer .vssue-current-user {
+        color: #111111; /**/
+    }
+    .vssue .vssue-icon {
+        fill: <%- hc_github_config.vssue_theme_color %>; /*theme color*/
+    }
+
+.vssue .vssue-new-comment .vssue-new-comment-footer .vssue-current-user .vssue-logout {
+  cursor: pointer;
+  text-decoration: underline;
+  color: <%- hc_github_config.vssue_theme_color %>;
+  font-weight: normal;
+}
+    </style>
+    <!-- Vue 运行时版 (runtime only)  -->
+    <script src="https://unpkg.com/vue/dist/vue.runtime.min.js"></script>
+    <script src="https://unpkg.com/vssue/dist/vssue.<%- hc_github_config.type %>.min.js"></script>
+    <script>
+        new Vue({
+            el: '#vssue',
+            render: h => h('Vssue', {
+                props: {
+                    // 在这里设置当前页面对应的 Issue 标题
+                    title: location.href,
+                    // 在这里设置你使用的平台的 OAuth App 配置
+                    options: {
+                        owner: '<%- hc_github_config.owner %>',
+                        repo: '<%- hc_github_config.repo %>',
+                        clientId: '<%- hc_github_config.client_id %>',
+                        clientSecret: '<%- hc_github_config.client_secret %>',
+                    },
+                }
+            })
+        })
+    </script>
+<% } %>

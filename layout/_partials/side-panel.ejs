@@ -1,0 +1,94 @@
+<% 
+  function path_adjust(__root){
+  if(__root[0] !== '/'){
+    __root = '/' + __root;
+  } 
+  if (__root[__root.length-1] !== '/') {
+    __root = __root + '/';
+  }
+  return __root;
+} %>
+
+<% const subpath_full= path_adjust(config.root); %>
+<% const subpath= subpath_full.slice(0,-1); %>
+
+<% var hc_menu=''; %>
+<% if(theme.hc_menu) {hc_menu= theme.hc_menu;} %>
+<% if(config.hc_menu) {hc_menu= config.hc_menu;} %>
+<% if(page.hc_menu) {hc_menu= page.hc_menu;} %>
+
+<% var hc_logo=''; %>
+<% if(theme.logo) {hc_logo= theme.logo;} %>
+<% if(theme.hc_logo) {hc_logo= theme.hc_logo;} %>
+<% if(config.logo) {hc_logo= config.logo;} %>
+<% if(config.hc_logo) {hc_logo= config.hc_logo;} %>
+<% if(page.logo) {hc_logo= page.logo;} %>
+<% if(page.hc_logo) {hc_logo= page.hc_logo;} %>
+
+
+<% if (is_home()) { %> 
+<header class="panel-cover">
+<% } else { %>
+<header class="panel-cover panel-cover--collapsed">
+<% } %>
+
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <% if (theme.hc_logo) { %>
+        <a href="<%- subpath_full %>" title="link to homepage for <%= config.title %>"><img src="<%= subpath + hc_logo %>" width="80" alt="<%= config.title %> logo" class="panel-cover__logo logo" /></a>
+        <% } %>
+
+        <h1 class="panel-cover__title panel-title"><a href="<%- subpath_full %>" title="link to homepage"><%= config.title %></a></h1>
+        <hr class="panel-cover__divider" />
+        <% if (config.subtitle) { %>
+        <p class="panel-cover__description">
+          <%= config.subtitle %>
+        </p>
+        <hr class="panel-cover__divider" />
+            <span class="mobile btn-mobile-menu">
+              <i class="icon icon-list btn-mobile-menu__icon"></i>
+              <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+            </span> 
+        <% } %>
+
+        <div class="navigation-wrapper">
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <% for (var i in hc_menu){ %>
+                <%
+                  if (hc_menu[i]+'' == '/#blog') {
+                    nav_btn_class = 'blog-button';
+                  } else {
+                    nav_btn_class = '';
+                  }
+                %>
+                <li class="navigation__item"><a href="<%- subpath + hc_menu[i] %>" title="" class="<%= nav_btn_class %>"><%- i %></a></li>
+              <% } %>
+            </ul>
+          </nav>
+          <%   // hc hc_panel_addition                                          %>
+          <%         var hc_panel_addition="";                                  %>
+          <%         if (theme.hc_panel_addition){                              %>
+          <%             hc_panel_addition = theme.hc_panel_addition;           %>
+          <%         }                                                          %>
+          <%         if (config.hc_panel_addition){                             %>
+          <%             hc_panel_addition = config.hc_panel_addition;          %>
+          <%         }                                                          %>
+          <%         if (page.hc_panel_addition){                               %>
+          <%             hc_panel_addition = page.hc_panel_addition;            %>
+          <%         }                                                          %>
+          <% if (hc_panel_addition) {                                           %>
+            <br/>
+            <%- hc_panel_addition %>
+          
+          <% } %>
+          <% //hc hc_panel_addition end %>
+          <%- partial('_partials/social') %>
+        </div>
+      </div>
+    </div>
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
