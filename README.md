@@ -40,10 +40,10 @@ huno version: commit 287f824
 
 ### Method 1: Download and Unzip(Recommend)
 
-1. Open the [latest stable release page](https://github.com/Riband/hunoc/releases/latest)
+1. Open the release page [https://github.com/Riband/hunoc/releases/](https://github.com/Riband/hunoc/releases/)
 2. Download **Source code(zip)**
 3. Unzip it to  &lt;Your hexo path&gt;/themes/hunoc
-4. Edit hexo's _config.yml
+4. Edit hexo's _config.yml  
     theme: hunoc
 5. If your'd like to config more about this theme,edit themes/hunoc/_config.yml,but you'd better copy the option to you hexo's _config.yml instead of theme's
 
@@ -51,7 +51,7 @@ huno version: commit 287f824
 
 1. Start your shell/cmd and enter your hexo path
 2. make sure your installed git,and:  
-    git clone https://github.com/Riband/hunoc.git themes/hunoc
+    git clone git://github.com/someus/hunoc.git themes/hunoc
 3. Edit hexo's _config.yml  
     theme: hunoc
 4. If your'd like to config more about this theme,edit themes/hunoc/_config.yml,but you'd better copy the option to you hexo's config.yml instead of theme's
@@ -117,16 +117,17 @@ For more infomation,read [huno readme](https://github.com/letiantian/huno)
 
 For example:
 <pre>
-    social:
-        github: tom
-        500px: tom
+social:
+    github: YourName
+    500px: YourName
 </pre>
-Do not need to edit social.yml
+Do not need to edit social.yml  
 For more infomation,read _config.yml  
 
-Foundation Icons v 3.0
- Made by ZURB 2013 [Official Site](http://zurb.com/playground/foundation-icon-fonts-3)
- MIT License
+Foundation Icons v 3.0  
+    Author: ZURB 2013  
+    Official Site: [http://zurb.com/playground/foundation-icon-fonts-3](http://zurb.com/playground/foundation-icon-fonts-3)  
+    License: MIT  
 
 ### Site analytics
 
@@ -152,7 +153,7 @@ hexo-theme-unit-test: PASSED
 It's generally tested on:
 
 * hexo: 3.8.0
-* node: 10.15.1 / 11.8.0
+* node: 10.15.1 / 11.10.0
 * Browsers: Firefox/Chrome/Edge/IE 11/IE 10
 * Plugins: hexo-all-minifier,hexo-deploy
 
@@ -164,6 +165,16 @@ It's generally tested on:
     This theme DO NOT update regularly
 * Vssue and gitalk are recommended.
 
+## Other cited projects
+
+|Project|Author|License|
+|---|---|---|
+|[Vssue](https://vssue.js.org/)|[meteorlxy](https://github.com/meteorlxy)|MIT|
+|[gitalk](https://github.com/gitalk/gitalk/)|[View](https://github.com/gitalk/gitalk/graphs/contributors)|MIT|
+|[gitment](https://github.com/imsun/gitment/)|[imsun](https://github.com/imsun/)|MIT|
+|[JQueryRotate](http://jqueryrotate.com/)|Pawel "wilq32" Witkowski|MIT|
+|[JQuery](https://jquery.com/)|JS Foundation and other contributors|jquery.org/license|
+
 ## Picture Authors
 
 Thank these generous guys!  
@@ -172,5 +183,3 @@ Thank these generous guys!
 |---|---|---|
 |Red and blue sky – end of day|[Peter Janzen](https://cc0.photo/author/peter/)|[CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)|
 |Picography lake view bridge|[Gratisography](https://gratisography.com/)|[CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)|
-
-Some authors are still being searched...

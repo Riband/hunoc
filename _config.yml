@@ -1,4 +1,4 @@
-# hunoc 0.1.5
+# hunoc 0.1.6
 # LICENSE: MPL 2.0
 # Based on huno,uno
 
@@ -9,13 +9,15 @@ hc_menu:
   About: /about/
   Archive: /archive/
 social:
-  github: YourName
+  #github: YourName
+  #500px: YourName
+
 #hc_social:
 #  github.com: github.com/YourName
 # hc_social use favicon.ico of your social sites,so it support every site,but not stable
 
-# You can still use huno's way to add social icons,which is stable,but don't use hc_social and social together.
-# And,why not using a button on the menu?
+# You can still use huno's way to add social icons,which is stable,but you'd better not use hc_social and social together.
+# And,why not just using a menu button?
 
 # Site favicon
 favicon: /favicon.ico
@@ -48,12 +50,11 @@ hc_github_config: #must set hc_post_comments: gitment, vssue, gitalk
   repo: 
   client_id: 
   client_secret: 
-  admin: #only for gitalk
-    - YourName
   vssue_theme_color: black
+  admin:                      #only for gitalk
+    - YourName
   
-
-hc_footer_info: hunoc 0.1.5<br/>based on huno by letiantian and uno by daleanthony,Powered by Hexo
+hc_footer_info: hunoc 0.1.6-dev.3<br/>based on huno by letiantian and uno by daleanthony,Powered by Hexo
 #[only available in theme]
 
 default_license_information: ©Copyright 2018
@@ -75,6 +76,9 @@ hc_panel_addition: false
 
 hc_site_analytics: false
 
+hc_logo_rotate: none
+#logo rotate: "rotate" or "none" 
+
 # - hc_hide:
 #   hide the page's content  
 #   Funny Option in [post]
@@ -85,3 +89,4 @@ hc_site_analytics: false
 #     This theme DO NOT obey Semantic Versioning now(AT LEAST before 1.0.0)
 #     This theme DO NOT update regular
 #-------------------- hunoc End --------------------
+

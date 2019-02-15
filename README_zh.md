@@ -164,7 +164,7 @@ Foundation Icons v 3.0
 在以下环境测试基本正常:
 
 * hexo: 3.8.0
-* node: 10.15.1 / 11.8.0
+* node: 10.15.1 / 11.10.0
 * 浏览器: Firefox/Chrome/Edge/IE 10,11
 * 插件: hexo-all-minifier,hexo-deploy
 
@@ -173,6 +173,16 @@ Foundation Icons v 3.0
 * 使用hexo-all-minifier插件
 * 建议使用vssue,gitalk
 * 注意,本主题暂不遵循语义版本,不能有规律地更新
+
+## 其他引用项目
+
+|项目|作者|许可协议|
+|---|---|---|
+|Vssue|[meteorlxy](https://github.com/meteorlxy)|MIT|
+|[gitalk](https://github.com/gitalk/gitalk/)|[查看](https://github.com/gitalk/gitalk/graphs/contributors)|MIT|
+|[gitment](https://github.com/imsun/gitment/)|[imsun](https://github.com/imsun/)|MIT|
+|[JQueryRotate](http://jqueryrotate.com/)|Pawel "wilq32" Witkowski|MIT|
+|[JQuery](https://jquery.com/)|JS Foundation and other contributors|jquery.org/license|
 
 ## 图片来源
 

@@ -55,21 +55,42 @@
     <!-- js files -->
     <script src="<%- subpath %>/js/jquery.min.js"></script>
     <script src="<%- subpath %>/js/scale.fix.js"></script>
+
+    <!-- Logo Rotate -->
+    <% var hc_logo_rotate='no'; %>
+    <% if(theme.hc_logo_rotate) {hc_logo_rotate= theme.hc_logo_rotate;} %>
+    <% if(config.hc_logo_rotate) {hc_logo_rotate= config.hc_logo_rotate;} %>
+    <% if(page.hc_logo_rotate) {hc_logo_rotate= page.hc_logo_rotate;} %>
+
+    <% if(hc_logo_rotate === 'rotate') { %>
+      <script src="<%- subpath %>/js/jQueryRotate.js"></script>
+      <script type="text/javascript">
+        var angle = 0;
+          setInterval(function () {
+            angle += 3;
+            $(".logo").rotate(angle);
+          }, 50);	
+      </script>
+      <% } %>  
+    <!-- Logo Rotate END-->
+
     <script type="text/javascript">
     $(document).ready(function() {
         $('a.blog-button').click(function() {
+          if($('body').hasClass('hide-overflow')){$('body').removeClass('hide-overflow');}
           if ($('.panel-cover').hasClass('panel-cover--collapsed')) return;
           currentWidth = $('.panel-cover').width();
           $('.panel-cover').addClass('animated panel-cover--collapsed slideInLeft');
           $('.content-wrapper').addClass('animated slideInLeft');
         });
         //页面跳转
-        if (window.location.hash === "#blog") {
+        if (window.location.hash === "#blog" || window.location.pathname !== "<%- subpath_full %>" && window.location.pathname !== "<%- subpath %>") {
           $('.panel-cover').addClass('panel-cover--collapsed');
+          $('body').removeClass('hide-overflow');
+        } else {
+          $('body').addClass('hide-overflow');
         }
-        else if (window.location.pathname !== "<%- subpath_full %>" && window.location.pathname !== "<%- subpath %>") {
-          $('.panel-cover').addClass('panel-cover--collapsed');
-        }
+        //页面跳转 END
         $('.btn-mobile-menu').click(function() {
           $('.navigation-wrapper').toggleClass('visible animated bounceInDown');
           $('.btn-mobile-menu__icon').toggleClass('icon-list icon-x-circle animated fadeIn');
@@ -79,6 +100,9 @@
           $('.btn-mobile-menu__icon').toggleClass('icon-list icon-x-circle animated fadeIn');
         });
       });
+
+    //---------------------
+
     </script>
 
     <% if (config.author){ %>

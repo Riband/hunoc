@@ -369,7 +369,7 @@ html {
 
 body {
   /*font-family: "Raleway", sans-serif;*/
-  font-family: "Microsoft YaHei UI","Noto Sans CJK";
+  font-family: "Microsoft YaHei UI","Noto Sans CJK",sans-serif;
   font-size: 1em;
   color: #000000; }
 
@@ -399,7 +399,7 @@ h5 {
   margin-top: .8em;
   margin-bottom: .4em;
   /*font-family: "Roboto Slab", serif;*/
-  font-family: "Microsoft YaHei UI";
+  font-family: "Microsoft YaHei UI",sans-serif;
   font-weight: lighter;
   color: #000000;
   -webkit-font-smoothing: antialiased; }
@@ -442,7 +442,7 @@ blockquote {
   border: 1px solid #eeeeee;
   border-radius: 3px;
   /*font-family: "Roboto Slab", serif;*/
-  font-family:  "Raleway",Verdana,sans-serif,宋体, serif, "Droid Serif", Helvetica Neue, Helvetica, Arial;
+  font-family:  "Raleway",Verdana,sans-serif, serif, "Droid Serif", Helvetica Neue, Helvetica, Arial;
   font-weight: lighter;
   font-style: italic;
   font-size: 1.0em;
@@ -502,7 +502,7 @@ code {
   color: #222222; }
 
 .intro {
-  font-family: "Microsoft YaHei UI","Noto Sans CJK SC DemiLight","宋体", serif;
+  font-family: "Microsoft YaHei UI","Noto Sans CJK SC","宋体", serif;
   font-size: 1.2em;
   font-weight: lighter;
   color: #999999; }
@@ -636,9 +636,9 @@ hr {
   font-family: "Microsoft YaHei UI","Noto Sans CJK SC";
   margin: 0 0 5px 0;
   font-size: 2.5em;
-  font-weight: 3px;
   letter-spacing: 4px;
   text-shadow: -4px 4px 0 rgba(0,0,0,.2);
+  word-break: normal;
   color: #FFF; }
 
 .panel-subtitle {
@@ -701,14 +701,17 @@ hr {
   vertical-align: middle;
   position: relative;
   z-index: 800;
-  padding: 0 60px; }
+  /*padding: 0 60px; */
+  max-width: 320px;
+  
+}
 
 .panel-main__content {
-  max-width: 620px;
+  max-width: 320px;
   margin: 0 auto; }
 
 .panel-main__content--fixed {
-  width: 480px;
+  width: 320px;
   transition: width 1s;
   -webkit-transition: width 1s;
   /* Safari */ }
@@ -752,7 +755,7 @@ hr {
   background: none; }
 
 .btn, .navigation__item a {
-  width: 7em;
+  width: 6em;
   margin-left: auto;
   margin-right: auto;
   padding: 10px 20px;
@@ -819,6 +822,7 @@ nav {
 .navigation__item {
   display: inline-block;
   margin: 3px 3px;
+  width: auto;
   line-height: 1em; }
 
   .navigation__item a {
@@ -830,7 +834,7 @@ nav {
     .navigation__item a:hover {
       color: black;
       border-color: white;
-       }
+      }
 
 .navigation--social {
   margin-left: 0em; }
@@ -1023,7 +1027,8 @@ input[type="tel"] {
     width: 100px; }
 
   .panel-title {
-    font-family: "Microsoft YaHei UI Light","Microsoft YaHei UI","Noto Sans CJK SC";
+    font-family: "Microsoft YaHei UI","Noto Sans CJK SC",sans-serif;
+    font-weight: lighter;
     font-size: 2em; }
 
   .panel-subtitle {
@@ -1071,7 +1076,6 @@ input[type="tel"] {
       padding: 0;
       background-position: center center; }
       .panel-cover.panel-cover--collapsed .panel-main__inner {
-        display: block;
         padding: 70px 0 30px 0; }
       .panel-cover.panel-cover--collapsed .panel-cover__logo {
         width: 60px;
@@ -1119,14 +1123,15 @@ input[type="tel"] {
     margin-left: 8%; }
 
   .navigation__item {
-    width: 100%;
+    /*display: block;*/
+    width: 6em;
     margin: 0 0 .4em 0; } }
 @media all and (max-width: 340px) {
   .panel-main__inner {
     padding: 0 5%; }
 
   .panel-title {
-    font-family: "Microsoft YaHei UI","Noto Sans CJK SC DemiLight";
+    font-family: "Microsoft YaHei UI","Noto Sans CJK SC",sans-serif;
     margin-bottom: 1.8em;
     font-size: 1.5em; }
 
@@ -1259,3 +1264,8 @@ pre {
 #post-content * a.headerlink:hover {
     color:  rgb(6, 53, 6);
   }
+
+.hide-overflow {
+  overflow-x: hidden; 
+  overflow-y: hidden; 
+}
