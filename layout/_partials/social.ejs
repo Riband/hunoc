@@ -1,0 +1,35 @@
+<br/>
+<% var hc_social=false; %>
+<% if(theme.hc_social) {hc_social= theme.hc_social;} %>
+<% if(config.hc_social) {hc_social= config.hc_social;} %>
+<% if(page.hc_social) {hc_social= page.hc_social;} %>
+<% if(hc_social){ %>
+<br/>
+<nav class="navigation--social"><ul class="navigation">
+<% for (var i in hc_social){ %>
+    <li class="hc-social-navigation">
+      <a href="https://<%- hc_social[i] %>" title="" class="hc-social">
+        <img src="https://<%- i %>/favicon.ico" class="hc-social-icon"/>
+      </a>
+    </li>
+<% } %>
+</ul></nav>
+<% } %>
+
+<% var social=false; %>
+<% if(theme.social) {social= theme.social;} %>
+<% if(config.social) {social= config.social;} %>
+<% if(page.social) {social= page.social;} %>
+<% if (social) { %>
+<nav class="cover-navigation navigation--social">
+  <% for (var i in social){ %>
+    <li class="hc-social-navigation">
+      <a href="https://<%- i %>.com/<%- social[i] %>" title="<%- i %>">
+        <i class='icon icon-social-<%- i %>'></i>
+        <span class="label"><%- i %></span>
+      </a>
+    </li>
+    <% } %>
+  </ul>
+</nav>
+<% } %>

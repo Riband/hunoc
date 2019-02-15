@@ -1,0 +1,134 @@
+<% 
+  function path_adjust(__root){
+  if(__root[0] !== '/'){
+    __root = '/' + __root;
+  } 
+  if (__root[__root.length-1] !== '/') {
+    __root = __root + '/';
+  }
+  return __root;
+} %>
+
+<% const subpath_full= path_adjust(config.root); %>
+<% const subpath = subpath_full.slice(0,-1); %>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <%
+    var title = page.title || '';
+    if (is_archive()) {
+      title = __('archive_title');
+      if (is_month()) {
+        title += ': ' + page.year + '/' + page.month;
+      } else if (is_year()) {
+        title += ': ' + page.year;
+      }
+    } else if (is_category()) {
+      title = __('category_title') + ': ' + page.category;
+    } else if (is_tag()) {
+      title = __('tag_title') + ': ' + page.tag;
+    }
+
+    description = '';
+    if (is_home()) {
+      title = config.title;
+      if (page.current && page.current > 1) {
+        title = 'page ' + page.current + ' | ' + config.title;
+      }
+    } else if (page.current && page.current > 1) {
+      title = 'page ' + page.current + ' | ' + title + ' | ' + config.title;
+    } else if (is_post()) {
+      title = title + ' | ' + config.title;
+    }
+    %>
+
+    <title>
+      <%= title %> 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- js files -->
+    <script src="<%- subpath %>/js/jquery.min.js"></script>
+    <script src="<%- subpath %>/js/scale.fix.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('a.blog-button').click(function() {
+          if ($('.panel-cover').hasClass('panel-cover--collapsed')) return;
+          currentWidth = $('.panel-cover').width();
+          $('.panel-cover').addClass('animated panel-cover--collapsed slideInLeft');
+          $('.content-wrapper').addClass('animated slideInLeft');
+        });
+        //页面跳转
+        if (window.location.hash === "#blog") {
+          $('.panel-cover').addClass('panel-cover--collapsed');
+        }
+        else if (window.location.pathname !== "<%- subpath_full %>" && window.location.pathname !== "<%- subpath %>") {
+          $('.panel-cover').addClass('panel-cover--collapsed');
+        }
+        $('.btn-mobile-menu').click(function() {
+          $('.navigation-wrapper').toggleClass('visible animated bounceInDown');
+          $('.btn-mobile-menu__icon').toggleClass('icon-list icon-x-circle animated fadeIn');
+        });
+        $('.navigation-wrapper .blog-button').click(function() {
+          $('.navigation-wrapper').toggleClass('visible');
+          $('.btn-mobile-menu__icon').toggleClass('icon-list icon-x-circle animated fadeIn');
+        });
+      });
+    </script>
+
+    <% if (config.author){ %>
+      <meta name="author" content="<%= config.author %>">
+    <% } %>
+    <% if ( is_home() && config.description){ %>
+      <meta name="description" content="<%= config.description %>">
+    <% } %>
+    
+    <%- open_graph({title: title}) %>
+    <% if (theme.rss){ %>
+      <link rel="alternate" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
+    <% } %>
+    <% if (theme.favicon){ %>
+      <link rel="icon" type="image/x-icon" href="<%- subpath + theme.favicon %>">
+    <% } %>
+    <%- css( '/css/uno.css') %>
+    <%- css( '/css/highlight') %>
+    <%- css( '/css/archive.css') %>
+
+    <!-- hc: load custom -->
+    <%         var hc_custom="";                                                    %>
+    <%         if (theme.hc_custom){                                                %>
+    <%             hc_custom = theme.hc_custom;                                     %>
+    <%         }                                                                    %>
+    <%         if (config.hc_custom){                                               %>
+    <%             hc_custom = config.hc_custom;                                    %>
+    <%         }                                                                    %>
+    <%         if (page.hc_custom){                                                 %>
+    <%             hc_custom = page.hc_custom;                                      %>
+    <%         }                                                                    %>
+    <% if(hc_custom) {                                                              %>
+    <%  var custom_uno_url = '/css/custom_uno/' + hc_custom + '.css';     %>
+    <%- css(custom_uno_url)                                                         %>
+    <% } %>
+    <!-- hc: load custom end -->
+
+</head>
+<body>
+    <%- partial('_partials/side-panel') %>
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            <%- body %>
+            <%- partial('_partials/footer') %>
+        </div>
+    </div>
+    <%- partial('_scripts/mathjax') %>
+    <%- partial('_scripts/awesome-toc') %>
+    <%- partial('_scripts/site-analytics') %>
+    <%- partial('_scripts/github-repo-widget') %>
+    <%- partial('_scripts/killie6') %>
+</body>
+</html>

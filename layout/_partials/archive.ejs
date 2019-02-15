@@ -1,0 +1,90 @@
+<% 
+  function path_adjust(__root){
+  if(__root[0] !== '/'){
+    __root = '/' + __root;
+  } 
+  if (__root[__root.length-1] !== '/') {
+    __root = __root + '/';
+  }
+  return __root;
+} %>
+
+<% const subpath_full= path_adjust(config.root); %>
+<% const subpath= subpath_full.slice(0,-1); %>
+
+<% 
+var title = '';
+if (is_category()) {
+  title = page.category;
+} else if (is_tag()) {
+  title = page.tag;
+} else if (is_month()) {
+  title = page.year + '/' + page.month;
+} else if (is_year()) {
+  title = page.year;
+} 
+
+%>
+
+<% if (type == 'index' || title == '') { %>
+   <!-- do nothing -->
+<% } else if (is_category()) {%>
+  <h1 class="archive-title"><%= __('category_title') %>: <%= title %></h1>
+  <hr class="post-list__divider" />
+<% } else if (is_tag()) { %>
+  <h1 class="archive-title"><%= __('tag_title') %>: <%= title %></h1>
+  <hr class="post-list__divider" />
+<% } else if (is_year() || is_mongth()) { %>
+  <h1 class="archive-title"><%= __('archive_title') %>: <%= title %></h1>
+  <hr class="post-list__divider" />
+<% } %>
+
+<div class="main-post-list">
+    <ol class="post-list">
+    
+    <% page.posts.each(function(post, i){ %>
+      <%
+        var title=post.title;
+        if(title==''){title=post.link;}
+        if(title==''){title='No title';}
+      %>
+      <%
+        var hc_link= post.link || subpath_full + post.path;
+      %>
+    <li>
+      <h2 class="post-list__post-title post-title">
+        <a href="<%- hc_link %>" title="link to <%= title %>"><%= title %></a>
+      </h2>
+      <div class="post-list__meta">
+      <% 
+      title='';
+      hc_link='';
+      %>
+
+      <% if (post.id && post.id.length > 0){ %>
+        <font class="post-id">
+          &#8226; ID:
+          <%- post.id %>
+          日期:
+        </font>
+        <% } %>
+
+        <time datetime="<%= date(post.date, config.date_format) %>" class="post-list__meta--date date"><%= date(post.date, config.date_format) %></time> 
+      </div>
+
+      <div class="excerpt">
+        <% if (post.description) { %>
+          <%- post.description %>
+        <% } else if (post.excerpt) { %>
+          <%- post.excerpt %>
+        <% } %>
+      </div>
+
+      <hr class="post-list__divider" />
+    </li>
+    <% }); %>
+  </ol>
+
+  <%- partial('pagination') %>
+
+</div>

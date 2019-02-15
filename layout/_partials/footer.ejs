@@ -1,0 +1,16 @@
+<!-- Modified by huno-clsblog。-->
+<footer class="footer">
+    <span class="footer__copyright">
+            <%         var license_information="";                                       %>
+            <%         if (theme.defalut_license_information){                           %>
+            <%             license_information = theme.defalut_license_information;      %>
+            <%         }                                                                 %>
+            <%         if (config.defalut_license_information){                          %>
+            <%             license_information = config.defalut_license_information;     %>
+            <%         }                                                                 %>
+            <%         if (page.license_information){                                    %>
+            <%             license_information = page.license_information;               %>
+            <%         }                                                                 %>
+            <%- license_information %>
+            <%- theme.hc_footer_info %>
+</footer>
