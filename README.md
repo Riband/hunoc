@@ -11,6 +11,8 @@ I like commiting,releasing,writing update log.Well,the most important thing is t
 
 ## Project Status
 
+**This Project is Frozen**
+
 ### Stable
 
 [![GitHub release](https://img.shields.io/github/release/Riband/hunoc.svg?style=flat-square)](https://github.com/Riband/hunoc/releases/) ![GitHub Release Date](https://img.shields.io/github/release-date/Riband/hunoc.svg?style=flat-square)  

@@ -399,7 +399,7 @@ h5 {
   margin-top: .8em;
   margin-bottom: .4em;
   /*font-family: "Roboto Slab", serif;*/
-  font-family: "Microsoft YaHei UI",sans-serif;
+  font-family: "Microsoft YaHei UI","Noto Sans CJK SC",sans-serif;
   font-weight: lighter;
   color: #000000;
   -webkit-font-smoothing: antialiased; }
@@ -502,7 +502,7 @@ code {
   color: #222222; }
 
 .intro {
-  font-family: "Microsoft YaHei UI","Noto Sans CJK SC","宋体", serif;
+  font-family: "Microsoft YaHei UI","Noto Sans CJK SC", serif;
   font-size: 1.2em;
   font-weight: lighter;
   color: #999999; }
@@ -633,7 +633,7 @@ hr {
   vertical-align: middle; }
 
 .panel-title {
-  font-family: "Microsoft YaHei UI","Noto Sans CJK SC";
+  font-family: "Microsoft YaHei UI","Noto Sans CJK SC",sans-serif;
   margin: 0 0 5px 0;
   font-size: 2.5em;
   letter-spacing: 4px;
@@ -642,7 +642,7 @@ hr {
   color: #FFF; }
 
 .panel-subtitle {
-  font-family: "Microsoft YaHei UI","Noto Sans CJK SC";
+  font-family: "Microsoft YaHei UI","Noto Sans CJK SC",sans-serif;
   font-size: 1.2em;
   font-weight: lighter;
   letter-spacing: 3px;
