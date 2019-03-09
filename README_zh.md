@@ -44,12 +44,12 @@ huno版本: commit 287f824
 
 ### 方案1: 下载解压(推荐)
 
-1. 打开发布页面 [https://github.com/Riband/hunoc/releases/](https://github.com/Riband/hunoc/releases/)
+1. 打开[最新稳定版发布页面](https://github.com/Riband/hunoc/releases/latest)
 2. 下载 **Source code(zip)**
-3. 解压至  &lt;你的hexo路径&gt;/themes/hunoc
-4. 修改 hexo的 _config.yml
-    theme: hunoc
-5. 如果有进一步的需要,编辑themes/hunoc/_config.yml但建议将其中的选项复制到&lt;你的hexo路径&gt;/_config.yml中修改
+3. 解压至 &lt;你的hexo路径&gt;/themes/hunoc
+4. 修改hexo的 _config.yml
+    <pre>theme: hunoc</pre>
+5. 如果有进一步的需要,编辑themes/hunoc/_config.yml,但建议将其中的选项复制到&lt;你的hexo路径&gt;/_config.yml中修改
 
 ### 方案2: 用Git克隆仓库
 
@@ -164,7 +164,7 @@ Foundation Icons v 3.0
 在以下环境测试基本正常:
 
 * hexo: 3.8.0
-* node: 10.15.1 / 11.10.0
+* node: 10.15 / 11.11
 * 浏览器: Firefox/Chrome/Edge/IE 10,11
 * 插件: hexo-all-minifier,hexo-deploy
 

@@ -11,7 +11,7 @@ I like commiting,releasing,writing update log.Well,the most important thing is t
 
 ## Project Status
 
-**This Project is Frozen**
+This project is in FROZEN period
 
 ### Stable
 
@@ -40,13 +40,13 @@ huno version: commit 287f824
 
 ## How to use
 
-### Method 1: Download and Unzip(Recommend)
+### Method 1: Download and Unzip(Recommended)
 
-1. Open the release page [https://github.com/Riband/hunoc/releases/](https://github.com/Riband/hunoc/releases/)
+1. Open the [latest stable release page](https://github.com/Riband/hunoc/releases/latest)
 2. Download **Source code(zip)**
-3. Unzip it to  &lt;Your hexo path&gt;/themes/hunoc
-4. Edit hexo's _config.yml  
-    theme: hunoc
+3. Unzip it to &lt;Your hexo path&gt;/themes/hunoc
+4. Edit hexo's _config.yml
+    <pre>theme: hunoc</pre>
 5. If your'd like to config more about this theme,edit themes/hunoc/_config.yml,but you'd better copy the option to you hexo's _config.yml instead of theme's
 
 ### Method 2: Git Clone
@@ -155,7 +155,7 @@ hexo-theme-unit-test: PASSED
 It's generally tested on:
 
 * hexo: 3.8.0
-* node: 10.15.1 / 11.10.0
+* node: 10.15 / 11.11
 * Browsers: Firefox/Chrome/Edge/IE 11/IE 10
 * Plugins: hexo-all-minifier,hexo-deploy
 
@@ -163,8 +163,8 @@ It's generally tested on:
 
 * Use hexo-all-minifier(Plugin)
 * If you want to keep up-to-date,you need to know:
-    This theme DO NOT obey Semantic Versioning now
-    This theme DO NOT update regularly
+    This theme DO NOT obey Semantic Versioning now  
+    This theme DO NOT update regularly  
 * Vssue and gitalk are recommended.
 
 ## Other cited projects
