@@ -154,8 +154,8 @@ hexo-theme-unit-test: PASSED
 
 It's generally tested on:
 
-* hexo: 3.8.0
-* node: 10.15 / 11.11
+* hexo: 3.8
+* node: 10/11
 * Browsers: Firefox/Chrome/Edge/IE 11/IE 10
 * Plugins: hexo-all-minifier,hexo-deploy
 

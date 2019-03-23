@@ -163,8 +163,8 @@ Foundation Icons v 3.0
 
 在以下环境测试基本正常:
 
-* hexo: 3.8.0
-* node: 10.15 / 11.11
+* hexo: 3.8
+* node: 10/11
 * 浏览器: Firefox/Chrome/Edge/IE 10,11
 * 插件: hexo-all-minifier,hexo-deploy
 
