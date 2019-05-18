@@ -133,7 +133,9 @@ Foundation Icons v 3.0
 
 ### Site analytics
 
-    hc_site_analytics: (your analytics code from Google analysis,CNZZ etc.)
+<pre>
+hc_site_analytics: [your analytics code]
+</pre>
 Or just paste it in layout/_scripts/site-analytics.ejs
 
 ## About huno
@@ -155,8 +157,8 @@ hexo-theme-unit-test: PASSED
 It's generally tested on:
 
 * hexo: 3.8
-* node: 10/11
-* Browsers: Firefox/Chrome/Edge/IE 11/IE 10
+* node: 10~12
+* Browsers: Firefox/Chrome/Edge/IE 10,11
 * Plugins: hexo-all-minifier,hexo-deploy
 
 ## Suggestions
@@ -174,8 +176,8 @@ It's generally tested on:
 |[Vssue](https://vssue.js.org/)|[meteorlxy](https://github.com/meteorlxy)|MIT|
 |[gitalk](https://github.com/gitalk/gitalk/)|[View](https://github.com/gitalk/gitalk/graphs/contributors)|MIT|
 |[gitment](https://github.com/imsun/gitment/)|[imsun](https://github.com/imsun/)|MIT|
-|[JQueryRotate](http://jqueryrotate.com/)|Pawel "wilq32" Witkowski|MIT|
-|[JQuery](https://jquery.com/)|JS Foundation and other contributors|jquery.org/license|
+|[JQueryRotate](http://jqueryrotate.com/)|Pawel wilq32 Witkowski|MIT|
+|[JQuery](https://jquery.com/)|JS Foundation and others|jquery.org/license|
 
 ## Picture Authors
 

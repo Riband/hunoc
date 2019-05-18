@@ -58,7 +58,7 @@ huno版本: commit 287f824
     git clone git://github.com/someus/hunoc.git themes/hunoc
 3. 修改 hexo的 _config.yml
     theme: hunoc
-4. 如果有进一步的需要,编辑themes/hunoc/_config.yml但建议将其中的选项复制到&lt;你的hexo路径&gt;/_config.yml中修改
+4. 如果有进一步的需要,编辑themes/hunoc/config.yml 但建议将其中的选项复制到[你的hexo路径]/config.yml 中修改
 
 ## 主题选项
 
@@ -96,9 +96,7 @@ hc_panel_addition: [String]/false
 ### 背景图片
 
 位于 source/images/background-cover.jpg  
-或者修改图片URL。例如修改成CDN中的某个图片
-    background: url("//img.alicdn.com/XXX") top left no-repeat #666666;
-请参阅 [huno说明](https://github.com/letiantian/huno)  
+若要修改成CDN中的某个图片,请参阅 [huno说明](https://github.com/letiantian/huno)  
 
 ### 归档页面
 
@@ -116,16 +114,14 @@ hc_menu:
 <pre>
     $ hexo new page archive
     $ cd source/archive
-    $   index.md
+    $ index.md
 </pre>
 
 内容修改为:
 
 <pre>
-    ---
-    title: 归档
-    layout: page-archive
-    ---
+title: 归档
+layout: page-archive
 </pre>
 hexo 默认有一个/archives，如果您认为归档页面的url（/archive）和这个冲突，可以选更加合适的名称  
 请参阅 [huno说明](https://github.com/letiantian/huno)  
@@ -133,20 +129,23 @@ hexo 默认有一个/archives，如果您认为归档页面的url（/archive）�
 ### 社交网站图标
 
 <pre>
-    social:
-        github: tom
-        500px: tom
+social:
+    github: tom
+    500px: tom
 </pre>
-由于版权问题存疑,hunoc移除了China Social Icon
-请参阅 [huno说明](https://github.com/letiantian/huno),_config.yml  
+由于版权问题存疑,hunoc移除了huno中的China Social Icon  
+请参阅 [huno说明](https://github.com/letiantian/huno)  
 
-Foundation Icons v 3.0
- Made by ZURB 2013 [Official Site](http://zurb.com/playground/foundation-icon-fonts-3)
- MIT License
+Foundation Icons v 3.0  
+Made by ZURB 2013  
+[Official Site](http://zurb.com/playground/foundation-icon-fonts-3)  
+MIT License  
 
 ### 网站分析
 
-    hc_site_analytics: (your analytics code from Google analysis,CNZZ etc.)
+<pre>
+hc_site_analytics: [your analytics code]
+</pre>
 
 ## 关于huno
 
@@ -164,7 +163,7 @@ Foundation Icons v 3.0
 在以下环境测试基本正常:
 
 * hexo: 3.8
-* node: 10/11
+* node: 10~12
 * 浏览器: Firefox/Chrome/Edge/IE 10,11
 * 插件: hexo-all-minifier,hexo-deploy
 
@@ -181,8 +180,8 @@ Foundation Icons v 3.0
 |Vssue|[meteorlxy](https://github.com/meteorlxy)|MIT|
 |[gitalk](https://github.com/gitalk/gitalk/)|[查看](https://github.com/gitalk/gitalk/graphs/contributors)|MIT|
 |[gitment](https://github.com/imsun/gitment/)|[imsun](https://github.com/imsun/)|MIT|
-|[JQueryRotate](http://jqueryrotate.com/)|Pawel "wilq32" Witkowski|MIT|
-|[JQuery](https://jquery.com/)|JS Foundation and other contributors|jquery.org/license|
+|[JQueryRotate](http://jqueryrotate.com/)|Pawel wilq32 Witkowski|MIT|
+|[JQuery](https://jquery.com/)|JS Foundation and others|jquery.org/license|
 
 ## 图片来源
 
