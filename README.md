@@ -4,7 +4,7 @@
 
 ## Introduction
 
-hunoc is a hexo theme based on [huno](https://github.com/letiantian/hunoc/).  
+hunoc is a hexo theme based on [huno](https://github.com/letiantian/huno/).  
 License: [Mozilla Public License Version 2.0](https://www.mozilla.org/en-US/MPL/2.0/)  
 In order to meet some needs,I have made some changes on hunoc. It may be the first serious project for me.  
 I like commiting,releasing,writing update log.Well,the most important thing is to be happy.  
@@ -20,7 +20,7 @@ This project is in FROZEN period
 ### Dev
 
 ![GitHub (pre-)release](https://img.shields.io/github/release/Riband/hunoc/all.svg?style=flat-square) ![GitHub (pre-)Release Date](https://img.shields.io/github/release-date-pre/Riband/hunoc.svg?style=flat-square) ![GitHub last commit](https://img.shields.io/github/last-commit/Riband/hunoc.svg?style=flat-square)  
-huno version: commit 287f824  
+huno version: Commit-2693076 (2019-01-12)
 
 ## Features
 

@@ -18,7 +18,7 @@ hunoc 是一个基于[huno](https://github.com/letiantian/huno/)的一个响应�
 ### 测试版
 
 ![GitHub (pre-)release](https://img.shields.io/github/release/Riband/hunoc/all.svg?style=flat-square) ![GitHub (pre-)Release Date](https://img.shields.io/github/release-date-pre/Riband/hunoc.svg?style=flat-square) ![GitHub last commit](https://img.shields.io/github/last-commit/Riband/hunoc.svg?style=flat-square)  
-huno版本: commit 287f824  
+huno版本: Commit-2693076 (2019-01-12)  
 
 ## 特性
 
