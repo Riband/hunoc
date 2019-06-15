@@ -1,5 +1,6 @@
 # hunoc 0.1.7 - dev.1
-# LICENSE: MPL 2.0
+# Edition: Old Town
+# License: MPL 2.0
 # Based on huno,uno
 
 # All path here (exclude hc_social) must begin as "/"
@@ -54,7 +55,7 @@ hc_github_config: #must set hc_post_comments: gitment, vssue, gitalk
   admin:                      #only for gitalk
     - YourName
   
-hc_footer_info: hunoc 0.1.6<br/>based on huno by letiantian and uno by daleanthony,Powered by Hexo
+hc_footer_info: hunoc 0.1.7-dev.1<br/>based on huno by letiantian and uno by daleanthony,Powered by Hexo
 #[only available in theme]
 
 default_license_information: ©Copyright 2018

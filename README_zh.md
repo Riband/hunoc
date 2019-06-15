@@ -54,7 +54,7 @@ huno版本: Commit-2693076 (2019-01-12)
 ### 方案2: 用Git克隆仓库
 
 1. 启动 shell/cmd 进入你的hexo路径
-2. 确保安装了git,然后执行:
+2. 确保安装了git,然后执行:  
     git clone git://github.com/someus/hunoc.git themes/hunoc
 3. 修改 hexo的 _config.yml
     theme: hunoc
@@ -80,10 +80,9 @@ hc_github_config:
   admin:
   vssue_theme_color:
 hc_footer_info:[String]
-    如:© 2016-2018  
-      CC-BY 4.0 International  
-      支持html
-        显示在页脚中的信息
+    显示在页脚中的信息
+    如:© YourName 2016-2018  
+    支持html
 hc_custom: [String]/false
     false: 无定制
     huno: huno风格(并不)
@@ -116,7 +115,7 @@ hc_menu:
 <pre>
     $ hexo new page archive
     $ cd source/archive
-    $   index.md
+    $ index.md
 </pre>
 
 内容修改为:
@@ -164,9 +163,9 @@ Foundation Icons v 3.0
 在以下环境测试基本正常:
 
 * hexo: 3.8
-* node: 10/11
+* node: 10~12
 * 浏览器: Firefox/Chrome/Edge/IE 10,11
-* 插件: hexo-all-minifier,hexo-deploy
+* 插件: hexo-all-minifier,hexo-deploy-git
 
 ## 建议
 

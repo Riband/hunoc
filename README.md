@@ -47,16 +47,17 @@ huno version: Commit-2693076 (2019-01-12)
 3. Unzip it to &lt;Your hexo path&gt;/themes/hunoc
 4. Edit hexo's _config.yml
     <pre>theme: hunoc</pre>
-5. If your'd like to config more about this theme,edit themes/hunoc/_config.yml,but you'd better copy the option to you hexo's _config.yml instead of theme's
+5. If your'd like to config more about this theme,edit themes/hunoc/_config.yml  
+  but you'd better copy the option to you hexo's _config.yml instead of hunoc-theme's
 
 ### Method 2: Git Clone
 
 1. Start your shell/cmd and enter your hexo path
-2. make sure your installed git,and:  
+2. make sure your installed git,and run:  
     git clone git://github.com/someus/hunoc.git themes/hunoc
 3. Edit hexo's _config.yml  
     theme: hunoc
-4. If your'd like to config more about this theme,edit themes/hunoc/_config.yml,but you'd better copy the option to you hexo's config.yml instead of theme's
+4. If your'd like to config more about this theme,edit themes/hunoc/_config.yml,but you'd better copy the options to your hexo's config.yml instead of theme's
 
 ## Theme Options
 
@@ -155,14 +156,14 @@ hexo-theme-unit-test: PASSED
 It's generally tested on:
 
 * hexo: 3.8
-* node: 10/11
-* Browsers: Firefox/Chrome/Edge/IE 11/IE 10
-* Plugins: hexo-all-minifier,hexo-deploy
+* node: 10~12
+* Browsers: Firefox/Chrome/Edge/IE 10 11
+* Plugins: hexo-all-minifier,hexo-deploy-git
 
 ## Suggestions
 
 * Use hexo-all-minifier(Plugin)
-* If you want to keep up-to-date,you need to know:
+* If you want to keep up-to-date,you need to know:  
     This theme DO NOT obey Semantic Versioning now  
     This theme DO NOT update regularly  
 * Vssue and gitalk are recommended.
