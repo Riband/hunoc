@@ -28,13 +28,13 @@ hc_logo: /avatar.png
 # or logo
 # you're suggested to config it in hexo's _config.yml to cover the option in theme
 
-# Enable Mathjax
+# Enable Mathjax,created by huno
 mathjax: false
 
-# Enable awesome-toc
+# Enable awesome-toc,created by huno
 awesome_toc: false
 
-# Enable githubRepoWidget
+# Enable githubRepoWidget,created by huno
 github_repo_widget: false
 
 hc_post_comments: false

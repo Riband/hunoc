@@ -56,24 +56,6 @@
     <script src="<%- subpath %>/js/jquery.min.js"></script>
     <script src="<%- subpath %>/js/scale.fix.js"></script>
 
-    <!-- Logo Rotate -->
-    <% var hc_logo_rotate='no'; %>
-    <% if(theme.hc_logo_rotate) {hc_logo_rotate= theme.hc_logo_rotate;} %>
-    <% if(config.hc_logo_rotate) {hc_logo_rotate= config.hc_logo_rotate;} %>
-    <% if(page.hc_logo_rotate) {hc_logo_rotate= page.hc_logo_rotate;} %>
-
-    <% if(hc_logo_rotate === 'rotate') { %>
-      <script src="<%- subpath %>/js/jQueryRotate.js"></script>
-      <script type="text/javascript">
-        var angle = 0;
-          setInterval(function () {
-            angle += 3;
-            $(".logo").rotate(angle);
-          }, 50);	
-      </script>
-      <% } %>  
-    <!-- Logo Rotate END-->
-
     <script type="text/javascript">
     $(document).ready(function() {
         $('a.blog-button').click(function() {
@@ -139,6 +121,25 @@
     <%- css(custom_uno_url)                                                         %>
     <% } %>
     <!-- hc: load custom end -->
+    <!-- Logo Rotate -->
+    <% var hc_logo_rotate="no"; %>
+    <% if(theme.hc_logo_rotate) {hc_logo_rotate= theme.hc_logo_rotate;} %>
+    <% if(config.hc_logo_rotate) {hc_logo_rotate= config.hc_logo_rotate;} %>
+    <% if(page.hc_logo_rotate) {hc_logo_rotate= page.hc_logo_rotate;} %>
+    
+    <% if(hc_logo_rotate === "rotate" && is_home()) { %>
+    <script src="<%- subpath %>/js/jQueryRotate.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+          var angle = 0;
+          setInterval(function () {
+            angle += 3;
+            $(".logo").rotate(angle);
+      }, 50);
+    });
+    </script>
+    <% } %>
+    <!-- Logo Rotate END-->
 
 </head>
 <body>

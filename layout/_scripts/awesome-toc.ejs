@@ -1,13 +1,42 @@
-<% if ( theme.awesome_toc && is_post()) {  %>
+<%         var awesome_toc=false;                            %>
+<%         if (theme.awesome_toc){                           %>
+<%             awesome_toc = theme.awesome_toc;              %>
+<%         }                                                 %>
+<%         if (config.awesome_toc){                          %>
+<%             awesome_toc = config.awesome_toc;             %>
+<%         }                                                 %>
+<%         if (page.awesome_toc){                            %>
+<%             awesome_toc = page.awesome_toc;               %>
+<%         }                                                 %>
+
+<% //Get child path again ... 
+  function path_adjust(__root){
+  if(__root[0] !== '/'){
+    __root = '/' + __root;
+  } 
+  if (__root[__root.length-1] !== '/') {
+    __root = __root + '/';
+  }
+  return __root;
+} %>
+
+<% const subpath_full= path_adjust(config.root); %>
+<% const subpath = subpath_full.slice(0,-1); %>
+
+<% if ( awesome_toc && is_post()) {                          %>
     <script src="<%- subpath %>/js/jquery.min.js"></script>
-    <script src="<%- subpath %>/js/awesome-toc.min.js"></script>
+    <script src="<%- subpath %>/js/awesome-toc.js"></script>
     <script>
         $(document).ready(function(){
             $.awesome_toc({
-                overlay: true,
-                contentId: "post-content",
+                autoDetectHeadings: true,
+                enableToTopButton: true,
+                title: "Index",
+                css: {
+                    fontSize: "14px",
+                    largeFontSize: "18px",
+                },
             });
         });
     </script>
-
 <% } %>

@@ -1,6 +1,15 @@
-<% if ( theme.mathjax ) {  %>
-
-    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<%         var mathjax=false;                            %>
+<%         if (theme.mathjax){                           %>
+<%             mathjax = theme.mathjax;                  %>
+<%         }                                             %>
+<%         if (config.mathjax){                          %>
+<%             mathjax = config.mathjax;                 %>
+<%         }                                             %>
+<%         if (page.mathjax){                            %>
+<%             mathjax = page.mathjax;                   %>
+<%         }                                             %>
+<% if ( mathjax ) {  %>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
     <script type="text/javascript"> 
         $(document).ready(function(){
             MathJax.Hub.Config({ 
@@ -8,5 +17,4 @@
             });
         });
     </script>
-
 <% } %>
