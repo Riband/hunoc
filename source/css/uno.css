@@ -45,7 +45,7 @@ q:before, q:after {
 body {
   width: 100%;
   *zoom: 1;
-  background-color: '#EEEEEE';
+  background-color: #EEEEEE;
 }
   body:before, body:after {
     content: "";
@@ -76,7 +76,11 @@ body {
   display: inline-block;
   text-decoration: inherit; 
 }
-
+.icon-x-circle:before { content: "\f216"; }
+.icon-list:before { content: "\f169"; }
+.icon-list-bullet:before { content: "\f166"; }
+.icon-list-number:before { content: "\f167"; }
+.icon-list-thumbnails:before { content: "\f168"; }
 .icon-archive:before {  content: "\f108"; }
 .icon-arrow-down:before { content: "\f109"; }
 .icon-arrow-left:before { content: "\f10a"; }
@@ -649,12 +653,12 @@ nav {
 
 .pagination__newer:hover {
   color: #000000;
-  border-color: 000000;
+  border-color: #000000;
   margin-right: 1em; }
 
 .pagination__older:hover {
   color: #000000;
-  border-color: 000000;
+  border-color: #000000;
   margin-left: 1em; }
 
 i {
