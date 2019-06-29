@@ -18,13 +18,15 @@ var post = page;
       <time datetime="<%= date(post.date, config.date_format) %>" class="post-meta__date date"><%= date(post.date, config.date_format) %></time>
       <span class="post-meta__tags tags">
 
+        <!--
             <% if (post.id){ %>
             <font class="post-id">
               &#8226; ID:
               <%- post.id %>
             </font>
            <% } %>
-
+        -->
+        
           <% if (post.categories && post.categories.length > 0){ %>
             <font class="categories">
             &nbsp; &#8226; 分类:
@@ -46,7 +48,6 @@ var post = page;
               }) %>
             </b>
           <% } %>
-
       </span>
     </div>
 

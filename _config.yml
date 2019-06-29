@@ -10,7 +10,7 @@ hc_menu:
   About: /about/
   Archive: /archive/
 social:
-  #github: YourName
+  github: YourName
   #500px: YourName
 
 #hc_social:
@@ -24,9 +24,9 @@ social:
 favicon: /favicon.ico
 
 # Site logo
-hc_logo: /avatar.png
+hc_logo: /logo.png
 # or logo
-# you're suggested to config it in hexo's _config.yml to cover the option in theme
+# you're suggested to config it in hexo's _config.yml to merge the option in theme
 
 # Enable Mathjax,created by huno
 mathjax: false

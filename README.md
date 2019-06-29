@@ -151,11 +151,12 @@ License: [Creative Commons Attribution 4.0 International](http://creativecommons
 
 ## Compatibility
 
-hexo-theme-unit-test: PASSED
+Hexo Theme Unit Test: PASSED  
+Hexo Theme Checklist: YES:13 PARTLY:2 NO:2 UNKNOWN:1  
 
-It's generally tested on:
+It's generally tested on:  
 
-* hexo: 3.8
+* hexo: 3.9
 * node: 10~12
 * Browsers: Firefox/Chrome/Edge/IE 10 11
 * Plugins: hexo-all-minifier,hexo-deploy-git

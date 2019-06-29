@@ -160,9 +160,12 @@ Foundation Icons v 3.0
 
 ## 兼容性
 
+Hexo Theme Unit Test: 通过  
+Hexo Theme Checklist: 符合:13 部分支持:2 不支持:2 未知:1    
+
 在以下环境测试基本正常:
 
-* hexo: 3.8
+* hexo: 3.9
 * node: 10~12
 * 浏览器: Firefox/Chrome/Edge/IE 10,11
 * 插件: hexo-all-minifier,hexo-deploy-git

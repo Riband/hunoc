@@ -12,6 +12,18 @@
 <% const subpath_full= path_adjust(config.root); %>
 <% const subpath = subpath_full.slice(0,-1); %>
 
+<% var rss=''; %>
+<% if(theme.rss) {rss= theme.rss;} %>
+<% if(config.rss) {rss= config.rss;} %>
+<% const hc_rss = rss %>
+<% rss = null %>
+
+<% var favicon=''; %>
+<% if(theme.favicon) {favicon= theme.favicon;} %>
+<% if(config.favicon) {favicon= config.favicon;} %>
+<% const hc_favicon = favicon %>
+<% favicon = null %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -95,11 +107,11 @@
     <% } %>
     
     <%- open_graph({title: title}) %>
-    <% if (theme.rss){ %>
-      <link rel="alternate" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
+    <% if (hc_rss){ %>
+      <link rel="alternate" href="<%- hc_rss %>" title="<%= config.title %>" type="application/atom+xml">
     <% } %>
-    <% if (theme.favicon){ %>
-      <link rel="icon" type="image/x-icon" href="<%- subpath + theme.favicon %>">
+    <% if (hc_favicon){ %>
+      <link rel="icon" type="image/x-icon" href="<%- subpath + hc_favicon %>">
     <% } %>
     <%- css( '/css/uno.css') %>
     <%- css( '/css/highlight') %>
