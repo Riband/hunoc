@@ -1,5 +1,5 @@
-# hunoc 0.1.7 - dev.2
-# Edition: Old Town
+# hunoc 0.1.7 - dev.3
+# Edition: Phantom
 # License: MPL 2.0
 # Based on huno,uno
 
@@ -10,7 +10,7 @@ hc_menu:
   About: /about/
   Archive: /archive/
 social:
-  github: YourName
+  github: github.com/YourName
   #500px: YourName
 
 #hc_social:
@@ -37,6 +37,8 @@ awesome_toc: false
 # Enable githubRepoWidget,created by huno
 github_repo_widget: false
 
+rss: false
+
 hc_post_comments: false
   #options
     # false : no comments
@@ -55,12 +57,12 @@ hc_github_config: #must set hc_post_comments: gitment, vssue, gitalk
   admin:                      #only for gitalk
     - YourName
   
-hc_footer_info: hunoc 0.1.7-dev.2<br/>based on huno by letiantian and uno by daleanthony,Powered by Hexo
+hc_footer_info: <br/>hunoc 0.1.7 - dev.3<br/>Based on huno by letiantian and uno by daleanthony,Powered by Hexo
 #[only available in theme]
 
-default_license_information: ©Copyright 2018
+default_license_information: ©Copyright
 # this is not suggested for users to config , becasue it will change with the updates of the theme;
-# This(default_license_information: "Copyright 2018") is NOT the license of this theme , which uses cc-by-nc-sa 4.0 license)
+# This(default_license_information: "Copyright") is NOT the license of this theme , which uses MPL 2.0 license)
 # [String] ,such as:
   # CC-BY 4.0 International
   # Even HTML Code provided by CC

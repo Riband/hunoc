@@ -284,7 +284,7 @@
         if (scrollVar.lastId !== id) {
             scrollVar.lastId = id;
             scrollVar.menuItems.css({"color": baseConfig.css.fontColor});
-            scrollVar.menuItems.filter("[href=#"+id+"]").css({"color": baseConfig.css.activeFontColor});
+            scrollVar.menuItems.filter("[href=\"#"+id+"\"]").css({"color": baseConfig.css.activeFontColor});
         }
     };
 

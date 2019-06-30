@@ -44,7 +44,7 @@ q:before, q:after {
 
 body {
   width: 100%;
-  *zoom: 1;
+  zoom: 1;
   background-color: #EEEEEE;
 }
   body:before, body:after {

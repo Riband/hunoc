@@ -22,21 +22,29 @@ This project is in FROZEN period
 ![GitHub (pre-)release](https://img.shields.io/github/release/Riband/hunoc/all.svg?style=flat-square) ![GitHub (pre-)Release Date](https://img.shields.io/github/release-date-pre/Riband/hunoc.svg?style=flat-square) ![GitHub last commit](https://img.shields.io/github/last-commit/Riband/hunoc.svg?style=flat-square)  
 huno version: Commit-2693076 (2019-01-12)
 
-## Features
+## Main Features
 
-* Add Custom option (Custom your theme with your own css)
-* Use Translucent Background
-* Clean commits of huno to save some space
-* Enable use HTML Code in hc_menu:  
-* SupportVssue/Gitment/Gitalk comment
-* Better subpath(child path) support(only need change root:)
-* Remove animate
-* Etc.
+### Inheriting huno's features(With some modifications)
+
+* A responsible theme
+* [Mathjax] Math formula support
+* [Awesome_toc](https://github.com/letiantian/awesome-toc).Automaticly generate a index for your pages
+* [GitHub Repo Widget](https://github.com/JoelSutherland/GitHub-jQuery-Repo-Widget)
+* Social icons
+* Indepedent archive pages
+
+### New
+
+* The custom option to custom hunoc with your own css
+* Translucent look
+* Enable use HTML Code in some options
+* Support Vssue,Gitment,Gitalk , which are based on the issue system of github
+* Better child path support , you only need change thw config.root option
+* More flexibile theme options,which can be used in many config files
 
 ## Demo
 
 [View](https://riband.github.io/hunoc-demo/)  
-[![hunoc Demo Img](https://riband.github.io/RiBase/hunoc-demo/demo.jpg)](https://riband.github.io/hunoc-demo/)  
 
 ## How to use
 
@@ -135,15 +143,13 @@ Foundation Icons v 3.0
 ### Site analytics
 
     hc_site_analytics: (your analytics code from Google analysis,CNZZ etc.)
-Or just paste it in layout/_scripts/site-analytics.ejs
+Or just paste it in the bottom of layout/_scripts/site-analytics.ejs
 
-## About huno
+## About huno and uno
 
 [huno](https://github.com/letiantian/huno) is a [Hexo](http://hexo.io/) theme，based on [uno](https://github.com/daleanthony/uno/)  
 Author: [letiantian](https://github.com/letiantian/)  
 License: [Creative Commons Attribution 4.0 International](http://creativecommons.org/licenses/by/4.0/)  
-
-## About uno
 
 [uno](https://github.com/daleanthony/)  
 Author: [daleanthony](https://github.com/daleanthony/)  
@@ -187,3 +193,7 @@ Thank these generous guys!
 |---|---|---|
 |Red and blue sky – end of day|[Peter Janzen](https://cc0.photo/author/peter/)|[CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)|
 |Picography lake view bridge|[Gratisography](https://gratisography.com/)|[CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)|
+
+## To-Do
+
+* Better RSS Support
