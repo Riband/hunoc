@@ -1057,3 +1057,13 @@ pre {
   overflow-x: hidden; 
   overflow-y: hidden; 
 }
+
+#post-content div.github-widget a{
+  color: #428CCC;
+  border: 0px;
+  background-color: rgba(255,255,255,0);
+}
+
+#post-content div.github-widget a.download{
+  color: black;
+}

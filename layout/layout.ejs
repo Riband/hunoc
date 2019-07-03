@@ -1,4 +1,4 @@
-<% 
+<%
   function path_adjust(__root){
   if(__root[0] !== '/'){
     __root = '/' + __root;
@@ -6,7 +6,7 @@
   if (__root[__root.length-1] !== '/') {
     __root = __root + '/';
   }
-  return __root;
+  return trim(__root);
 } %>
 
 <% const subpath_full= path_adjust(config.root); %>
