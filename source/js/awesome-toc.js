@@ -192,7 +192,7 @@
         for (var i=0; i<3; i++) {
             var line = document.createElement("span");
             $(line).css({
-                "background": "#87daff none repeat scroll 0 0",
+                "background": "azure none repeat scroll 0 0",
                 "display": "inline-block",
                 "height": "2px",
                 "margin-top": "2px",
