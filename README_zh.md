@@ -187,10 +187,10 @@ Hexo Theme Checklist: 符合:13 部分支持:2 不支持:2 未知:1
 |项目|作者|许可协议|
 |---|---|---|
 |Vssue|[meteorlxy](https://github.com/meteorlxy)|MIT|
-|[gitalk](https://github.com/gitalk/gitalk/)|[查看](https://github.com/gitalk/gitalk/graphs/contributors)|MIT|
+|[gitalk](https://github.com/gitalk/gitalk/)|[booxood等](https://github.com/gitalk/gitalk/graphs/contributors)|MIT|
 |[gitment](https://github.com/imsun/gitment/)|[imsun](https://github.com/imsun/)|MIT|
-|[JQueryRotate](http://jqueryrotate.com/)|Pawel "wilq32" Witkowski|MIT|
-|[JQuery](https://jquery.com/)|JS Foundation and other contributors|jquery.org/license|
+|[JQueryRotate](http://jqueryrotate.com/)|[wilq32等](https://github.com/wilq32/jqueryrotate/graphs/contributors)|MIT|
+|[JQuery](https://jquery.com/)|JS Foundation等|jquery.org/license|
 
 ## 图片来源
 

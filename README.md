@@ -27,20 +27,20 @@ huno version: Commit-2693076 (2019-01-12)
 ### Inheriting huno's features(With some modifications)
 
 * A responsible theme
-* [Mathjax] Math formula support
+* [Mathjax](https://www.mathjax.org) Math formula support
 * [Awesome_toc](https://github.com/letiantian/awesome-toc).Automaticly generate a index for your pages
-* [GitHub Repo Widget](https://github.com/JoelSutherland/GitHub-jQuery-Repo-Widget)
+* [GitHub Repo Widget](https://github.com/JoelSutherland/GitHub-jQuery-Repo-Widget) support
 * Social icons
 * Indepedent archive pages
 
 ### New
 
-* The custom option to custom hunoc with your own css
-* Translucent look
-* Enable use HTML Code in some options
-* Support Vssue,Gitment,Gitalk , which are based on the issue system of github
-* Better child path support , you only need change thw config.root option
-* More flexibile theme options,which can be used in many config files
+* The "hc_custom" option to custom hunoc with your own css
+* Translucent looks
+* Enable to use HTML Code in some options
+* Support Vssue,Gitment,Gitalk , which are based on the issue system of the Github
+* Better child path support.You only need change the config.root option
+* More flexibile theme options,which can be used in many places
 
 ## Demo
 
@@ -180,9 +180,9 @@ It's generally tested on:
 |Project|Author|License|
 |---|---|---|
 |[Vssue](https://vssue.js.org/)|[meteorlxy](https://github.com/meteorlxy)|MIT|
-|[gitalk](https://github.com/gitalk/gitalk/)|[View](https://github.com/gitalk/gitalk/graphs/contributors)|MIT|
+|[gitalk](https://github.com/gitalk/gitalk/)|booxood and [others](https://github.com/gitalk/gitalk/graphs/contributors)|MIT|
 |[gitment](https://github.com/imsun/gitment/)|[imsun](https://github.com/imsun/)|MIT|
-|[JQueryRotate](http://jqueryrotate.com/)|Pawel "wilq32" Witkowski|MIT|
+|[JQueryRotate](http://jqueryrotate.com/)|wilq32 and [others](https://github.com/wilq32/jqueryrotate/graphs/contributors)|MIT|
 |[JQuery](https://jquery.com/)|JS Foundation and other contributors|jquery.org/license|
 
 ## Picture Authors
@@ -193,7 +193,3 @@ Thank these generous guys!
 |---|---|---|
 |Red and blue sky – end of day|[Peter Janzen](https://cc0.photo/author/peter/)|[CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)|
 |Picography lake view bridge|[Gratisography](https://gratisography.com/)|[CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)|
-
-## To-Do
-
-* Better RSS Support
