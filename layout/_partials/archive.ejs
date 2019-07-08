@@ -60,22 +60,14 @@ if (is_category()) {
       title='';
       hc_link='';
       %>
-
-      <% if (post.id && post.id.length > 0){ %>
-        <font class="post-id">
-          &#8226; ID:
-          <%- post.id %>
-          日期:
-        </font>
-        <% } %>
-
         <time datetime="<%= date(post.date, config.date_format) %>" class="post-list__meta--date date"><%= date(post.date, config.date_format) %></time> 
       </div>
 
       <div class="excerpt">
         <% if (post.description) { %>
           <%- post.description %>
-        <% } else if (post.excerpt) { %>
+        <% } %>
+        <% if (post.excerpt) { %>
           <%- post.excerpt %>
         <% } %>
       </div>

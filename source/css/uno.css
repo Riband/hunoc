@@ -1017,15 +1017,14 @@ pre {
 
 .hc-social{
   margin: 0;
-  width: 35px;
-  height: 35px;
-  border-radius: 70px;
-  border: 1px solid white;
+  width: 25px;
+  height: 25px;
+  border: 0px;
 }
 
 .hc-social-icon{
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 }
 
 .hc-social-navigation {

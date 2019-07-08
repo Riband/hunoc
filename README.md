@@ -24,7 +24,7 @@ huno version: Commit-2693076 (2019-01-12)
 
 ## Main Features
 
-### Inheriting huno's features(With some modifications)
+### From huno
 
 * A responsible theme
 * [Mathjax](https://www.mathjax.org) Math formula support

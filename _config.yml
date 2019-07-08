@@ -3,7 +3,7 @@
 # License: MPL 2.0
 # Based on huno,uno
 
-# All path here (exclude hc_social) must begin as "/"
+# All relative path here must begin as "/"
 
 hc_menu:
   Blog: /#blog  # "/#blog" is Compulsory
@@ -15,10 +15,10 @@ social:
 
 #hc_social:
 #  github.com: github.com/YourName
-# hc_social use favicon.ico of your social sites,so it support every site,but not stable
-
-# You can still use huno's way to add social icons,which is stable,but you'd better not use hc_social and social together.
-# And,why not just using a menu button?
+# hc_social use favicon.ico of your social sites,so it supports every site,but not stable and the icons are not good
+# You are advised to use huno's way to add social icons,which is stable and beautiful
+# and you'd better not use hc_social and social together.
+# What's more,why not just using a menu button?
 
 # Site favicon
 favicon: /favicon.ico
@@ -72,7 +72,7 @@ hc_custom: false
 #choices:
   # false: None custom
   #(other): file name in /themes/hunoc/source/css/custom_uno/ 
-  # huno: original huno look 
+  # huno: original huno look(Not very original)
 
 hc_panel_addition: false
 # add some customed html in side-panel like bgm
