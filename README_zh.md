@@ -18,21 +18,27 @@ hunoc 是一个基于[huno](https://github.com/letiantian/huno/)的一个响应�
 ### 测试版
 
 ![GitHub (pre-)release](https://img.shields.io/github/release/Riband/hunoc/all.svg?style=flat-square) ![GitHub (pre-)Release Date](https://img.shields.io/github/release-date-pre/Riband/hunoc.svg?style=flat-square) ![GitHub last commit](https://img.shields.io/github/last-commit/Riband/hunoc.svg?style=flat-square)  
-huno版本: commit 287f824  
+huno版本: Commit-2693076 (2019-01-12)  
 
-## 特性
+## 主要特性
 
-在huno的基础上
+### 继承自huno的特性(会有一些不同)
 
-* 增加定制选项(进一步用CSS自定义)
-* 更丰富的页脚自定义
-* 使用半透明背景
-* 清理commit以节省空间
-* 允许在导航按钮中使用HTML  
-* 支持Vssue/Gitment/Gitalk评论
-* 更好的子目录支持(仅需修改root)
-* 移除了动画
-* 等等
+* 响应式主题设计
+* Mathjax数学公式支持
+* [Awesome_toc](https://github.com/letiantian/awesome-toc),一个为网页生成目录的小工具，也支持回到顶部的功能
+* [GitHub仓库控件](https://github.com/JoelSutherland/GitHub-jQuery-Repo-Widget)
+* 社交网站图标
+* 独立的归档页面
+
+### 新的特性
+
+* 定制选项(custom)支持用额外的CSS自定义主题
+* 支持在一些选项中使用HTML
+* 透明外观
+* 支持Vssue,Gitment,Gitalk三个基于Githun Issue的评论系统
+* 更好的子目录支持,只需修改config.root
+* 更灵活的主题选项,可以在多处配置
 
 ## 演示
 
@@ -54,7 +60,7 @@ huno版本: commit 287f824
 ### 方案2: 用Git克隆仓库
 
 1. 启动 shell/cmd 进入你的hexo路径
-2. 确保安装了git,然后执行:
+2. 确保安装了git,然后执行:  
     git clone git://github.com/someus/hunoc.git themes/hunoc
 3. 修改 hexo的 _config.yml
     theme: hunoc
@@ -80,10 +86,9 @@ hc_github_config:
   admin:
   vssue_theme_color:
 hc_footer_info:[String]
-    如:© 2016-2018  
-      CC-BY 4.0 International  
-      支持html
-        显示在页脚中的信息
+    显示在页脚中的信息
+    如:© YourName 2016-2018  
+    支持html
 hc_custom: [String]/false
     false: 无定制
     huno: huno风格(并不)
@@ -160,12 +165,15 @@ hc_site_analytics: [your analytics code]
 
 ## 兼容性
 
+Hexo Theme Unit Test: 通过  
+Hexo Theme Checklist: 符合:13 部分支持:2 不支持:2 未知:1  
+
 在以下环境测试基本正常:
 
-* hexo: 3.8
+* hexo: 3.9
 * node: 10~12
 * 浏览器: Firefox/Chrome/Edge/IE 10,11
-* 插件: hexo-all-minifier,hexo-deploy
+* 插件: hexo-all-minifier,hexo-deploy-git
 
 ## 建议
 
@@ -178,10 +186,10 @@ hc_site_analytics: [your analytics code]
 |项目|作者|许可协议|
 |---|---|---|
 |Vssue|[meteorlxy](https://github.com/meteorlxy)|MIT|
-|[gitalk](https://github.com/gitalk/gitalk/)|[查看](https://github.com/gitalk/gitalk/graphs/contributors)|MIT|
+|[gitalk](https://github.com/gitalk/gitalk/)|[booxood等](https://github.com/gitalk/gitalk/graphs/contributors)|MIT|
 |[gitment](https://github.com/imsun/gitment/)|[imsun](https://github.com/imsun/)|MIT|
-|[JQueryRotate](http://jqueryrotate.com/)|Pawel wilq32 Witkowski|MIT|
-|[JQuery](https://jquery.com/)|JS Foundation and others|jquery.org/license|
+|[JQueryRotate](http://jqueryrotate.com/)|[wilq32等](https://github.com/wilq32/jqueryrotate/graphs/contributors)|MIT|
+|[JQuery](https://jquery.com/)|JS Foundation等|jquery.org/license|
 
 ## 图片来源
 

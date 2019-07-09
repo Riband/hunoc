@@ -6,6 +6,10 @@ excerpt_title: Read More
 
 comment: Comments
 
+categories: Categories
+tags: Tags
+archives: Archives
+
 pagination:
   prev: Prev
   next: Next

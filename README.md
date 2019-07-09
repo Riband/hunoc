@@ -4,7 +4,7 @@
 
 ## Introduction
 
-hunoc is a hexo theme based on [huno](https://github.com/letiantian/hunoc/).  
+hunoc is a hexo theme based on [huno](https://github.com/letiantian/huno/).  
 License: [Mozilla Public License Version 2.0](https://www.mozilla.org/en-US/MPL/2.0/)  
 In order to meet some needs,I have made some changes on hunoc. It may be the first serious project for me.  
 I like commiting,releasing,writing update log.Well,the most important thing is to be happy.  
@@ -20,23 +20,31 @@ This project is in FROZEN period
 ### Dev
 
 ![GitHub (pre-)release](https://img.shields.io/github/release/Riband/hunoc/all.svg?style=flat-square) ![GitHub (pre-)Release Date](https://img.shields.io/github/release-date-pre/Riband/hunoc.svg?style=flat-square) ![GitHub last commit](https://img.shields.io/github/last-commit/Riband/hunoc.svg?style=flat-square)  
-huno version: commit 287f824  
+huno version: Commit-2693076 (2019-01-12)
 
-## Features
+## Main Features
 
-* Add Custom option (Custom your theme with your own css)
-* Use Translucent Background
-* Clean commits of huno to save some space
-* Enable use HTML Code in hc_menu:  
-* SupportVssue/Gitment/Gitalk comment
-* Better subpath(child path) support(only need change root:)
-* Remove animate
-* Etc.
+### From huno
+
+* A responsible theme
+* [Mathjax](https://www.mathjax.org) Math formula support
+* [Awesome_toc](https://github.com/letiantian/awesome-toc).Automaticly generate a index for your pages
+* [GitHub Repo Widget](https://github.com/JoelSutherland/GitHub-jQuery-Repo-Widget) support
+* Social icons
+* Indepedent archive pages
+
+### New
+
+* The "hc_custom" option to custom hunoc with your own css
+* Translucent looks
+* Enable to use HTML Code in some options
+* Support Vssue,Gitment,Gitalk , which are based on the issue system of the Github
+* Better child path support.You only need change the config.root option
+* More flexibile theme options,which can be used in many places
 
 ## Demo
 
 [View](https://riband.github.io/hunoc-demo/)  
-[![hunoc Demo Img](https://riband.github.io/RiBase/hunoc-demo/demo.jpg)](https://riband.github.io/hunoc-demo/)  
 
 ## How to use
 
@@ -47,16 +55,17 @@ huno version: commit 287f824
 3. Unzip it to &lt;Your hexo path&gt;/themes/hunoc
 4. Edit hexo's _config.yml
     <pre>theme: hunoc</pre>
-5. If your'd like to config more about this theme,edit themes/hunoc/_config.yml,but you'd better copy the option to you hexo's _config.yml instead of theme's
+5. If your'd like to config more about this theme,edit themes/hunoc/_config.yml  
+  but you'd better copy the option to you hexo's _config.yml instead of hunoc-theme's
 
 ### Method 2: Git Clone
 
 1. Start your shell/cmd and enter your hexo path
-2. make sure your installed git,and:  
+2. make sure your installed git,and run:  
     git clone git://github.com/someus/hunoc.git themes/hunoc
 3. Edit hexo's _config.yml  
     theme: hunoc
-4. If your'd like to config more about this theme,edit themes/hunoc/_config.yml,but you'd better copy the option to you hexo's config.yml instead of theme's
+4. If your'd like to config more about this theme,edit themes/hunoc/_config.yml,but you'd better copy the options to your hexo's config.yml instead of theme's
 
 ## Theme Options
 
@@ -133,18 +142,14 @@ Foundation Icons v 3.0
 
 ### Site analytics
 
-<pre>
-hc_site_analytics: [your analytics code]
-</pre>
-Or just paste it in layout/_scripts/site-analytics.ejs
+    hc_site_analytics: (your analytics code from Google analysis,CNZZ etc.)
+Or just paste it in the bottom of layout/_scripts/site-analytics.ejs
 
-## About huno
+## About huno and uno
 
 [huno](https://github.com/letiantian/huno) is a [Hexo](http://hexo.io/) theme，based on [uno](https://github.com/daleanthony/uno/)  
 Author: [letiantian](https://github.com/letiantian/)  
 License: [Creative Commons Attribution 4.0 International](http://creativecommons.org/licenses/by/4.0/)  
-
-## About uno
 
 [uno](https://github.com/daleanthony/)  
 Author: [daleanthony](https://github.com/daleanthony/)  
@@ -152,19 +157,20 @@ License: [Creative Commons Attribution 4.0 International](http://creativecommons
 
 ## Compatibility
 
-hexo-theme-unit-test: PASSED
+Hexo Theme Unit Test: PASSED  
+[Hexo Theme Checklist](./Checklist.md): YES:13 PARTLY:2 NO:2 UNKNOWN:1  
 
-It's generally tested on:
+It's generally tested on:  
 
-* hexo: 3.8
+* hexo: 3.9
 * node: 10~12
-* Browsers: Firefox/Chrome/Edge/IE 10,11
-* Plugins: hexo-all-minifier,hexo-deploy
+* Browsers: Firefox/Chrome/Edge/IE 10 11
+* Plugins: hexo-all-minifier,hexo-deploy-git
 
 ## Suggestions
 
 * Use hexo-all-minifier(Plugin)
-* If you want to keep up-to-date,you need to know:
+* If you want to keep up-to-date,you need to know:  
     This theme DO NOT obey Semantic Versioning now  
     This theme DO NOT update regularly  
 * Vssue and gitalk are recommended.
@@ -174,10 +180,10 @@ It's generally tested on:
 |Project|Author|License|
 |---|---|---|
 |[Vssue](https://vssue.js.org/)|[meteorlxy](https://github.com/meteorlxy)|MIT|
-|[gitalk](https://github.com/gitalk/gitalk/)|[View](https://github.com/gitalk/gitalk/graphs/contributors)|MIT|
+|[gitalk](https://github.com/gitalk/gitalk/)|booxood and [others](https://github.com/gitalk/gitalk/graphs/contributors)|MIT|
 |[gitment](https://github.com/imsun/gitment/)|[imsun](https://github.com/imsun/)|MIT|
-|[JQueryRotate](http://jqueryrotate.com/)|Pawel wilq32 Witkowski|MIT|
-|[JQuery](https://jquery.com/)|JS Foundation and others|jquery.org/license|
+|[JQueryRotate](http://jqueryrotate.com/)|wilq32 and [others](https://github.com/wilq32/jqueryrotate/graphs/contributors)|MIT|
+|[JQuery](https://jquery.com/)|JS Foundation and other contributors|jquery.org/license|
 
 ## Picture Authors
 

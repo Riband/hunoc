@@ -7,24 +7,12 @@ var post = page;
   if(title=='' && page.date==''){title=='No title';}
 %>
 <article class="post-container post-container--single">
-
   <header class="post-header">
-
     <h1 class="post-title"><%= title %></h1>
-
     <% if (type == 'post') { %>
-
     <div class="post-meta">
       <time datetime="<%= date(post.date, config.date_format) %>" class="post-meta__date date"><%= date(post.date, config.date_format) %></time>
       <span class="post-meta__tags tags">
-
-            <% if (post.id){ %>
-            <font class="post-id">
-              &#8226; ID:
-              <%- post.id %>
-            </font>
-           <% } %>
-
           <% if (post.categories && post.categories.length > 0){ %>
             <font class="categories">
             &nbsp; &#8226; 分类:
@@ -46,14 +34,10 @@ var post = page;
               }) %>
             </b>
           <% } %>
-
       </span>
     </div>
-
     <% } %>
-
   </header>
-
     <% // hc hide begin %>
     <% if(post.hc_hide) { %>
        <section id="post-content" class="article-content post" style="visibility: hidden;"><%- post.content %></section>
@@ -61,6 +45,5 @@ var post = page;
         <section id="post-content" class="article-content post"><%- post.content %></section>
     <% } %>
     <% // hc hide end  %>
-
   <%- partial('comment') %>
 </article>

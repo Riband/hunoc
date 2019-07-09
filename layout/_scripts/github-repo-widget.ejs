@@ -1,5 +1,28 @@
-<% if ( theme.github_repo_widget) {  %>
+<%         var github_repo_widget=false;                            %>
+<%         if (theme.github_repo_widget){                           %>
+<%             github_repo_widget = theme.github_repo_widget;       %>
+<%         }                                                        %>
+<%         if (config.github_repo_widget){                          %>
+<%             github_repo_widget = config.github_repo_widget;      %>
+<%         }                                                        %>
+<%         if (page.github_repo_widget){                            %>
+<%             github_repo_widget = page.github_repo_widget;        %>
+<%         }                                                        %>
 
-    <script src="<%- config.root %>js/jquery.githubRepoWidget.min.js"></script>
+<% //Get child path again ... 
+  function path_adjust(__root){
+  if(__root[0] !== '/'){
+    __root = '/' + __root;
+  } 
+  if (__root[__root.length-1] !== '/') {
+    __root = __root + '/';
+  }
+  return __root;
+} %>
 
+<% const subpath_full= path_adjust(config.root); %>
+<% const subpath = subpath_full.slice(0,-1); %>
+
+<% if ( github_repo_widget) {  %>
+    <script src="<%- subpath %>/js/jquery.githubRepoWidget.min.js"></script>
 <% } %>
