@@ -19,7 +19,7 @@
 ### Post
 
 - [YES]Display post categories and tags.
-- [YES but manully]Disqus comment support.
+- [YES,but manully paste your code to comment.ejs]Disqus comment support.
 - [YES]Display the post date.
 - Support [NO]`photo` and [YES]`link` layout.
 - [YES]Posts without title should be accessible.
@@ -27,7 +27,6 @@
 ### Performance
 
 - [UNKNOWN]Use [fragment_cache](https://hexo.io/docs/helpers.html#fragment_cache)  
-  It caches render result across post/pages, see [#1769](https://github.com/hexojs/hexo/issues/1769) for the impact
 
 ### Optional
 

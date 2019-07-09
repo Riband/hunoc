@@ -158,7 +158,7 @@ License: [Creative Commons Attribution 4.0 International](http://creativecommons
 ## Compatibility
 
 Hexo Theme Unit Test: PASSED  
-Hexo Theme Checklist: YES:13 PARTLY:2 NO:2 UNKNOWN:1  
+[Hexo Theme Checklist](./Checklist.md): YES:13 PARTLY:2 NO:2 UNKNOWN:1  
 
 It's generally tested on:  
 
