@@ -1,4 +1,4 @@
-# hunoc 0.1.7
+# hunoc 1.1.7
 # Edition: Phantom
 # License: MPL 2.0
 # Based on huno,uno
@@ -57,7 +57,7 @@ hc_github_config: #must set hc_post_comments: gitment, vssue, gitalk
   admin:                      #only for gitalk
     - YourName
   
-hc_footer_info: <br/>hunoc 0.1.7<br/>Based on huno by letiantian and uno by daleanthony,Powered by Hexo
+hc_footer_info: <br/>hunoc 1.1.7<br/>Based on huno by letiantian and uno by daleanthony,Powered by Hexo
 #[only available in theme]
 
 default_license_information: ©Copyright
